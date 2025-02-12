@@ -92,12 +92,12 @@
 	
 	To incorporate astrophysical constraints, we solve the Tolman-Oppenheimer-Volkoff (TOV) equations for each EOS and retain only those satisfying the mass measurements of J0348+0432~\citep{Antoniadis2013} ($M = 2.01\pm 0.04,M_{\odot}$) and J0740+6620~\citep{Cromartie2019, Fonseca2021} ($M = 2.08 \pm 0.07,M_{\odot}$), discarding EOSs with a maximum mass $M_{\rm TOV} < 2.0,M_{\odot}$. We also impose NICER radius constraints from J0740+6620~\citep{Miller2021, Riley2021} and J0030+0451~\citep{Riley2019, MCMiller2019b}, rejecting EOSs with $R < 10.75$ km at $M = 2.0,M_{\odot}$ or $R < 10.8$ km at $M = 1.1,M_{\odot}$.
 	
-	In the neutron star binary case, we impose an upper bound on the binary tidal deformability from GW170817, requiring $\tilde{\Lambda} < 720$ under low-spin priors~\citep{Abbott2018a}. The tidal deformability is computed as
+	In the neutron star binary case, the binary tidal deformability is computed as
 	\begin{equation} 
 		\tilde{\Lambda}_{\rm NSNS} = \frac{16}{13} \frac{ (12M_2 + M_1) M_1^4 \Lambda_1 + (12M_1 + M_2) M_2^4 \Lambda_2}{(M_1 + M_2)^5}~,
 	\end{equation}
 	where $M_i$, $R_i$, and $\Lambda_i = \frac{2}{3} k_2 \left( R_i/M_i \right)^5$ ($i=1,2$) denote the component masses, radii, and tidal deformabilities, with $k_2$ being the second tidal Love number.
-	EOSs violating $\tilde{\Lambda} < 720$ for a chirp mass $\mathcal{M}_{\rm chirp} = (M_1 M_2)^{3/5} (M_1+M_2)^{-1/5} = 1.186,M_\odot$ and mass ratio $q = M_2/M_1 > 0.73$ are discarded.
+	The chirp mass is given by $\mathcal{M}_{\rm chirp} = (M_1 M_2)^{3/5} (M_1+M_2)^{-1/5}$ and we in the following we will use the mass ratio defined as $q = M_2/M_1$.
 	
 	In the mixed binary case, i.e., where one binary component is a neutron star and the other one a black hole, the formula for the binary tidal deformability simplifies, because black holes have zero tidal deformability $\Lambda_{\rm BH}=0$.
 	The binary tidal deformability in this case becomes
@@ -105,9 +105,6 @@
 		\tilde{\Lambda}_{\rm NSBH} = \frac{16}{13} \frac{ (12M_{\rm BH} + M_{\rm NS}) M_{\rm NS}^4 \Lambda_{\rm NS}}{(M_{\rm NS} + M_{\rm BH})^5}~,
 	\end{equation}
 	where $M_{\rm NS}$ and $\Lambda_{\rm NS}$ are the nuetron star mass and tidal defromability, respectively, and $M_{\rm BH}$ the black hole mass. The expressions for the chirp mass and mass ratio remain intact, with the understanding that $M_1=M_{\rm NS}$ and $M_2=M_{\rm BH}$. 
-	%Applying these observational constraints reduces our initial set of $8 \times 10^6$ EOSs to approximately $10^6$ viable models, forming the basis for the results in the next section.
-	
-	%While an upper bound on $M_{\rm TOV}$ has been proposed ($M_{\rm TOV} \lesssim 2.16^{+0.17}{-0.15} M{\odot}$, see \citet{Rezzolla2017} and also \citet{Margalit2017, Ruiz2017, Shibata2019, Nathanail2021}), this estimate relies on model assumptions about the kilonova associated with GRB170817A from GW170817. Given these uncertainties, we do not impose this bound in our main analysis but explore its impact in Appendix~\ref{sec:appendix_a}.
 	
 	\subsection{Binary neutron star mergers}
 	We use the probability distribution of $10^7$ equation of state models informed by nuclear physics, perturbative quantum chromodynamics and  astrophysics from~\citet{altiparmak22} to generate a probability distribution for chirp mass -- tidal deformability, and use it as priors on those quantities as shown in Fig.~\ref{fig:priors}. We implement this in \textsc{Bilby} using the \verb!conditional_prior! function\footnote{\red{git link to our code!?}},
