@@ -1,0 +1,98 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\href{#1}{#1}}
+\providecommand{\dodoi}[1]{doi:~\href{http://doi.org/#1}{\nolinkurl{#1}}}
+\providecommand{\doeprint}[1]{\href{http://ascl.net/#1}{\nolinkurl{http://ascl.net/#1}}}
+\providecommand{\doarXiv}[1]{\href{https://arxiv.org/abs/#1}{\nolinkurl{https://arxiv.org/abs/#1}}}
+
+\bibitem[{{Aasi} {et~al.}(2015){Aasi}, {Abbott}, {Abbott}, {Abbott}, {Abernathy}, {Ackley}, {Adams}, {Adams}, {Addesso}, {Adhikari}, {Adya}, {Affeldt}, {Aggarwal}, {et~al.}}]{LIGO}
+{Aasi}, J., {Abbott}, B.~P., {Abbott}, R., {et~al.} 2015, Classical and Quantum Gravity, 32, 074001, \dodoi{10.1088/0264-9381/32/7/074001}
+
+\bibitem[{{Abac} {et~al.}(2024){Abac}, {Abbott}, {Abouelfettouh}, {Acernese}, {Ackley}, {Adhicary}, {Adhikari}, {Adhikari}, {Adkins}, \& {others}}]{GW230529}
+{Abac}, A.~G., {Abbott}, R., {Abouelfettouh}, I., {et~al.} 2024, \apjl, 970, L34, \dodoi{10.3847/2041-8213/ad5beb}
+
+\bibitem[{{Abbott} {et~al.}(2017){Abbott}, {Abbott}, {Abbott}, {Acernese}, {Ackley}, {Adams}, {Adams}, {Addesso}, {Adhikari}, {Adya}, {Affeldt}, {Afrough}, {Agarwal}, {Agathos}, {Agatsuma}, {Aggarwal}, {Aguiar}, {et~al.}}]{abbott17_170817observation}
+{Abbott}, B.~P., {Abbott}, R., {Abbott}, T.~D., {et~al.} 2017, \prl, 119, 161101, \dodoi{10.1103/PhysRevLett.119.161101}
+
+\bibitem[{{Abbott} {et~al.}(2018){Abbott}, {Abbott}, {Abbott}, {Acernese}, {Ackley}, {Adams}, {Adams}, {Addesso}, {Adhikari}, {Adya}, {Affeldt}, {et~al.}}]{abbott18_170817EOS}
+---. 2018, \prl, 121, 161101, \dodoi{10.1103/PhysRevLett.121.161101}
+
+\bibitem[{{Abbott} {et~al.}(2019){Abbott}, {Abbott}, {Abbott}, {Acernese}, {Ackley}, {Adams}, {Adams}, {Addesso}, {Adhikari}, {Adya}, {Affeldt}, {Agarwal}, {Agathos}, {Agatsuma}, {Aggarwal}, {et~al.}}]{abbott19_170817Properties}
+---. 2019, Physical Review X, 9, 011001, \dodoi{10.1103/PhysRevX.9.011001}
+
+\bibitem[{{Abbott} {et~al.}(2020){Abbott}, {Abbott}, {Abbott}, {Abraham}, {Acernese}, {Ackley}, {Adams}, {Adhikari}, {Adya}, {Affeldt}, {Agathos}, {et~al.}}]{abbott20_190425}
+---. 2020, \apjl, 892, L3, \dodoi{10.3847/2041-8213/ab75f5}
+
+\bibitem[{{Abbott} {et~al.}(2021){Abbott}, {Abbott}, {Abraham}, {Acernese}, {Ackley}, {Adams}, {Adams}, {Adhikari}, {Adya}, {Affeldt}, {Agarwal}, \& {Agathos}}]{GW200115}
+{Abbott}, R., {Abbott}, T.~D., {Abraham}, S., {et~al.} 2021, \apjl, 915, L5, \dodoi{10.3847/2041-8213/ac082e}
+
+\bibitem[{{Acernese} {et~al.}(2015){Acernese}, {Agathos}, {Agatsuma}, {Aisa}, {Allemandou}, {Allocca}, {Amarni}, {Astone}, {Balestri}, {Ballardin}, {Barone}, {Baronick}, {Barsuglia}, {et~al.}}]{Virgo}
+{Acernese}, F., {Agathos}, M., {Agatsuma}, K., {et~al.} 2015, Classical and Quantum Gravity, 32, 024001, \dodoi{10.1088/0264-9381/32/2/024001}
+
+\bibitem[{Akutsu {et~al.}(2020)Akutsu, Ando, Arai, Arai, Araki, Araya, Aritomi, Aso, Bae, Bae, Baiotti, Bajpai, Barton, Cannon, Capocasa, Chan, Chen, {et~al.}}]{KAGRA}
+Akutsu, T., Ando, M., Arai, K., {et~al.} 2020, Progress of Theoretical and Experimental Physics, 2021, 05A101, \dodoi{10.1093/ptep/ptaa125}
+
+\bibitem[{{Altiparmak} {et~al.}(2022{\natexlab{a}}){Altiparmak}, {Ecker}, \& {Rezzolla}}]{altiparmak22}
+{Altiparmak}, S., {Ecker}, C., \& {Rezzolla}, L. 2022{\natexlab{a}}, \apjl, 939, L34, \dodoi{10.3847/2041-8213/ac9b2a}
+
+\bibitem[{{Altiparmak} {et~al.}(2022{\natexlab{b}}){Altiparmak}, {Ecker}, \& {Rezzolla}}]{Altiparmak:2022}
+---. 2022{\natexlab{b}}, Astrophys. J. Lett., 939, L34, \dodoi{10.3847/2041-8213/ac9b2a}
+
+\bibitem[{{Annala} {et~al.}(2020){Annala}, {Gorda}, {Kurkela}, {N{\"a}ttil{\"a}}, \& {Vuorinen}}]{Annala2019}
+{Annala}, E., {Gorda}, T., {Kurkela}, A., {N{\"a}ttil{\"a}}, J., \& {Vuorinen}, A. 2020, Nature Physics, 16, 907, \dodoi{10.1038/s41567-020-0914-9}
+
+\bibitem[{{Antoniadis} {et~al.}(2013){Antoniadis}, {Freire}, {Wex}, {Tauris}, {Lynch}, \& {et al.}}]{Antoniadis2013}
+{Antoniadis}, J., {Freire}, P.~C.~C., {Wex}, N., {et~al.} 2013, Science, 340, 448, \dodoi{10.1126/science.1233232}
+
+\bibitem[{{Ashton} {et~al.}(2019){Ashton}, {H{\"u}bner}, {Lasky}, {Talbot}, {Ackley}, {Biscoveanu}, {Chu}, {Divakarla}, {Easter}, {Goncharov}, {Hernandez Vivanco}, {Harms}, {Lower}, {Meadors}, {Melchor}, {Payne}, {Pitkin}, {Powell}, {Sarin}, {Smith}, \& {Thrane}}]{ashton19}
+{Ashton}, G., {H{\"u}bner}, M., {Lasky}, P.~D., {et~al.} 2019, \apjs, 241, 27, \dodoi{10.3847/1538-4365/ab06fc}
+
+\bibitem[{{Baym} {et~al.}(1971){Baym}, {Pethick}, \& {Sutherland}}]{Baym71}
+{Baym}, G., {Pethick}, C., \& {Sutherland}, P. 1971, \apj, 170, 299, \dodoi{10.1086/151216}
+
+\bibitem[{{Broekgaarden} {et~al.}(2021){Broekgaarden}, {Berger}, {Neijssel}, {Vigna-G{\'o}mez}, {Chattopadhyay}, {Stevenson}, {Chruslinska}, {Justham}, {de Mink}, \& {Mandel}}]{2021Broekgaarden+}
+{Broekgaarden}, F.~S., {Berger}, E., {Neijssel}, C.~J., {et~al.} 2021, \mnras, 508, 5028, \dodoi{10.1093/mnras/stab2716}
+
+\bibitem[{{Cromartie} {et~al.}(2020){Cromartie}, {Fonseca}, {Ransom}, {Demorest}, {Arzoumanian}, {Blumer}, {Brook}, {DeCesar}, {Dolch}, {Ellis}, {Ferdman}, {Ferrara}, {Garver-Daniels}, {Gentile}, {Jones}, {Lam}, {Lorimer}, {Lynch}, {McLaughlin}, {Ng}, {Nice}, {Pennucci}, {Spiewak}, {Stairs}, {Stovall}, {Swiggum}, \& {Zhu}}]{Cromartie2019}
+{Cromartie}, H.~T., {Fonseca}, E., {Ransom}, S.~M., {et~al.} 2020, Nature Astronomy, 4, 72, \dodoi{10.1038/s41550-019-0880-2}
+
+\bibitem[{{Dietrich} {et~al.}(2019){Dietrich}, {Samajdar}, {Khan}, {Johnson-McDaniel}, {Dudi}, \& {Tichy}}]{IMRPhenomP_NRtidal}
+{Dietrich}, T., {Samajdar}, A., {Khan}, S., {et~al.} 2019, \prd, 100, 044003, \dodoi{10.1103/PhysRevD.100.044003}
+
+\bibitem[{{Favata}(2014)}]{favata14}
+{Favata}, M. 2014, \prl, 112, 101101, \dodoi{10.1103/PhysRevLett.112.101101}
+
+\bibitem[{{Fonseca} {et~al.}(2021){Fonseca}, {Cromartie}, {Pennucci}, {Ray}, {Kirichenko}, {Ransom}, {Demorest}, {Stairs}, {Arzoumanian}, {Guillemot}, {Parthasarathy}, {Kerr}, {Cognard}, {Baker}, {Blumer}, {Brook}, {DeCesar}, {Dolch}, {Dong}, {Ferrara}, {Fiore}, {Garver-Daniels}, {Good}, {Jennings}, {Jones}, {Kaspi}, {Lam}, {Lorimer}, {Luo}, {McEwen}, {McKee}, {McLaughlin}, {McMann}, {Meyers}, {Naidu}, {Ng}, {Nice}, {Pol}, {Radovan}, {Shapiro-Albert}, {Tan}, {Tendulkar}, {Swiggum}, {Wahl}, \& {Zhu}}]{Fonseca2021}
+{Fonseca}, E., {Cromartie}, H.~T., {Pennucci}, T.~T., {et~al.} 2021, Astrophys. J. Lett., 915, L12, \dodoi{10.3847/2041-8213/ac03b8}
+
+\bibitem[{Hebeler {et~al.}(2013)Hebeler, Lattimer, Pethick, \& Schwenk}]{Hebeler:2013nza}
+Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys. J., 773, 11, \dodoi{10.1088/0004-637X/773/1/11}
+
+\bibitem[{{Miller} {et~al.}(2019){Miller}, {Lamb}, {Dittmann}, {Bogdanov}, {Arzoumanian}, {Gendreau}, {Guillot}, {Harding}, {Ho}, {Lattimer}, {Ludlam}, {Mahmoodifar}, {Morsink}, {Ray}, {Strohmayer}, {Wood}, {Enoto}, {Foster}, {Okajima}, {Prigozhin}, \& {Soong}}]{MCMiller2019b}
+{Miller}, M.~C., {Lamb}, F.~K., {Dittmann}, A.~J., {et~al.} 2019, Astrophys. J. Lett., 887, L24, \dodoi{10.3847/2041-8213/ab50c5}
+
+\bibitem[{{Miller} {et~al.}(2021){Miller}, {Lamb}, {Dittmann}, {Bogdanov}, {Arzoumanian}, {Gendreau}, {Guillot}, {Ho}, {Lattimer}, {Loewenstein}, {Morsink}, {Ray}, {Wolff}, {Baker}, {Cazeau}, {Manthripragada}, {Markwardt}, {Okajima}, {Pollard}, {Cognard}, {Cromartie}, {Fonseca}, {Guillemot}, {Kerr}, {Parthasarathy}, {Pennucci}, {Ransom}, \& {Stairs}}]{Miller2021}
+---. 2021, Astrophys. J. Lett., 918, L28, \dodoi{10.3847/2041-8213/ac089b}
+
+\bibitem[{{Planck Collaboration} {et~al.}(2020)}]{Planck}
+{Planck Collaboration}, {et~al.} 2020, \aap, 641, A6, \dodoi{10.1051/0004-6361/201833910}
+
+\bibitem[{{Riley} {et~al.}(2019){Riley}, {Watts}, {Bogdanov}, {Ray}, {Ludlam}, {Guillot}, {Arzoumanian}, {Baker}, {Bilous}, {Chakrabarty}, {Gendreau}, {Harding}, {Ho}, {Lattimer}, {Morsink}, \& {Strohmayer}}]{Riley2019}
+{Riley}, T.~E., {Watts}, A.~L., {Bogdanov}, S., {et~al.} 2019, Astrophys. J. Lett., 887, L21, \dodoi{10.3847/2041-8213/ab481c}
+
+\bibitem[{{Riley} {et~al.}(2021){Riley}, {Watts}, {Ray}, {Bogdanov}, {Guillot}, {Morsink}, {Bilous}, {Arzoumanian}, {Choudhury}, {Deneva}, {Gendreau}, {Harding}, {Ho}, {Lattimer}, {Loewenstein}, {Ludlam}, {Markwardt}, {Okajima}, {Prescod-Weinstein}, {Remillard}, {Wolff}, {Fonseca}, {Cromartie}, {Kerr}, {Pennucci}, {Parthasarathy}, {Ransom}, {Stairs}, {Guillemot}, \& {Cognard}}]{Riley2021}
+{Riley}, T.~E., {Watts}, A.~L., {Ray}, P.~S., {et~al.} 2021, Astrophys. J. Lett., 918, L27, \dodoi{10.3847/2041-8213/ac0a81}
+
+\bibitem[{{Romero-Shaw} {et~al.}(2020){Romero-Shaw}, {Talbot}, {Biscoveanu}, {D'Emilio}, {Ashton}, {Berry}, {Coughlin}, {Galaudage}, {Hoy}, {H{\"u}bner}, {Phukon}, {Pitkin}, {Rizzo}, {Sarin}, {Smith}, {Stevenson}, {Vajpeyi}, {Ar{\`e}ne}, {Athar}, {Banagiri}, {Bose}, {Carney}, {Chatziioannou}, {Clark}, {Colleoni}, {Cotesta}, {Edelman}, {Estell{\'e}s}, {Garc{\'\i}a-Quir{\'o}s}, {Ghosh}, {Green}, {Haster}, {Husa}, {Keitel}, {Kim}, {Hernandez-Vivanco}, {Maga{\~n}a Hernandez}, {Karathanasis}, {Lasky}, {De Lillo}, {Lower}, {Macleod}, {Mateu-Lucena}, {Miller}, {Millhouse}, {Morisaki}, {Oh}, {Ossokine}, {Payne}, {Powell}, {Pratten}, {P{\"u}rrer}, {Ramos-Buades}, {Raymond}, {Thrane}, {Veitch}, {Williams}, {Williams}, \& {Xiao}}]{romeroshaw20}
+{Romero-Shaw}, I.~M., {Talbot}, C., {Biscoveanu}, S., {et~al.} 2020, \mnras, 499, 3295, \dodoi{10.1093/mnras/staa2850}
+
+\bibitem[{{Smith} {et~al.}(2020){Smith}, {Ashton}, {Vajpeyi}, \& {Talbot}}]{pbilby}
+{Smith}, R. J.~E., {Ashton}, G., {Vajpeyi}, A., \& {Talbot}, C. 2020, \mnras, 498, 4492, \dodoi{10.1093/mnras/staa2483}
+
+\bibitem[{{Speagle}(2020)}]{Dynesty}
+{Speagle}, J.~S. 2020, \mnras, 493, 3132, \dodoi{10.1093/mnras/staa278}
+
+\bibitem[{{Wade} {et~al.}(2014){Wade}, {Creighton}, {Ochsner}, {Lackey}, {Farr}, {Littenberg}, \& {Raymond}}]{wade14}
+{Wade}, L., {Creighton}, J. D.~E., {Ochsner}, E., {et~al.} 2014, \prd, 89, 103012, \dodoi{10.1103/PhysRevD.89.103012}
+
+\end{thebibliography}

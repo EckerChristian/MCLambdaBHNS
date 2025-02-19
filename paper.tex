@@ -74,11 +74,11 @@ GW190425, the improvement is \red{\ldots}.
 	
 	Our setup closely follows that of~~\citet{Altiparmak:2022}, which we briefly review here. 
 	We begin by constructing a large set of EOSs by stitching together various components.
-	At the lowest densities ($n<0.5,n_s$), we adopt the Baym-Pethick-Sutherland (BPS) model~\citep{Baym71} for the neutron-star crust.
-	In the range $0.5,n_s < n < 1.1,n_s$, we randomly sample polytropes to span the range between the softest and stiffest EOSs from~\citet{Hebeler:2013nza}.
+	At the lowest densities ($n<0.5 n_s$), we adopt the Baym-Pethick-Sutherland (BPS) model~\citep{Baym71} for the neutron-star crust.
+	In the range $0.5 n_s < n < 1.1 n_s$, we randomly sample polytropes to span the range between the softest and stiffest EOSs from~\citet{Hebeler:2013nza}.
 	At high densities ($n \gtrsim 40,n_s$), corresponding to a baryon chemical potential of $\mu = 2.6,{\rm GeV}$, we impose the perturbative QCD constraint from~\citet{Fraga2014} on the pressure $p(X, \mu)$ of cold quark matter, with the renormalization scale parameter $X$ sampled uniformly in $[1,4]$.
 	
-	For the intermediate density range ($1.1,n_s < n \lesssim 40,n_s$), we use the parametrization method of~\citet{Annala2019}, which models the sound speed as a function of the chemical potential, $c_s^2(\mu)$, using piecewise-linear segments:
+	For the intermediate density range ($1.1 n_s < n \lesssim 40 n_s$), we use the parametrization method of~\citet{Annala2019}, which models the sound speed as a function of the chemical potential, $c_s^2(\mu)$, using piecewise-linear segments:
 	\begin{equation} \label{eq:cs2}
 		c_s^2(\mu) = \frac{\left(\mu_{i+1}-\mu \right) c_{s,i}^2 + \left(\mu - \mu_i \right) c_{s,i+1}^2}{\mu_{i+1}-\mu_i}~, 
 	\end{equation}
