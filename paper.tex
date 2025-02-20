@@ -42,7 +42,7 @@
 		We introduce physics-inspired priors derived from a combination of constraints from nuclear-physics experiments, perturbative quantum chromodynamics calculations, and astrophysical constraints.
 		When these priors are used in gravitational-wave astrophysical inference, we show significant improvement on nuclear equation of state constraints. 
 		Applying these to the first two gravitational-wave binary neutron star mergers GW170817 and GW190425, constraints on the radius of a $1.4\,M_\odot$ neutron star improves from $R=\red{XX^{+YY}_{-ZZ}}\,{\rm km}$ to $\red{XX^{+YY}_{-ZZ}}\,{\rm km}$ (90\% confidence intervals).
-		We also show these priors can be used to perform model selection between binary neutron star and neutron star-black hole mergers, although the results for GW190425 are incolnclusive with a Bayes factor of $\red{}$ in favour of the binary neutron star merger hypothesis, representing only marginal evidence.
+		We also show these priors can be used to perform model selection between binary neutron star and neutron star-black hole mergers, although the results for GW190425 are incolnclusive with a Bayes factor of 1.33 in favour of the binary neutron star merger hypothesis, representing only marginal evidence.
 		We advocate for these physics-inspired priors to be used as standard in the literature, and provide open-source code for reproducibility and further adaptation of the method.
 	\end{abstract}
 	
@@ -121,12 +121,12 @@ GW190425, the improvement is \red{\ldots}.
 	\subsection{Binary neutron star mergers}
 	We use the probability distribution of $10^7$ equation of state models informed by nuclear physics, perturbative quantum chromodynamics and  astrophysics from~\citet{altiparmak22} to generate a probability distribution for chirp mass -- tidal deformability, and use it as priors on those quantities as shown in Fig.~\ref{fig:priors}. We implement this in \textsc{Bilby} using the \verb!conditional_prior! function\footnote{\red{git link to our code!?}},
 	interpolating the $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and $\tilde{\Lambda}$. 
-	\begin{figure*}
+	\begin{figure}
 		\centering
 		\includegraphics[width=1.\linewidth]{Fig_1_Physics_priors.pdf}
 		\caption{Coupled priors for the source-frame chirp mass $\mathcal{M}$ and dimensionless tidal deformability $\tilde{\Lambda}$. Top: prior for binary neutron star mergers. Bottom: prior for neutron star -- black hole mergers. The horizontal grey bands are the 90\% credible intervals for the measured chirp masses of GW170817~\citep{abbott17_170817observation}, GW190425~\citep{abbott20_190425}, GW200115~\citep{GW200115} and GW230529~\citep{GW230529}}. 
 		\label{fig:priors}
-	\end{figure*}
+	\end{figure}
 	
 	We sample directly in source-frame chirp mass, mass ratio $q=m_1/m_2$ and the two tidal deformability parameters $\tilde{\Lambda}$ and $\delta\Lambda$~\citep[see][for explicit expressions for these quantities]{favata14,wade14}. We note that $q$ is not a variable that depends on the equation of state, but instead priors \textit{could} be chosen based on astrophysical formation scenarios. In this work, we take the standard approach and choose a prior on $q$ that is uniform between $q=0.125$ and 1~\citep[e.g.,][]{romeroshaw20}.
 	
@@ -160,7 +160,9 @@ GW190425, the improvement is \red{\ldots}.
 	Figure \red{XX} shows the reconstructed mass---radius curves of GW170817 ... 
 	\subsection{GW190425}
 	Figure \ref{fig:GW190425_tides} shows the posterior distribution of the intrinsic tidal parameter of GW190425 when analyzed using both the binary neutron star prior (teal) and neutron star -- black hole prior (pink). We show the official posterior distribution  of the LVK obtained using uniform priors in blue. 
-	Bayesian model selection between the binary neutron star and neutron star -- black hole merger gives a Bayes factor of \red{XX}, slightly in favor of a binary neutron star merger origin. 
+	% Z_BNS = -576535.277281933
+	% Z_NSBH = -576535.5652987232
+	Bayesian model selection between the binary neutron star and neutron star -- black hole merger gives a Bayes factor of 1.33, marginally in favor of a binary neutron star merger origin. 
 	Figure \red{XX} shows the reconstructed mass radius curves of GW190425 analyzed using the new priors.  
 	\begin{figure}
 		\centering
@@ -193,7 +195,26 @@ GW190425, the improvement is \red{\ldots}.
 		\label{fig:mass ratio distrbution}
 	\end{figure}
 	\section{Model Selection}\label{sec:Model Selection}
-	
+	We perform parameter estimation of gravtitational-wave strain data using the \textsc{dynesty} nested sampler. Unlike standard MCMC samplers,
+	\textsc{dynesty} calculates the evidence for each parameter estimation run.   
+	To perform Bayesian model selection between binary neutron star and neutron star-- black hole mergers, we calculate the Bayes factor
+	\begin{equation}
+		\rm BF  = \frac{\mathcal{Z_{\rm BNS}}}{\mathcal{Z_{\rm NSBH}}},
+	\end{equation}
+	where $\mathcal{Z}_{\rm BNS}$ and $\mathcal{Z}_{\rm NSBH}$ are the Bayesian evidences obtained for the parameter estimation runs using the binary neutron star 
+	and neutron star black hole priors respectively.
+	%  In practice we compute the log Bayes factor
+	% \begin{equation}
+	% 	\log \ (\rm BF) = \log (Z_{\rm BNS} ) - \log (Z_{\rm NSBH}).
+	% \end{equation} 
+	Formally, for model selection we should be computing the odds ratio, which is defined as
+	\begin{equation}
+		\mathcal{O} \equiv \frac{Z_{\rm BNS}}{Z_{\rm NSBH}} \frac{\pi_{\rm BNS}}{\pi_{\rm NSBH}},
+	\end{equation}
+	where $\pi_{\rm BNS}$ and $\pi_{\rm NSBH}$ are the prior odds for each hypothesis; i.e our relative belief about which hypothesis is more likely. 
+	In this work we set the prior odds to unity, so the odds ratio is the Bayes factor. 
+	We could in principle construct an odds ratio where the prior odds was informed by the relative rates of binary neutron star and neutron -- star black hole mergers. 
+	However since these rates are still highly uncertain, we choose the more agnostic approach of setting the prior odds to unity. 
 	\bibliography{references}{}
 	\bibliographystyle{aasjournal}
 	

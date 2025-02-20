@@ -1,49 +1,47 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
 The style file: aasjournal.bst
 Database file #1: references.bib
-Warning--I didn't find a database entry for "Fraga2014"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 30 entries,
+You've used 31 entries,
             3168 wiz_defined-function locations,
-            898 strings with 17338 characters,
-and the built_in function-call counts, 17521 in all, are:
-= -- 1153
-> -- 1862
+            904 strings with 17506 characters,
+and the built_in function-call counts, 17959 in all, are:
+= -- 1192
+> -- 1892
 < -- 3
-+ -- 614
-- -- 663
-* -- 1857
-:= -- 3409
-add.period$ -- 30
-call.type$ -- 30
-change.case$ -- 152
-chr.to.int$ -- 29
-cite$ -- 30
-duplicate$ -- 506
-empty$ -- 836
-format.name$ -- 688
-if$ -- 3374
++ -- 624
+- -- 674
+* -- 1896
+:= -- 3488
+add.period$ -- 31
+call.type$ -- 31
+change.case$ -- 158
+chr.to.int$ -- 30
+cite$ -- 31
+duplicate$ -- 523
+empty$ -- 863
+format.name$ -- 700
+if$ -- 3463
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 30
-newline$ -- 98
-num.names$ -- 120
-pop$ -- 145
+missing$ -- 31
+newline$ -- 101
+num.names$ -- 124
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 158
 quote$ -- 0
-skip$ -- 441
+skip$ -- 455
 stack$ -- 0
-substring$ -- 585
+substring$ -- 602
 swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 270
+type$ -- 279
 warning$ -- 0
-while$ -- 102
+while$ -- 106
 width$ -- 0
-write$ -- 337
-(There was 1 warning)
+write$ -- 348
