@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  20 FEB 2025 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  25 FEB 2025 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -435,16 +435,27 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count342
+\float@exts=\toks29
+\float@box=\box88
+\@float@everytoks=\toks30
+\@floatcapt=\box89
 )
 Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 14.
+
+
+Class revtex4-1 Warning: Repair the float package.
+
 Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 14.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 14.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 14.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 14.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+(/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count342
-\l__pdf_internal_box=\box88
+\l__color_backend_stack_int=\count343
+\l__pdf_internal_box=\box90
 ) (./paper.aux)
 \openout1 = `paper.aux'.
 
@@ -468,44 +479,38 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count343
+\scratchcounter=\count344
 \scratchdimen=\dimen176
-\scratchbox=\box89
-\nofMPsegments=\count344
-\nofMParguments=\count345
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count346
+\scratchbox=\box91
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count347
 \MPscratchDim=\dimen177
-\MPnumerator=\count347
-\makeMPintoPDFobject=\count348
-\everyMPtoPDFconversion=\toks30
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks32
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/local/texlive/2022/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count349
-\output=\toks31
-\linenoprevgraf=\count350
+\linenopenalty=\count350
+\output=\toks33
+\linenoprevgraf=\count351
 \linenumbersep=\dimen178
 \linenumberwidth=\dimen179
-\c@linenumber=\count351
-\c@pagewiselinenumber=\count352
-\c@LN@truepage=\count353
-\c@internallinenumber=\count354
-\c@internallinenumbers=\count355
+\c@linenumber=\count352
+\c@pagewiselinenumber=\count353
+\c@LN@truepage=\count354
+\c@internallinenumber=\count355
+\c@internallinenumbers=\count356
 \quotelinenumbersep=\dimen180
 \bframerule=\dimen181
 \bframesep=\dimen182
-\bframebox=\box90
+\bframebox=\box92
 LaTeX Info: Redefining \\ on input line 3056.
 )
 Package hyperref Info: Link coloring ON on input line 14.
@@ -516,7 +521,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count356
+\c@section@level=\count357
 )
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
@@ -528,106 +533,114 @@ LaTeX Info: Redefining \nameref on input line 14.
 Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 14.
 Class revtex4-1 Info: Line numbering not turned on yet on input line 14.
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 14.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 44.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 44.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Orcid-ID.png, id=49, 220.825pt x 220.825pt>
+<Orcid-ID.png, id=41, 220.825pt x 220.825pt>
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 52.
+Package pdftex.def Info: Orcid-ID.png  used on input line 49.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 52.
+Package pdftex.def Info: Orcid-ID.png  used on input line 49.
+(pdftex.def)             Requested size: 9.0pt x 8.99997pt.
+File: Orcid-ID.png Graphic file (type png)
+<use Orcid-ID.png>
+Package pdftex.def Info: Orcid-ID.png  used on input line 49.
+(pdftex.def)             Requested size: 9.0pt x 8.99997pt.
+File: Orcid-ID.png Graphic file (type png)
+<use Orcid-ID.png>
+Package pdftex.def Info: Orcid-ID.png  used on input line 49.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
  [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Orcid-ID.png>]
-Overfull \hbox (1.33908pt too wide) detected at line 110
-[][][] \OT1/cmr/m/n/10 = [][] []\OML/cmm/m/it/10 ;
+Underfull \hbox (badness 1748) in paragraph at lines 94--96
+\OT1/cmr/m/n/10 by ran-domly se-lect-ing the max-i-mum sound speed
  []
 
 
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 122--122
+Overfull \hbox (0.7835pt too wide) detected at line 103
+[][][] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 ;
+ []
+
+
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 117--117
 [][]| [] [][][]| 
  []
 
-<Fig_1_Physics_priors.pdf, id=131, 1084.05pt x 1084.05pt>
+<Fig_1_Physics_priors.pdf, id=123, 909.32533pt x 914.14276pt>
 File: Fig_1_Physics_priors.pdf Graphic file (type pdf)
 <use Fig_1_Physics_priors.pdf>
-Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 126.
-(pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
+Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 121.
+(pdftex.def)             Requested size: 242.26653pt x 243.5439pt.
 [2]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 134.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 134.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 141--141
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 135--135
 [][]| [] [][][]| 
  []
 
-[3 <./Fig_1_Physics_priors.pdf>]
-<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=247, 674.62985pt x 405.42586pt>
+[3
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.144 	
+        <./Fig_1_Physics_priors.pdf>]
+<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=243, 674.62985pt x 405.42586pt>
 File: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf Graphic file (type pdf)
 <use Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>
-Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 169.
+Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 166.
 (pdftex.def)             Requested size: 242.26653pt x 145.5882pt.
-<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=248, 665.45746pt x 405.42586pt>
+<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=244, 665.45746pt x 405.42586pt>
 File: Fig_3_GW190425_lambda_tilde_posteriors.pdf Graphic file (type pdf)
 <use Fig_3_GW190425_lambda_tilde_posteriors.pdf>
-Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 176.
+Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 174.
 (pdftex.def)             Requested size: 242.26653pt x 147.59874pt.
-<NSBH_mass_ratio_density.pdf, id=252, 641.3737pt x 407.16171pt>
+ [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.190 \appendix
+               
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.190 \appendix
+                <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf> <./Fig_3_GW190425_lambda_tilde_posteriors.pdf>]
+<NSBH_mass_ratio_density.pdf, id=268, 641.3737pt x 407.16171pt>
 File: NSBH_mass_ratio_density.pdf Graphic file (type pdf)
 <use NSBH_mass_ratio_density.pdf>
-Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 193.
+Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 199.
 (pdftex.def)             Requested size: 513.11743pt x 325.76707pt.
- (./paper.bbl
-Overfull \vbox (21.71284pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (21.71284pt too high) has occurred while \output is active []
-
- [4 <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 29.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 29.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
-) [5 <./Fig_3_GW190425_lambda_tilde_posteriors.pdf>] [6 <./NSBH_mass_ratio_density.pdf>] (./paper.aux)
+ [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.219 \end{equation}
+                     <./NSBH_mass_ratio_density.pdf>] (./paper.bbl) [6] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: BEA770060975B3E0895C2CC3623AA776;1589.
+(rerunfilecheck)             Checksum: A2DFC95781B634A3964DA9F39F9B0A2C;1393.
  ) 
 Here is how much of TeX's memory you used:
- 13332 strings out of 478268
- 199719 string characters out of 5846348
- 570463 words of memory out of 5000000
- 31297 multiletter control sequences out of 15000+600000
+ 13355 strings out of 478268
+ 199774 string characters out of 5846348
+ 573427 words of memory out of 5000000
+ 31321 multiletter control sequences out of 15000+600000
  479836 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,77p,848b,498s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,77p,846b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on paper.pdf (6 pages, 4245508 bytes).
+Output written on paper.pdf (6 pages, 4241845 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
- 62 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

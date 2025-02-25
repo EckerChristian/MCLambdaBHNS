@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex paper"] 1740032201 "paper.aux" "paper.bbl" "paper" 1740032212
+["bibtex paper"] 1740378719 "paper.aux" "paper.bbl" "paper" 1740443529
   "./aasjournal.bst" 1738837905 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "paper.aux" 1740032212 10349 6c15a4e18e04125d7c03121899d13229 "pdflatex"
-  "references.bib" 1740014008 34257 d55618ab41f02e941005010318fe7c65 ""
+  "paper.aux" 1740443529 10206 dd9e1919fd7e796c5c6a3844ccdeb7ae "pdflatex"
+  "references.bib" 1740051680 34677 bfd055004b1f59a329ce2af9fcdb9687 ""
   (generated)
   "paper.bbl"
   "paper.blg"
-["pdflatex"] 1740032211 "/Users/smag0001/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1740032212
-  "/Users/smag0001/MCLambdaBHNS/paper.tex" 1740032211 20256 15d847284345dc5e710a19e7a342aa14 ""
+["pdflatex"] 1740443528 "/Users/smag0001/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1740443529
+  "/Users/smag0001/MCLambdaBHNS/paper.tex" 1740443267 22349 a21b4e6f8caf85a8c20ebed127c1babf ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -96,6 +96,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/base/latexsym.sty" 1622581934 2853 064bc688b5f0914f6c46857908d3b04a ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd" 1622581934 2233 fb041045cf7e676975d0d6824c7a540e ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def" 1601931164 19103 48d29b6e2a64cb717117ef65f107b404 ""
@@ -104,7 +105,6 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty" 1636758526 7996 a8fb260d598dcaf305a7ae7b9c3e3229 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty" 1622581934 2671 4de6781a30211fe0ea4c672e4a2a8166 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty" 1636758526 4009 187ea2dc3194cd5a76cd99a8d7a6c4d0 ""
-  "/usr/local/texlive/2022/texmf-dist/tex/latex/grfext/grfext.sty" 1575499774 7133 b94bbacbee6e4fdccdc7f810b2aec370 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty" 1580250785 17914 4c28a13fc3d975e6e81c9bea1d697276 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def" 1645564115 49029 7c9e5115b2217efbeb7828ac0d1bf1a0 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty" 1645564115 220999 6145ea83914c186e178d1d31c50b37df ""
@@ -132,16 +132,16 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1651564789 2826439 e8456ca29e0243e2f5bb1789615dcfbd ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Fig_1_Physics_priors.pdf" 1738837905 3941647 295429d1d771a68163443d84cdc75818 ""
+  "Fig_1_Physics_priors.pdf" 1740443509 3938477 2e985f11d823acba9b88a37dbb8a5ee4 ""
   "Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf" 1738837905 70998 a99a8199727f4cf49e3faeddbf223950 ""
   "Fig_3_GW190425_lambda_tilde_posteriors.pdf" 1738837905 70256 971d1fdd27c6cd87c206158666daf18a ""
   "NSBH_mass_ratio_density.pdf" 1738837905 70517 74acc1169448ef1f7cb36290d20cc742 ""
   "Orcid-ID.png" 1738837905 27604 8527c7c3c14d5c207af947385c09fd77 ""
   "aastex631.cls" 1738837905 231673 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "paper.aux" 1740032212 10349 6c15a4e18e04125d7c03121899d13229 "pdflatex"
-  "paper.bbl" 1740032201 10254 aa6b016a2ac984dcde7222e55f3b85d5 "bibtex paper"
-  "paper.out" 1740032212 1589 bea770060975b3e0895c2cc3623aa776 "pdflatex"
-  "paper.tex" 1740032211 20256 15d847284345dc5e710a19e7a342aa14 ""
+  "paper.aux" 1740443529 10206 dd9e1919fd7e796c5c6a3844ccdeb7ae "pdflatex"
+  "paper.bbl" 1740378719 10412 987ecf7a0532ad599c922eddc4495f57 "bibtex paper"
+  "paper.out" 1740443529 1393 a2dfc95781b634a3964da9f39f9b0a2c "pdflatex"
+  "paper.tex" 1740443267 22349 a21b4e6f8caf85a8c20ebed127c1babf ""
   (generated)
   "paper.aux"
   "paper.log"
