@@ -52,6 +52,11 @@
 {Acernese}, F., {Agathos}, M., {Agatsuma}, K., {et~al.} 2015, Classical and
   Quantum Gravity, 32, 024001, \dodoi{10.1088/0264-9381/32/2/024001}
 
+\bibitem[{{Agathos} {et~al.}(2015){Agathos}, {Meidam}, {Del Pozzo}, {Li},
+  {Tompitak}, {Veitch}, {Vitale}, \& {Van Den Broeck}}]{2015Agathos}
+{Agathos}, M., {Meidam}, J., {Del Pozzo}, W., {et~al.} 2015, \prd, 92, 023012,
+  \dodoi{10.1103/PhysRevD.92.023012}
+
 \bibitem[{Akutsu {et~al.}(2020)Akutsu, Ando, Arai, Arai, Araki, Araya, Aritomi,
   Aso, Bae, Bae, Baiotti, Bajpai, Barton, Cannon, Capocasa, Chan, Chen,
   {et~al.}}]{KAGRA}
@@ -135,6 +140,11 @@ Ecker, C., \& Rezzolla, L. 2022, Mon. Not. Roy. Astron. Soc., 519, 2615,
 Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys.
   J., 773, 11, \dodoi{10.1088/0004-637X/773/1/11}
 
+\bibitem[{{Landry} {et~al.}(2020){Landry}, {Essick}, \&
+  {Chatziioannou}}]{2020Landry}
+{Landry}, P., {Essick}, R., \& {Chatziioannou}, K. 2020, \prd, 101, 123007,
+  \dodoi{10.1103/PhysRevD.101.123007}
+
 \bibitem[{{Miller} {et~al.}(2019){Miller}, {Lamb}, {Dittmann}, {Bogdanov},
   {Arzoumanian}, {Gendreau}, {Guillot}, {Harding}, {Ho}, {Lattimer}, {Ludlam},
   {Mahmoodifar}, {Morsink}, {Ray}, {Strohmayer}, {Wood}, {Enoto}, {Foster},
@@ -194,5 +204,10 @@ Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys.
   {Farr}, {Littenberg}, \& {Raymond}}]{wade14}
 {Wade}, L., {Creighton}, J. D.~E., {Ochsner}, E., {et~al.} 2014, \prd, 89,
   103012, \dodoi{10.1103/PhysRevD.89.103012}
+
+\bibitem[{{Wysocki} {et~al.}(2020){Wysocki}, {O'Shaughnessy}, {Wade}, \&
+  {Lange}}]{2020Wysocki}
+{Wysocki}, D., {O'Shaughnessy}, R., {Wade}, L., \& {Lange}, J. 2020, arXiv
+  e-prints, arXiv:2001.01747, \dodoi{10.48550/arXiv.2001.01747}
 
 \end{thebibliography}

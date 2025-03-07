@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  25 FEB 2025 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  4 MAR 2025 16:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,15 +443,15 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks30
 \@floatcapt=\box89
 )
-Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 14.
+Class revtex4-1 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 13.
 
 
 Class revtex4-1 Warning: Repair the float package.
 
-Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 14.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 14.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 14.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 14.
+Class revtex4-1 Info: Patching unrecognized longtable package. (Proceeding with fingers crossed) on input line 13.
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 13.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 13.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 13.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count343
@@ -459,24 +459,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count344
@@ -513,7 +513,7 @@ Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \bframebox=\box92
 LaTeX Info: Redefining \\ on input line 3056.
 )
-Package hyperref Info: Link coloring ON on input line 14.
+Package hyperref Info: Link coloring ON on input line 13.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -523,67 +523,67 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count357
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
+LaTeX Info: Redefining \nameref on input line 13.
  (./paper.out) (./paper.out)
 \@outlinefile=\write4
 \openout4 = `paper.out'.
 
-Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 14.
-Class revtex4-1 Info: Line numbering not turned on yet on input line 14.
-Class revtex4-1 Info: Overriding \@LN@LLerror on input line 14.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 40.
+Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 13.
+Class revtex4-1 Info: Line numbering not turned on yet on input line 13.
+Class revtex4-1 Info: Overriding \@LN@LLerror on input line 13.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 39.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <Orcid-ID.png, id=41, 220.825pt x 220.825pt>
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 49.
+Package pdftex.def Info: Orcid-ID.png  used on input line 48.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 49.
+Package pdftex.def Info: Orcid-ID.png  used on input line 48.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 49.
+Package pdftex.def Info: Orcid-ID.png  used on input line 48.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 49.
+Package pdftex.def Info: Orcid-ID.png  used on input line 48.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
  [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Orcid-ID.png>]
-Underfull \hbox (badness 1748) in paragraph at lines 94--96
+Underfull \hbox (badness 1748) in paragraph at lines 93--95
 \OT1/cmr/m/n/10 by ran-domly se-lect-ing the max-i-mum sound speed
  []
 
 
-Overfull \hbox (0.7835pt too wide) detected at line 103
+Overfull \hbox (0.7835pt too wide) detected at line 102
 [][][] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 ;
  []
 
 
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 117--117
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 116--116
 [][]| [] [][][]| 
  []
 
 <Fig_1_Physics_priors.pdf, id=123, 909.32533pt x 914.14276pt>
 File: Fig_1_Physics_priors.pdf Graphic file (type pdf)
 <use Fig_1_Physics_priors.pdf>
-Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 121.
+Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 120.
 (pdftex.def)             Requested size: 242.26653pt x 243.5439pt.
 [2]
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 135--135
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 134--134
 [][]| [] [][][]| 
  []
 
@@ -591,56 +591,100 @@ Overfull \hbox (10.88353pt too wide) in paragraph at lines 135--135
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.144 	
+l.143 	
         <./Fig_1_Physics_priors.pdf>]
-<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=243, 674.62985pt x 405.42586pt>
+<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=252, 674.62985pt x 405.42586pt>
 File: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf Graphic file (type pdf)
 <use Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>
-Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 166.
+Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 189.
 (pdftex.def)             Requested size: 242.26653pt x 145.5882pt.
-<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=244, 665.45746pt x 405.42586pt>
+<GW170817_mass_radius_universalrel.pdf, id=253, 416.34106pt x 316.16193pt>
+File: GW170817_mass_radius_universalrel.pdf Graphic file (type pdf)
+<use GW170817_mass_radius_universalrel.pdf>
+Package pdftex.def Info: GW170817_mass_radius_universalrel.pdf  used on input line 196.
+(pdftex.def)             Requested size: 242.26653pt x 183.97707pt.
+<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=254, 665.45746pt x 405.42586pt>
 File: Fig_3_GW190425_lambda_tilde_posteriors.pdf Graphic file (type pdf)
 <use Fig_3_GW190425_lambda_tilde_posteriors.pdf>
-Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 174.
+Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 203.
 (pdftex.def)             Requested size: 242.26653pt x 147.59874pt.
- [4
+<GW190425_mass_radius_universalrel.pdf, id=255, 416.34106pt x 316.16193pt>
+File: GW190425_mass_radius_universalrel.pdf Graphic file (type pdf)
+<use GW190425_mass_radius_universalrel.pdf>
+Package pdftex.def Info: GW190425_mass_radius_universalrel.pdf  used on input line 211.
+(pdftex.def)             Requested size: 242.26653pt x 183.97707pt.
+<GW190425_mass_radius_universalrel_NSBH.pdf, id=256, 416.34106pt x 316.16193pt>
+File: GW190425_mass_radius_universalrel_NSBH.pdf Graphic file (type pdf)
+<use GW190425_mass_radius_universalrel_NSBH.pdf>
+Package pdftex.def Info: GW190425_mass_radius_universalrel_NSBH.pdf  used on input line 217.
+(pdftex.def)             Requested size: 242.26653pt x 183.97707pt.
+
+Underfull \hbox (badness 1558) in paragraph at lines 218--218
+[]\OT1/cmr/bx/n/9 Figure 6. []\OT1/cmr/m/n/9 Posterior dis-trub-tions of mass--radius for
+ []
+
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.190 \appendix
-               
+l.233 \appendix
+                <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 233.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 233.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+<NSBH_mass_ratio_density.pdf, id=283, 641.3737pt x 407.16171pt>
+File: NSBH_mass_ratio_density.pdf Graphic file (type pdf)
+<use NSBH_mass_ratio_density.pdf>
+Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 242.
+(pdftex.def)             Requested size: 513.11743pt x 325.76707pt.
+(./paper.bbl [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.190 \appendix
-                <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf> <./Fig_3_GW190425_lambda_tilde_posteriors.pdf>]
-<NSBH_mass_ratio_density.pdf, id=268, 641.3737pt x 407.16171pt>
-File: NSBH_mass_ratio_density.pdf Graphic file (type pdf)
-<use NSBH_mass_ratio_density.pdf>
-Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 199.
-(pdftex.def)             Requested size: 513.11743pt x 325.76707pt.
- [5
+l.1 \begin{thebibliography}{}
+                             
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.219 \end{equation}
-                     <./NSBH_mass_ratio_density.pdf>] (./paper.bbl) [6] (./paper.aux)
+l.1 \begin{thebibliography}{}
+                              <./GW170817_mass_radius_universalrel.pdf> <./Fig_3_GW190425_lambda_tilde_posteriors.pdf>] [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29   {et~al.}}]{abbott18_170817EOS}
+                                     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.29   {et~al.}}]{abbott18_170817EOS}
+                                      <./GW190425_mass_radius_universalrel.pdf> <./GW190425_mass_radius_universalrel_NSBH.pdf>] [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.139   Schwenk}]{Hebeler:2013nza}
+                                   <./NSBH_mass_ratio_density.pdf>]) [8] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: A2DFC95781B634A3964DA9F39F9B0A2C;1393.
  ) 
 Here is how much of TeX's memory you used:
- 13355 strings out of 478268
- 199774 string characters out of 5846348
- 573427 words of memory out of 5000000
- 31321 multiletter control sequences out of 15000+600000
+ 13406 strings out of 478268
+ 201221 string characters out of 5846348
+ 560633 words of memory out of 5000000
+ 31358 multiletter control sequences out of 15000+600000
  479836 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,77p,846b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,77p,846b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on paper.pdf (6 pages, 4241845 bytes).
+Output written on paper.pdf (8 pages, 4925581 bytes).
 PDF statistics:
- 425 PDF objects out of 1000 (max. 8388607)
- 353 compressed objects within 4 object streams
- 61 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 575 PDF objects out of 1000 (max. 8388607)
+ 411 compressed objects within 5 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

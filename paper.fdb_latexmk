@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex paper"] 1740378719 "paper.aux" "paper.bbl" "paper" 1740443529
+["bibtex paper"] 1741065534 "paper.aux" "paper.bbl" "paper" 1741065588
   "./aasjournal.bst" 1738837905 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "paper.aux" 1740443529 10206 dd9e1919fd7e796c5c6a3844ccdeb7ae "pdflatex"
-  "references.bib" 1740051680 34677 bfd055004b1f59a329ce2af9fcdb9687 ""
+  "paper.aux" 1741065588 10806 055270598fe92d001f422e467f4e8e82 "pdflatex"
+  "references.bib" 1740720938 37134 83cbea2c6eda344de85d16b69510e7ce ""
   (generated)
   "paper.bbl"
   "paper.blg"
-["pdflatex"] 1740443528 "/Users/smag0001/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1740443529
-  "/Users/smag0001/MCLambdaBHNS/paper.tex" 1740443267 22349 a21b4e6f8caf85a8c20ebed127c1babf ""
+["pdflatex"] 1741065587 "/Users/smag0001/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1741065588
+  "/Users/smag0001/MCLambdaBHNS/paper.tex" 1741065587 25604 419ddfe4dce903f53b6639ad5f302e9a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -135,13 +135,16 @@
   "Fig_1_Physics_priors.pdf" 1740443509 3938477 2e985f11d823acba9b88a37dbb8a5ee4 ""
   "Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf" 1738837905 70998 a99a8199727f4cf49e3faeddbf223950 ""
   "Fig_3_GW190425_lambda_tilde_posteriors.pdf" 1738837905 70256 971d1fdd27c6cd87c206158666daf18a ""
+  "GW170817_mass_radius_universalrel.pdf" 1741063830 267205 ce947dcf0f958dbbc937ad69f76f460a ""
+  "GW190425_mass_radius_universalrel.pdf" 1741063739 282595 8dd4b00434d6ba4c4985044b724789b8 ""
+  "GW190425_mass_radius_universalrel_NSBH.pdf" 1741063748 137434 cae9446ed617cf0b11ae2449ac7bd4ab ""
   "NSBH_mass_ratio_density.pdf" 1738837905 70517 74acc1169448ef1f7cb36290d20cc742 ""
   "Orcid-ID.png" 1738837905 27604 8527c7c3c14d5c207af947385c09fd77 ""
   "aastex631.cls" 1738837905 231673 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "paper.aux" 1740443529 10206 dd9e1919fd7e796c5c6a3844ccdeb7ae "pdflatex"
-  "paper.bbl" 1740378719 10412 987ecf7a0532ad599c922eddc4495f57 "bibtex paper"
-  "paper.out" 1740443529 1393 a2dfc95781b634a3964da9f39f9b0a2c "pdflatex"
-  "paper.tex" 1740443267 22349 a21b4e6f8caf85a8c20ebed127c1babf ""
+  "paper.aux" 1741065588 10806 055270598fe92d001f422e467f4e8e82 "pdflatex"
+  "paper.bbl" 1741065534 11113 88f8bcbd065deebe7fac0eee65fb73d9 "bibtex paper"
+  "paper.out" 1741065588 1393 a2dfc95781b634a3964da9f39f9b0a2c "pdflatex"
+  "paper.tex" 1741065587 25604 419ddfe4dce903f53b6639ad5f302e9a ""
   (generated)
   "paper.aux"
   "paper.log"
