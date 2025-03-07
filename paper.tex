@@ -49,10 +49,19 @@
 	
 \red{Some background sentences here on the  importance and constraints of pQCD and nuclear theory.}
 
-When performing gravitational-wave astrophysical inference of binary neutron star mergers~\citep[e.g.,][]{abbott17_170817observation,abbott18_170817EOS,abbott19_170817Properties,abbott20_190425}, it is common to use `agnostic' priors on their gravitational-wave observables, for example, uniform priors on chirp mass $\mathcal{M}$ and the dimensionless tidal deformability parameter $\tilde{\Lambda}$. 
-However, \citet{altiparmak22,Ecker:2022dlg} showed that the above conditions imply highly correlated probability distributions in $\mathcal{M}-\tilde{\Lambda}$ parameter space.
- 	
-In this work, we advocate using these physics-inspired priors joint priors on $\mathcal{M}$ and $\tilde{\Lambda}$, which are the two best measured and most informative parameters related to the neutron star equation of state (EOS).
+One of the main goals of gravitational wave (GW) astronomy is to infer constraints on the neutron star equation of state (EOS) from signals emitted by binary neutron star mergers.
+The baryon density in neutron stars and their mergers can reach several times the nuclear saturation density, $n_s=0.16\,{\rm fm}^{-3}$, which is inaccessible to terrestrial experiments and ab initio calculations due to the infamous fermionic sign problem, preventing the direct solution of the fundamental theory of matter—Quantum Chromodynamics (QCD)—on the lattice.
+The major challenge lies in extracting information about the EOS at such densities from the GW signal of these events.
+
+%When performing astrophyiscal GW inference of binary neutron star mergers~\citep[e.g.,][]{abbott17_170817observation,abbott18_170817EOS,abbott19_170817Properties,abbott20_190425}, it is common to use `agnostic' priors on their GW observables.  
+A common approach to astrophysical GW inference is to use agnostic priors for GW observables, assuming they are uncorrelated and uniformly distributed.
+For example, analyses of GW170817 \citep[e.g.,][]{abbott17_170817observation, abbott18_170817EOS, abbott19_170817Properties} and GW190425 \citep[e.g.,][]{abbott20_190425} have employed uniform priors on the chirp mass $\mathcal{M}$ and the dimensionless tidal deformability parameter $\tilde{\Lambda}$, the two most informative parameters in these events related to the neutron star EOS.
+%For example, uniform priors on chirp mass $\mathcal{M}$ and the dimensionless tidal deformability parameter $\tilde{\Lambda}$, which so far are the two most informative parameters related to the neutron star EOS, have been used by the Ligo-Virgo-Kargra analysis of GW170817~\citep[e.g.,][]{abbott17_170817observation,abbott18_170817EOS,abbott19_170817Properties} and GW190425~\citep[e.g.,][]{abbott20_190425}.
+%However, \citet{altiparmak22,Ecker:2022dlg} showed that the above conditions imply highly correlated probability distributions in $\mathcal{M}-\tilde{\Lambda}$ parameter space.
+However, the assumption of agnostic priors may be overly conservative, as basic physical principles such as causality of the EOS, along with consistency with nuclear physics and perturbative QCD imply a strong correlation between $\mathcal{M}$ and $\tilde{\Lambda}$ in neutron star binaries. 
+Furthermore, imposing constraints from astrophysical measurements of neutron star masses and radii further tightens this correlation~\citep{altiparmak22, Ecker:2022dlg}.
+
+Motivated by this, we introduce physics-inspired joint priors on $\mathcal{M}$ and $\tilde{\Lambda}$ that incorporate microphysical constraints from nuclear theory and perturbative QCD, as well as astrophysical constraints on neutron star masses and radii.
 We show an improvement on the measurement of the marginalized posterior on $\tilde{\Lambda}$ from the gravitational-wave observation of GW170817 from $\tilde{\Lambda}=466^{+901}_{-158}$ with the agnostic prior to $\tilde{\Lambda} = 384^{+690}_{-226}$ with the new physics-inspired prior.
 This corresponds to an improvement in the neutron star radius measurement of an equivalent $1.4\,{M_\odot}$ star from $\red{R_{1.4}}= $ to $\red{\ldots}$ \CE{How to quantify this improvement?}. \SM{The easiest way is probably to compute 90\% CI of mass--radius curves from the posteriors of both the official and physics inspired PE. We can then make a direct $R_{1.4}$ comparison.}
 For GW190425, the effective tidal deformabilty improves from $\tilde{\Lambda} = 381^{+1446}_{-110}$ to $\tilde{\Lambda} = 183^{+362}_{-82}$. \SM{Do we constrain GW190425 relative to the BNS prior?}
@@ -65,9 +74,9 @@ This implements numerically the joint probability distribution as a constrained 
 	
 \section{Methods} \label{sec:Methods}
 	
-Our setup closely follows that of~\citet{Altiparmak:2022}, which we briefly review here. 
-We begin by constructing a large set of EOSs by stitching together various components.
-At the lowest densities ($n<0.5\,n_s$), with $n_s=0.16\,{\rm fm}^{-3}$ the nuclear saturation density, we adopt the Baym-Pethick-Sutherland (BPS) model~\citep{Baym71} for the neutron-star crust.
+The construction of our physics-inspired prior closely follows that of~\citet{Altiparmak:2022}, which we briefly review here. 
+We begin by building a large set of EOSs by stitching together various components.
+At the lowest densities ($n<0.5\,n_s$) we adopt the Baym-Pethick-Sutherland (BPS) model~\citep{Baym71} for the neutron-star crust.
 In the range $0.5\,n_s < n < 1.1\,n_s$, we randomly sample polytropes to span the range between the softest and stiffest EOSs from~\citet{Hebeler:2013nza}.
 At high densities ($n \gtrsim 40\,n_s$), corresponding to a baryon chemical potential of $\mu = 2.6\,\rm GeV$, we impose the perturbative QCD constraint from~\citet{Fraga2014} on the pressure $p(X, \mu)$ of cold quark matter, with the renormalization scale parameter $X$ sampled uniformly in $[1,4]$.
 	
@@ -95,8 +104,9 @@ These EOSs are by construction consistent with nuclear theory and perturbative Q
 
 To incorporate astrophysical constraints, we solve the Tolman-Oppenheimer-Volkoff (TOV) equations for each EOS and retain only those satisfying the mass measurements of J0348+0432~\citep{Antoniadis2013} ($M = 2.01\pm 0.04\,M_{\odot}$) and J0740+6620~\citep{Cromartie2019, Fonseca2021} ($M = 2.08 \pm 0.07\,M_{\odot}$), discarding EOSs with a maximum mass $M_{\rm TOV} < 2.0\,M_{\odot}$. 
 In addition, we impose NICER radius constraints from J0740+6620~\citep{Miller2021, Riley2021} and J0030+0451~\citep{Riley2019, MCMiller2019b}, rejecting EOSs with $R < 10.75\,\rm km$ at $M = 2.0\,M_{\odot}$ or $R < 10.8\,\rm km$ at $M = 1.1\,M_{\odot}$.
+Unlike in~\citet{altiparmak22,Ecker:2022dlg} we do not impose any GW informed constraints on the binary tidal deformability in the construction of our proior.
 	
-In the neutron star binary case, the binary tidal deformability is computed as
+In the neutron star binary case, the binary tidal deformability of the prior is computed as
 \begin{equation} 
  \tilde{\Lambda}_{\rm NSNS} = \frac{16}{13} \frac{ (12M_2 + M_1) M_1^4 \Lambda_1 + (12M_1 + M_2) M_2^4 \Lambda_2}{(M_1 + M_2)^5}\,,
 \end{equation}
@@ -110,7 +120,6 @@ The binary tidal deformability in this case becomes
  \end{equation}
 where $M_{\rm NS}$ and $\Lambda_{\rm NS}$ are the neutron star mass and tidal defromability, respectively, and $M_{\rm BH}$ the black hole mass. 
 The expressions for the chirp mass and mass ratio remain intact, with the understanding that $M_1=M_{\rm NS}$ and $M_2=M_{\rm BH}$. 
-Unlike in~\citet{altiparmak22,Ecker:2022dlg} we do not impose any GW informed constraints on the binary tidal deformability in the construction of our proior.
 	
 \subsection{Binary neutron star mergers}
 We use the probability distributions of the previous section as priors on chirp mass and effective tidal deformability as shown in Fig.~\ref{fig:priors}. We implement this in \textsc{Bilby} using the \verb!conditional_prior! function\footnote{\red{git link to our code!?}},
