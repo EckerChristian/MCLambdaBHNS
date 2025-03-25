@@ -113,6 +113,10 @@ Akutsu, T., Ando, M., Arai, K., {et~al.} 2020, Progress of Theoretical and
 {Dietrich}, T., {Samajdar}, A., {Khan}, S., {et~al.} 2019, \prd, 100, 044003,
   \dodoi{10.1103/PhysRevD.100.044003}
 
+\bibitem[{{Douchin} \& {Haensel}(2001)}]{2001_SLy_EOS}
+{Douchin}, F., \& {Haensel}, P. 2001, \aap, 380, 151,
+  \dodoi{10.1051/0004-6361:20011402}
+
 \bibitem[{Ecker \& Rezzolla(2022)}]{Ecker:2022dlg}
 Ecker, C., \& Rezzolla, L. 2022, Mon. Not. Roy. Astron. Soc., 519, 2615,
   \dodoi{10.1093/mnras/stac3755}
@@ -144,6 +148,9 @@ Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys.
   {Chatziioannou}}]{2020Landry}
 {Landry}, P., {Essick}, R., \& {Chatziioannou}, K. 2020, \prd, 101, 123007,
   \dodoi{10.1103/PhysRevD.101.123007}
+
+\bibitem[{{Lindblom}(2010)}]{Lindblom2010}
+{Lindblom}, L. 2010, \prd, 82, 103011, \dodoi{10.1103/PhysRevD.82.103011}
 
 \bibitem[{{Miller} {et~al.}(2019){Miller}, {Lamb}, {Dittmann}, {Bogdanov},
   {Arzoumanian}, {Gendreau}, {Guillot}, {Harding}, {Ho}, {Lattimer}, {Ludlam},

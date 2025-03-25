@@ -36,18 +36,18 @@
  Gravitational-wave astronomy shows great promise in determining nuclear physics in a regime not accessible to terrestrial experiments. 
  We introduce physics-inspired priors informed by nuclear theory and perturbative quantum chromodynamics calculations as well as astrophysical measurements of neutron star masses and radii.
  When these priors are used in gravitational-wave astrophysical inference, we show significant improvement on nuclear equation of state constraints. 
- Applying these to the first two gravitational-wave binary neutron star mergers GW170817 and GW190425, constraints on the radius of a $1.4\,M_\odot$ neutron star improves from $R=\red{XX^{+YY}_{-ZZ}}\,{\rm km}$ to $\red{XX^{+YY}_{-ZZ}}\,{\rm km}$ (90\% confidence intervals).
+ Applying these to the first two gravitational-wave binary neutron star mergers GW170817 and GW190425, constraints on the radius of a $1.4\,M_\odot$ neutron star improves from $R_{1.4}={12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $12.11^{+0.91}_{-1.11}\,{\rm km}$ (90\% confidence intervals).
  We also show these priors can be used to perform model selection between binary neutron star and neutron star-black hole mergers, although the results for GW190425 are inconclusive with a Bayes factor of $1.33$ in favour of the binary neutron star merger hypothesis, representing only marginal evidence.
  We advocate for these physics-inspired priors to be used as standard in the literature, and provide open-source code for reproducibility and further adaptation of the method.
- \CE{The abstract seems a bit optimisitc. Can we actually claim an improvement of the NS EOS and radius constraints?}
-\SM{We should see some improvement compared to the LVK measurment as the posterior volume in $\mathcal{M}-\tilde{\Lambda}$ has decreased. Whether or not this improved constraint is significant when compared to the physics prior is less clear.}
+ %\CE{The abstract seems a bit optimisitc. Can we actually claim an improvement of the NS EOS and radius constraints?}
+%\SM{We should see some improvement compared to the LVK measurment as the posterior volume in $\mathcal{M}-\tilde{\Lambda}$ has decreased. Whether or not this improved constraint is significant when compared to the physics prior is less clear.}
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
 		
 \section{Introduction} \label{sec:Intro}
 	
-\red{Some background sentences here on the  importance and constraints of pQCD and nuclear theory.}
+%\red{Some background sentences here on the  importance and constraints of pQCD and nuclear theory.}
 
 One of the main goals of gravitational wave (GW) astronomy is to infer constraints on the neutron star equation of state (EOS) from signals emitted by binary neutron star mergers.
 The baryon density in neutron stars and their mergers can reach several times the nuclear saturation density, $n_s=0.16\,{\rm fm}^{-3}$, which is inaccessible to terrestrial experiments and ab initio calculations due to the infamous fermionic sign problem, preventing the direct solution of the fundamental theory of matter—Quantum Chromodynamics (QCD)—on the lattice.
@@ -63,8 +63,8 @@ Furthermore, imposing constraints from astrophysical measurements of neutron sta
 
 Motivated by this, we introduce physics-inspired joint priors on $\mathcal{M}$ and $\tilde{\Lambda}$ that incorporate microphysical constraints from nuclear theory and perturbative QCD, as well as astrophysical constraints on neutron star masses and radii.
 We show an improvement on the measurement of the marginalized posterior on $\tilde{\Lambda}$ from the gravitational-wave observation of GW170817 from $\tilde{\Lambda}=466^{+901}_{-158}$ with the agnostic prior to $\tilde{\Lambda} = 384^{+690}_{-226}$ with the new physics-inspired prior.
-This corresponds to an improvement in the neutron star radius measurement of an equivalent $1.4\,{M_\odot}$ star from $\red{R_{1.4}}= $ to $\red{\ldots}$ \CE{How to quantify this improvement?}. \SM{The easiest way is probably to compute 90\% CI of mass--radius curves from the posteriors of both the official and physics inspired PE. We can then make a direct $R_{1.4}$ comparison.}
-For GW190425, the effective tidal deformabilty improves from $\tilde{\Lambda} = 381^{+1446}_{-110}$ to $\tilde{\Lambda} = 183^{+362}_{-82}$. \SM{Do we constrain GW190425 relative to the BNS prior?}
+This corresponds to an improvement in the neutron star radius measurement of an equivalent $1.4\,{M_\odot}$ star from ${R_{1.4}}=12.54^{+1.05}_{-1.54} \rm \ km  $ to $12.11^{+0.91}_{-1.11} \ \rm{km}$ %\CE{How to quantify this improvement?}. \SM{The easiest way is probably to compute 90\% CI of mass--radius curves from the posteriors of both the official and physics inspired PE. We can then make a direct $R_{1.4}$ comparison.}
+For GW190425, the effective tidal deformabilty improves from $\tilde{\Lambda} = 381^{+1446}_{-110}$ to $\tilde{\Lambda} = 183^{+362}_{-82}$. %\SM{Do we constrain GW190425 relative to the BNS prior?}
 	
 We also demonstrate the utility of these priors for distinguishing between the sources of Gravitational wave events. 
 We perform model selection between a binary neutron star and neutron star -- black hole origin of GW190425 and find a Bayes factor of 1.33 in favor of a binary neutron star origin. 
@@ -150,33 +150,9 @@ Since we are required to sample in the source--frame chirp mass instead of the o
 We employ both the binary neutron star and the neutron star -- black hole merger priors in our analysis of GW190425. This facilitates a model selection analysis between a binary neutron star, and neutron star -- black hole origin of GW190425. The details of this model selection analysis are described further in Appendix \ref{sec:Model Selection}. 
 For GW170817 we perform parameter estimation using the binary neutron star prior only. 
 	
-We reconstruct mass--radius curves from posterior samples of source--frame chirp mass and tidal deformability by performing equation of state inference on the posterior samples of mass and tidal deformability.
-The posterior on the equation of state from the gravitational-wave data is
-\begin{equation}
-	p(\epsilon| d) = \frac{p(d|{\epsilon})\pi(\epsilon)}{\mathcal{Z}},
-\end{equation}
-where $\pi(\epsilon)$ is the prior on equation of state parameters $\epsilon$, and $\mathcal{Z}$ is the evidence. The likelihood is given by
-% This formatting is gross 
-\begin{equation}
-    \begin{split}
-    p(d|\epsilon) & \approx \int dm_1 dm_2 \,p(m_1,m_2|\epsilon) \\
-	& \times p(d|m_1,m_2,\Lambda_1(\epsilon,m_1),\Lambda_2(\epsilon,m_2)),
-    \end{split}
-\end{equation}
-which is an integral over the binary masses $m_1$ and $m_2$. 
-We take the population priors on the mass distribution(s) for a given equation of state to be flat
-\begin{equation}
-	p(m|\epsilon) = \begin{cases}
-  		\frac{1}{M_{\rm max} - M_{\rm min}},              & {\rm{if}} \ M_{\rm min} \leq m \leq M_{\max},\\
-  		0,                    & else,
-	\end{cases}
-\end{equation}
-where we set $M_{\rm min} = 1.0$ and $M_{\rm max} = M_{\rm TOV}$. A flat mass distribution is a valid approximation as population parameters are not expected to significantly
-impact equation of state inference until $N \geq 20$ (e.g \citealt{2015Agathos, 2020Wysocki, 2020Landry}).
+We reconstruct pressure--density and mass--radius curves from posterior samples of source--frame chirp mass, mass ratio, and effective tidal deformability by performing equation of state inference on the posterior samples of mass and tidal deformability.
+We utilise a four piece spectral pararmeterisation~\citep{Lindblom2010}, that is sitched to the SLy~\citep{2001_SLy_EOS} crust at low densities. Further details may be found in Appendix \ref{sec:EOS_inference}. 
 
-The second term in the integral is the likelihood obtained from the posterior samples of the gravitational-wave analysis.
-Which we obtain by marginalizing over nuisance parameters and dividing out the analysis priors.  
-	
 \section{Results} \label{sec:Results}
 	
 	
@@ -184,28 +160,40 @@ Which we obtain by marginalizing over nuisance parameters and dividing out the a
 Figure \ref{fig:GW170817_tides} shows the posterior distributions of intrinsic tidal parameter of GW170817 analyzed using the $\mathcal{M}-\tilde{\Lambda}$ feature (teal), when compared to the official posterior samples from the LVK (midnight blue).
 While we show only the tidal posteriors, we sample over all binary parameters. Posterior distributions for all other intrinsic and extrinsic binary parameters are identical. 
 	% \red{The full posteriors for this event are shown in Appendix XX}. 
-	
-Figure \ref{fig:GW170817_massradius} shows the reconstructed mass---radius curves of GW170817 ... 
-	%\subsection{GW190425}
+\begin{figure}
+		\centering
+		\includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
+		\caption{The posterior distributions of the tidal deformability $\tilde{\Lambda}$ obtained from Bayesian parameter estimation for GW170817. The posterior using a nuclear, microphysics, and astrophysics inspired prior is shown in teal, while the posterior using uniform priors from the LVK is shown in midnight blue. We show the (marginalized) prior with the light blue curve. Note, the posterior samples from the LVK show support up to $\tilde{\Lambda}$ = 2000. }
+		\label{fig:GW170817_tides}
+\end{figure}	
+
+Figure \ref{fig:GW170817_massradius} shows the reconstructed pressure--density (top panel) and mass--radius (bottom panel) posteriors of GW170817.
+The shaded regions show the 90\% credible intervals for the posteriors samples obtained using the physics inspired priors (teal) and uniform priors (orange).
+The dotted lines represent the 90\% credible intervals of the effective priors on the physics prior and uniform prior when sampled with the spectral parameterisation. 
+The gray curves show the 90\% credible interval of the true equation of state distribution of our priors; i.e., the distribution used to generate our chirp mass–tidal deformability relationship.
+We find that the radius of a $1.4 \ M_\odot$ neutron star can be constrained to $12.11^{+0.91}_{-1.11} \ \rm{km}$. 
+%\subsection{GW190425}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\linewidth]{GW170817_press_dens_MR.pdf}
+	\caption{Posterior distirbutions of the cold nuclear equation of state from analysis of GW170817 using the spectral parameterisation~\citep{Lindblom2010}. The top panel shows the posterior distributions in pressure--density space,
+	while the bottom panel shows the reconstructed mass--radius curves.The shaded regions show the 90\% credible intervals of the posterior distributions obtained from the analysis using the physics
+	inspired priors (teal) and uniform priors (orange). The dashed curves show the 90\% credible intervals of the effective priors, whilst the grey curve shows the 90\% credible interval of the true distribtuion used to generate the priors.}
+	\label{fig:GW170817_massradius}
+\end{figure}
 
 Figure \ref{fig:GW190425_tides} shows the posterior distribution of the intrinsic tidal parameter of GW190425 when analyzed using both the binary neutron star prior (teal) and neutron star -- black hole prior (pink). We show the official posterior distribution of the LVK obtained using uniform priors in blue. 
 	% log Z_BNS = -576535.277281933
 	% log Z_NSBH = -576535.5652987232
 Bayesian model selection between the binary neutron star and neutron star -- black hole merger gives a Bayes factor of 1.33, marginally in favor of a binary neutron star merger origin. 
-Figures \ref{fig:GW190425_massradius_BNS} and \ref{fig:GW190425_massradius_NSBH} show the reconstructed mass--radius curves of GW190425 analyzed using the new priors.  
-\begin{figure}[H]
-		\centering
-		\includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
-		\caption{The posterior distributions of the tidal deformability $\tilde{\Lambda}$ obtained from Bayesian parameter estimation for GW170817. The posterior using a nuclear, microphysics, and astrophysics inspired prior is shown in teal, while the posterior using uniform priors from the LVK is shown in midnight blue. We show the (marginalized) prior with the light blue curve. Note, the posterior samples from the LVK show support up to $\tilde{\Lambda}$ = 2000. }
-		\label{fig:GW170817_tides}
-\end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=\linewidth]{GW170817_mass_radius_universalrel.pdf}
-	\caption{\SM{These are some plots I generated using the YY universal relations so we can have a sense of the underlying EOS. Will replace with  mass-radius curves when available.} Posterior distrubtions of mass--radius for GW170817, analysed using the physics inspired BNS prior. The posterior distribution of the large neutron star is shown in blue, while the lighter neutron star is shown in orange. The dashed black line is the 90\% CI, while the grey curves are representative tabulated equations of state.  }
-	\label{fig:GW170817_massradius}
-\end{figure}
+Figure \ref{fig:GW190425_massradius_BNS} shows the reconstructed pressure--density (top) and mass--radius (bottom) posteriors of GW190425. Equation of state the 90\% credible intervals of posteriors obtained using the binary neutron star physics inspired prior are shown in teal, while the neutron star--black hole posteriors are shown in pink.
+Once again the dashed curve represents our effective prior on the equation of state, while the gray curve shows the true prior. 
+We find that the radius of $1.4 \ M_\odot$ neutron star is constrained to $12.69^{+1.24}_{-1.22} \ \rm{km}$ using the BNS prior, and $12.06^{+1.44}_{-1.15} \ \rm{km}$ using the NSBH prior.   
+
+
+
 	
 \begin{figure}
 		\centering
@@ -217,25 +205,22 @@ Figures \ref{fig:GW190425_massradius_BNS} and \ref{fig:GW190425_massradius_NSBH}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{GW190425_mass_radius_universalrel.pdf}
-	\caption{ Posterior distrubtions of mass--radius for GW190425, analysed using the physics inspired BNS prior. The posterior distribution of the large neutron star is shown in blue, while the lighter neutron star is shown in orange. The dashed black line is the 90\% CI, while the grey curves are representative tabulated equations of state.}	
+	\includegraphics[width=\linewidth]{GW190425_press_dens_MR.pdf}
+	\caption{Posterior distirbutions of the cold nuclear equation of state from analysis of GW190425 using the spectral parameterisation~\citep{Lindblom2010}. The top panel shows the posterior distributions in pressure--density space,
+	while the bottom panel shows the reconstructed mass--radius curves. The shaded regions show the 90\% credible intervals of the posterior distributions obtained from the analysis using the physics
+	inspired BNS priors (teal) and the NSBH prior (orange). The black dashed curve shows the 90\% credible intervals of the effective priors, whilst the grey curve shows the 90\% credible interval of the true distribtuion used to generate the priors.}	
 	\label{fig:GW190425_massradius_BNS}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=\linewidth]{GW190425_mass_radius_universalrel_NSBH.pdf}
-	\caption{Posterior distrubtions of mass--radius for GW190425, analysed using the physics inspired NSBH prior. The posterior distribution of the large neutron star is shown in blue, while the lighter neutron star is shown in orange. The dashed black line is the 90\% CI, while the grey curves are representative tabulated equations of state.}	
-	\label{fig:GW190425_massradius_NSBH}
 \end{figure}
 
 \section{Conclusions}
 We have constructed new physics inspired priors for the analysis of gravitational-wave stran data of neutron star mergers. 
 Analyis of the neutron star mergers GW170817 and GW190425 with our priors, constrains the effective tidal-deforambility of GW170817 to $\tilde{\Lambda} = 384^{+690}_{-226}$ and GW190425 to $\tilde{\Lambda} = 183^{+362}_{-82}$. Coresponding  
 to a 37\%, and 80\% decrease in the width of 90\% credible interval respectively when compared to uniform priors. 
-Performing equation of state inference, we find that the radius of a $1.4 M_\odot$ neutron star can be constrained to \red{XX} at a 90\% credible interval. \red{Which suggests a preference for softer/stiffer equations of state ...}
+Performing equation of state inference, we find that the radius of a $1.4 M_\odot$ neutron star can be constrained to $12.11^{+0.91}_{-1.11}\,{\rm km}$ at a 90\% credible interval. \red{Which suggests a preference for softer/stiffer equations of state ...}
 	\
 
-Model selection between a binary neutron star and neutron star -- black hole origin on GW190425, yields marginal support for a binary neutron star origin. \red{\ldots}
+Model selection between a binary neutron star and neutron star -- black hole origin on GW190425, yields marginal support for a binary neutron star origin. 
+However, such a result is not unexpected given the low signal to noise of the event and lack of significant tidal measurements.
 	\
 
 In this work, we have constructed priors using binaries containing neutron stars with low spins ($\chi \leq 0.05$) only. However, analysis by the LVK typically involves both galactic ``low-spin'' and ``high-spin'' ($\chi \leq 0.89$) priors. We leave the development of ``high-spin'' binary neutron star and neutron star -- black hole priors to future work. 
@@ -273,6 +258,63 @@ where $\pi_{\rm BNS}$ and $\pi_{\rm NSBH}$ are the prior odds for each hypothesi
 In this work we set the prior odds to unity, so the odds ratio is the Bayes factor. 
 We could in principle construct an odds ratio where the prior odds was informed by the relative rates of binary neutron star and neutron -- star black hole mergers. 
 However since these rates are still highly uncertain, we choose the more agnostic approach of setting the prior odds to unity. 
+\section{equation of state inference}\label{sec:EOS_inference}
+The posterior on the equation of state from the gravitational-wave data is
+\begin{equation}
+	p(\epsilon| d) = \frac{p(d|{\epsilon})\pi(\epsilon)}{\mathcal{Z}},
+\end{equation}
+where $\pi(\epsilon)$ is the prior on equation of state parameters $\epsilon$, and $\mathcal{Z}$ is the evidence.
+The likelihood is given by
+\begin{equation}
+    p(d|\epsilon) = \int  d\theta \,p(d|\theta)\,\pi(\theta|\epsilon),
+\end{equation}
+where $\theta$ are our nuisance parameters which we marginalize over.
+Our likelihood reduces to 
+\begin{equation}
+    p(d|\epsilon) = \int \  d\theta \ p(d|\mathcal{M},q,\tilde{\Lambda}) \ \pi(\mathcal{M},q,\tilde{\Lambda}|\epsilon,\theta) \ d\mathcal{M} \ dq \ d \tilde{\Lambda}.
+\end{equation}
+Since we a dealing with a small number of events (i.e 1-2), we may ignore the modelling of overall neutron-star population parameters
+without introducing signficant biases into the equation of state inference (e.g \citealt{2015Agathos, 2020Wysocki, 2020Landry}).
+The marginalized likelihood transforms to  
+\begin{equation}
+    p(d|\epsilon) = \int \ p(d|\mathcal{M},q,\tilde{\Lambda}) \ \pi(\mathcal{M},q,\tilde{\Lambda}|\epsilon)\ d\mathcal{M} \ dq \ d \tilde{\Lambda},
+\end{equation}
+
+We have two terms that need to be calculated; $\pi(\mathcal{M},q,\tilde{\Lambda}|\epsilon)$ a prior on chirp mass,
+mass-ratio and $\tilde{\Lambda}$ for a given equation of state $\epsilon$, and $p(d|\mathcal{M},q,\tilde{\Lambda})$ the likelihood. 
+Typically, this likelihood would be obtained by reweighting posterior samples of parameter estimation runs
+\begin{equation}
+    p(d|\mathcal{M},q,\tilde{\Lambda}) = \frac{p(\mathcal{M},q,\tilde{\Lambda}|d)}{\pi_{\rm PE}(\mathcal{M},q,\tilde{\Lambda})}, 
+\end{equation}
+however if we did this we would be removing any of our prior information from the posterior samples.
+Since our prior on $\tilde{\Lambda}$ and $\mathcal{M}$ is actually physical motivated, we set
+\begin{equation}
+    \pi_{\rm PE}(\mathcal{M},q,\tilde{\Lambda}) = \pi(\mathcal{M},q,\tilde{\Lambda}|\epsilon),
+\end{equation}
+which then implies that 
+\begin{equation}
+    p(d|\epsilon) = \int p(\mathcal{M},q,\tilde{\Lambda}|d)\ d \mathcal{M} \ d q \ d \tilde{\Lambda}.
+\end{equation}
+Since the chirp mass is often very-well constrained by parameter estimation, we take the median value of chirp mass $\bar{\mathcal{M}}$,
+and rewrite our posterior distribution as
+\begin{equation}
+    p(\mathcal{M},q,\tilde{\Lambda}|d) = p(q,\tilde{\Lambda}) \ \delta(\mathcal{M}- \bar{\mathcal{M}}),
+\end{equation}
+which simplifies the integral to 
+\begin{equation}
+    p(d|\epsilon) =  \int p(\bar{\mathcal{M}},q,\tilde{\Lambda}|d)\ d q \ d \tilde{\Lambda}.
+\end{equation}
+We note that we can also express the tidal deformability as a function of $\bar{\mathcal{M}}$, $q$ and $\epsilon$ 
+which removes another dimension from our integration
+\begin{equation}
+        p(d|\epsilon) =  \int p(q,\tilde{\Lambda}(\bar{\mathcal{M}},q,\epsilon)|d)\ d q, 
+\end{equation}
+which is now just an integral over mass ratio q.
+
+We evaluate the probability density of our marginalized posterior samples using a bounded kernel-density estimate,
+and parameterise our equation of state using the spectral parametersiation of \cite{Lindblom2010}. 
+We use uniform priors for each equation of state parameter, and enforce a minimum TOV mass $M_{\rm TOV} \geq 2.0 M_{\odot}$ and causality. 
+	
 \bibliography{references}{}
 \bibliographystyle{aasjournal}
 	
