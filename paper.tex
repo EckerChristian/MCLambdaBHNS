@@ -137,7 +137,7 @@ interpolating the $200\times200$ grid to draw from a joint prior on $\mathcal{M}
 		\label{fig:priors}
 	\end{figure}
 	
-We sample directly in source-frame chirp mass, mass ratio and the two tidal deformability parameters $\tilde{\Lambda}$ and $\delta\Lambda$~\citep[see][for explicit expressions for these quantities]{favata14,wade14}. We note that $q$ is not a variable that depends on the equation of state, and we therefore take the standard approach of choosing a prior on $q$ uniform in the range $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}\footnote{One \textit{could} choose a prior on $q$ motivated by astrophysical formation scenarios~\citep[e.g.,][]{}, however we choose here to do use the common approach instead \pdl{Are there references for this? If not, I suggest we just delete this footnote.}}
+We sample directly in source-frame chirp mass, mass ratio and the two tidal deformability parameters $\tilde{\Lambda}$ and $\delta\Lambda$~\citep[see][for explicit expressions for these quantities]{favata14,wade14}. We note that $q$ is not a variable that depends on the equation of state, and we therefore take the standard approach of choosing a prior on $q$ uniform in the range $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}\footnote{One \textit{could} choose a prior on $q$ motivated by astrophysical formation scenarios~\citep[e.g.,][]{}, however we choose here to do use the common approach instead \pdl{Are there references for this? If not, I suggest we just delete this footnote.}}.
 Furthermore, while both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are related to the equation of state, we only impose a prior here on $\tilde{\Lambda}$. In general, $\tilde{\Lambda}$ is measured much better than $\delta\tilde{\Lambda}$, which can be understood because $\tilde{\Lambda}$ enters waveform approximates at the $5^{\rm th}$ post-Newtonian order, whereas $\delta\tilde{\Lambda}$ only enters at $6^{\rm th}$ order in linear combination with $\tilde{\Lambda}$~\citep{wade14}. In principle, one could set a combined prior on the three parameters $(\mathcal{M},\,\tilde{\Lambda},\,\delta\tilde{\Lambda})$, however, adding this latter parameter would not add significantly to parameter estimation in the relatively low signal-to-noise regime. We therefore leave exploration of physically-motivated priors on $\delta\tilde{\Lambda}$ for future work.
 	
 	
@@ -147,18 +147,16 @@ We again use a uniformally-distributed mass-ratio prior. Again, there are more s
 We choose once again to work with priors in $\mathcal{M}$ -- $\tilde{\Lambda}$, enforcing $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal deformability of the neutron star.
 
 \subsection{Parameter estimation}
-We perform Bayesian parameter estimation on the gravitational-wave strain data of the two (likely) binary neutron star merger events GW170817 and GW190425 using the strain data freely available from the GWOSC repository~\footnote{\url{https://gwosc.org}}. 
-We utilize the \textsc{Bilby} Bayesian inference framework and priors on source--frame chirp mass and tidal--deformability implemented in Section \ref{sec:Methods}. Priors for all renaming parameters assume the low-spin ($\chi \leq 0.05$) defaults as defined in \textsc{Bilby} (e.g \citealt{ashton19}, \citealt{romeroshaw20}).
+We perform Bayesian parameter estimation on the GW strain data of the two (likely) binary neutron star merger events GW170817 and GW190425 using the publicly-available data from the GWOSC repository\footnote{\url{https://gwosc.org}}. 
+We utilize the \textsc{Bilby} Bayesian inference framework~\citep{ashton19,romeroshaw20} and priors on source--frame chirp mass and tidal--deformability as discussed in Section \ref{sec:Methods}. Priors for all renaming parameters assume the so-called low-spin ($\chi \leq 0.05$) default priors as defined in \textsc{Bilby}. We use Planck 2018 cosmological parameters~\citep{Planck} such that Hubble's constant and the matter density are respectively $H_0=67.66 \rm  \ km  \ s^{-1}$, $\Omega_M = 0.30966$.  
 	
-Parameter estimation for each run was performed using the \textsc{dynesty} nested sampler~\citep{Dynesty} and the \textsc{IMRPhenomPv2\_NRTidal} waveform~\citep{IMRPhenomP_NRtidal}. Analysis of binary neutron star merger signals is significantly computationally expensive and as such we utilize \textsc{pBilby}~\citep{pbilby}, a parallel implementation of \textsc{Bilby} which uses the Message Passing Interface (MPI). 
+Parameter estimation for each run is performed using the \textsc{dynesty} nested sampler~\citep{Dynesty} and the \textsc{IMRPhenomPv2\_NRTidal} waveform~\citep{IMRPhenomP_NRtidal}. Analysis of binary neutron star merger signals is computationally expensive and as such we utilize \textsc{pBilby}~\citep{pbilby}, a parallel implementation of \textsc{Bilby}.
 	
-Since we are required to sample in the source--frame chirp mass instead of the observer frame, we must assume a cosmology. We use $H_0=67.66 \rm  \ km  \ s^{-1}$, $\Omega_M = 0.30966 $ informed by the Planck 2018 results~\citep{Planck}.  
-	
-We employ both the binary neutron star and the neutron star -- black hole merger priors in our analysis of GW190425. This facilitates a model selection analysis between a binary neutron star, and neutron star -- black hole origin of GW190425. The details of this model selection analysis are described further in Appendix \ref{sec:Model Selection}. 
-For GW170817 we perform parameter estimation using the binary neutron star prior only. 
+% We employ both the binary neutron star and the neutron star -- black hole merger priors in our analysis of GW190425. This facilitates a model selection analysis between a binary neutron star, and neutron star -- black hole origin of GW190425. The details of this model selection analysis are described further in Appendix \ref{sec:Model Selection}. 
+% For GW170817 we perform parameter estimation using the binary neutron star prior only. 
 	
 We reconstruct pressure--density and mass--radius curves from posterior samples of source--frame chirp mass, mass ratio, and effective tidal deformability by performing equation of state inference on the posterior samples of mass and tidal deformability.
-We utilise a four piece spectral pararmeterisation~\citep{Lindblom2010}, that is sitched to the SLy~\citep{2001_SLy_EOS} crust at low densities. Further details may be found in Appendix \ref{sec:EOS_inference}. 
+We utilise a four-piece spectral pararmeterisation~\citep{Lindblom2010} sitched to an SLy~\citep{2001_SLy_EOS} crust at low densities. Further details may be found in Appendix~\ref{sec:EOS_inference}. 
 
 \section{Results} \label{sec:Results}
 	
