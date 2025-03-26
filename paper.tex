@@ -9,6 +9,9 @@
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\SM}[1]{\textcolor{blue}{SM: #1}}
 \newcommand{\CE}[1]{\textcolor{violet}{CE: #1}}
+\newcommand{\pdl}[1]{\textcolor{teal}{PL: #1}}
+
+
 
 \begin{document}
 	
@@ -228,14 +231,14 @@ In this work, we have constructed priors using binaries containing neutron stars
 	
 \section{Neutron star -- black hole merger prior generation}\label{sec:NSBH generation}
 	
-\red{We should detail the prior generation for neutron star -- black hole here, in particular the independence of a mass ratio informed by population synthesis on the prior distributions and potentially the resultant posterior distributions. Might be worth showing an extreme example to prove the point.}
+\red{We should detail the prior generation for neutron star -- black hole here, in particular the independence of a mass ratio informed by population synthesis on the prior distributions and potentially the resultant posterior distributions. Might be worth showing an extreme example to prove the point.} \pdl{Probably delete this appendix; make a comment in the paper, and not include Fig.~\ref{fig:mass_ratio_distrbution}}
 	
 We generate two relations, one with uniform priors on our population of BH - NS mergers, and one directly informed by state of the art binary population synthesis. We use the mass ratio distribution of \cite{2021Broekgaarden+}  (\red{ what particular model are we using?}) for the generation of our population synthesis informed priors. Figure \ref{fig:mass ratio distrbution} shows the distribution in mass ratio used for the generation of the prior. 
 \begin{figure}
 		\centering
 		\includegraphics[width=\linewidth]{NSBH_mass_ratio_density.pdf}
 		\caption{Probability density function of the mass ratio for detectable neutron star black hole mergers from \citep{2021Broekgaarden+}.}
-		\label{fig:mass ratio distrbution}
+		\label{fig:mass_ratio_distrbution}
 \end{figure}
 \section{Model Selection}\label{sec:Model Selection}
 We perform parameter estimation of gravtitational-wave strain data using the \textsc{dynesty} nested sampler. Unlike standard MCMC samplers,
