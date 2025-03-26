@@ -162,13 +162,13 @@ We utilise a four-piece spectral pararmeterisation~\citep{Lindblom2010} sitched 
 	
 	
 	%\subsection{GW170817}
-Figure \ref{fig:GW170817_tides} shows the posterior distributions of intrinsic tidal parameter of GW170817 analyzed using the $\mathcal{M}-\tilde{\Lambda}$ feature (teal), when compared to the official posterior samples from the LVK (midnight blue).
-While we show only the tidal posteriors, we sample over all binary parameters. Posterior distributions for all other intrinsic and extrinsic binary parameters are identical. 
+Figure \ref{fig:GW170817_tides} shows the marginalized posterior distributions of the tidal deformability of GW170817 analyzed using the physics-inspired binary neutron star priors (teal), and the publicly-released uniform priors from the LIGO-Virgo-KAGRA collaboration~\citep[midnigt blue;][]{abbott17_170817observation}. We also show the marginalized prior for $\tilde{\Lambda}$ as the light-blue curve.
+While we show only the tidal posteriors, we sample over all binary parameters. Posterior distributions for all other binary parameters, including the chirp mass and mass ratio, are identical. 
 	% \red{The full posteriors for this event are shown in Appendix XX}. 
 \begin{figure}
 		\centering
 		\includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
-		\caption{The posterior distributions of the tidal deformability $\tilde{\Lambda}$ obtained from Bayesian parameter estimation for GW170817. The posterior using a nuclear, microphysics, and astrophysics inspired prior is shown in teal, while the posterior using uniform priors from the LVK is shown in midnight blue. We show the (marginalized) prior with the light blue curve. Note, the posterior samples from the LVK show support up to $\tilde{\Lambda}$ = 2000. }
+		\caption{Marginalized posterior distributions of the tidal deformability $\tilde{\Lambda}$ obtained from Bayesian parameter estimation for GW170817. The posterior using a nuclear, microphysics, and astrophysics inspired prior is shown in teal, while the posterior using uniform priors from the LIGO-Virgo-KAGRA collaboration is shown in midnight blue. We show the (marginalized) prior with the light blue curve. Note, the posterior samples from the LVK show support up to $\tilde{\Lambda}$ = 2000. \pdl{We need better labels in the legend -- they are all BNS!}}
 		\label{fig:GW170817_tides}
 \end{figure}	
 
@@ -183,9 +183,10 @@ We find that the radius of a $1.4 \ M_\odot$ neutron star can be constrained to 
 	\centering
 	\includegraphics[width=\linewidth]{GW170817_press_dens_MR.pdf}
 	\caption{Posterior distirbutions of the cold nuclear equation of state from analysis of GW170817 using the spectral parameterisation~\citep{Lindblom2010}. The top panel shows the posterior distributions in pressure--density space,
-	while the bottom panel shows the reconstructed mass--radius curves.The shaded regions show the 90\% credible intervals of the posterior distributions obtained from the analysis using the physics
-	inspired priors (teal) and uniform priors (orange). The dashed curves show the 90\% credible intervals of the effective priors, whilst the grey curve shows the 90\% credible interval of the true distribtuion used to generate the priors.}
-	\label{fig:GW170817_massradius}
+	while the bottom panel shows the reconstructed mass--radius curves. The shaded regions show the 90\% credible intervals of the posterior distributions obtained from the analysis using the physics
+	inspired priors (teal) and uniform priors (orange). The dashed curves show the 90\% credible intervals of the effective priors, whilst the grey curve shows the 90\% credible interval of the true distribtuion used to generate the priors. 
+	\pdl{bigger labels on everything. And let's discuss colour choices.}
+	\label{fig:GW170817_massradius}}
 \end{figure}
 
 Figure \ref{fig:GW190425_tides} shows the posterior distribution of the intrinsic tidal parameter of GW190425 when analyzed using both the binary neutron star prior (teal) and neutron star -- black hole prior (pink). We show the official posterior distribution of the LVK obtained using uniform priors in blue. 
