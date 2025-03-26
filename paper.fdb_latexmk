@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex paper"] 1742956870 "paper.aux" "paper.bbl" "paper" 1742956871 0
+["bibtex paper"] 1742956870 "paper.aux" "paper.bbl" "paper" 1742958070 0
   "./aasjournal.bst" 1739821686 36130 1e2d4614828005814bd64e3c665b8e99 ""
   "./references.bib" 1741821329 37134 83cbea2c6eda344de85d16b69510e7ce ""
-  "paper.aux" 1742956871 11105 570b14328e2af4c1646aa15c6f38b025 "pdflatex"
+  "paper.aux" 1742958070 11105 570b14328e2af4c1646aa15c6f38b025 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1742956870 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1742956871 0
-  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1742956867 31321 45433cc3edc8bb3406f8e1fc2b76b458 ""
+["pdflatex"] 1742958069 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1742958070 0
+  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1742958069 31330 da03b103c996ae4475d2330fba493be0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/helvetic/phvr.tfm" 1136768653 2504 ba6584b616b92101c768b6c4ffb32dd0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -144,10 +144,10 @@
   "NSBH_mass_ratio_density.pdf" 1739821686 70517 74acc1169448ef1f7cb36290d20cc742 ""
   "Orcid-ID.png" 1739821686 27604 8527c7c3c14d5c207af947385c09fd77 ""
   "aastex631.cls" 1739821686 231673 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "paper.aux" 1742956871 11105 570b14328e2af4c1646aa15c6f38b025 "pdflatex"
+  "paper.aux" 1742958070 11105 570b14328e2af4c1646aa15c6f38b025 "pdflatex"
   "paper.bbl" 1742956870 11176 d46810625ffad7b931d78ae073b3e96b "bibtex paper"
-  "paper.out" 1742956871 1582 b9d6dff0f54f04a616c1a42f9c87979f "pdflatex"
-  "paper.tex" 1742956867 31321 45433cc3edc8bb3406f8e1fc2b76b458 ""
+  "paper.out" 1742958070 1582 b9d6dff0f54f04a616c1a42f9c87979f "pdflatex"
+  "paper.tex" 1742958069 31330 da03b103c996ae4475d2330fba493be0 ""
   (generated)
   "paper.aux"
   "paper.log"
