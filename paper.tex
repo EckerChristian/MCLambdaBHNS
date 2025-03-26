@@ -83,14 +83,14 @@ The construction of our physics-inspired prior closely follows that of~\citet{Al
 We begin by building a large set of EOSs by stitching together various components.
 At the lowest densities ($n<0.5\,n_s$) we adopt the Baym-Pethick-Sutherland (BPS) model~\citep{Baym71} for the neutron-star crust.
 In the range $0.5\,n_s < n < 1.1\,n_s$, we randomly sample polytropes to span the range between the softest and stiffest EOSs from~\citet{Hebeler:2013nza}.
-At high densities ($n \gtrsim 40\,n_s$), corresponding to a baryon chemical potential of $\mu = 2.6\,\rm GeV$, we impose the perturbative QCD constraint from~\citet{Fraga2014} on the pressure $p(X, \mu)$ of cold quark matter, with the renormalization scale parameter $X$ sampled uniformly in $[1,4]$.
+At high densities ($n \gtrsim 40\,n_s$), corresponding to a baryon chemical potential of $\mu = 2.6\,\rm GeV$, we impose the perturbative QCD constraint from~\citet{Fraga2014} on the pressure $p(X, \mu)$ of cold quark matter, with the renormalization scale parameter $X$ sampled uniformly in the range $[1,4]$.
 	
 For the intermediate density range ($1.1\,n_s < n \lesssim 40\,n_s$), we use the parametrization method of~\citet{Annala2019}, which models the sound speed as a function of the chemical potential, $c_s^2(\mu)$, using piecewise-linear segments:
 \begin{equation} \label{eq:cs2}
  c_s^2(\mu) = \frac{\left(\mu_{i+1}-\mu \right) c_{s,i}^2 + \left(\mu - \mu_i \right) c_{s,i+1}^2}{\mu_{i+1}-\mu_i}\,, 
 \end{equation}
 where $\mu_i$ and $c_{s,i}^2$ are parameters defining the $i$-th segment in the range $\mu_i \leq \mu \leq \mu_{i+1}$.
-Throughout this work, we adopt natural units where $c=G=1$.
+Throughout this work, we adopt natural units where $c=G=1$, unless otherwise stated.
 
 The number density follows as 
 \begin{equation} \label{eq:n}
@@ -99,32 +99,33 @@ The number density follows as
 where $n_1 = 1.1\,n_s$, and $\mu_1 = \mu(n_1)$ is set by the corresponding polytrope EOS.
 The pressure is then obtained via
 \begin{equation} \label{eq:p}
- p(\mu) = p_1 + \int_{\mu_1}^\mu d\mu^\prime , n(\mu^\prime)~,
+ p(\mu) = p_1 + \int_{\mu_1}^\mu d\mu^\prime \, n(\mu^\prime)~,
 \end{equation}
 where the integration constant $p_1$ matches the pressure of the polytrope at $n = n_1$.
 We numerically integrate Eq.~\eqref{eq:p} using seven segments for $c_s^2(\mu)$.
 
-Using this framework, we generate $\approx 10^6$ EOSs by randomly selecting the maximum sound speed $c_{s,{\rm max}}^2 \in [0,1]$ and uniformly sampling the free parameters $\mu_i \in [\mu_1, \mu_{N+1}]$ (where $\mu_{N+1} = 2.6\,\rm GeV$) and $c_{s,i}^2 \in [0, c_{s,{\rm max}}^2]$.
-These EOSs are by construction consistent with nuclear theory and perturbative QCD uncertainties.
+Using this framework, we generate approximately $10^6$ EOSs by randomly selecting the maximum sound speed $c_{s,{\rm max}}^2 \in [0,1]$ and uniformly sampling the free parameters $\mu_i \in [\mu_1, \mu_{N+1}]$ (where $\mu_{N+1} = 2.6\,\rm GeV$) and $c_{s,i}^2 \in [0, c_{s,{\rm max}}^2]$.
+These EOSs are, by construction, consistent with nuclear theory and perturbative QCD uncertainties.
 
-To incorporate astrophysical constraints, we solve the Tolman-Oppenheimer-Volkoff (TOV) equations for each EOS and retain only those satisfying the mass measurements of J0348+0432~\citep{Antoniadis2013} ($M = 2.01\pm 0.04\,M_{\odot}$) and J0740+6620~\citep{Cromartie2019, Fonseca2021} ($M = 2.08 \pm 0.07\,M_{\odot}$), discarding EOSs with a maximum mass $M_{\rm TOV} < 2.0\,M_{\odot}$. 
+To incorporate astrophysical constraints, we solve the Tolman-Oppenheimer-Volkoff (TOV) equations for each EOS and retain only those satisfying the mass measurements of J0348+0432~\citep[][$M = 2.01\pm 0.04\,M_{\odot}$]{Antoniadis2013} and J0740+6620~\citep[][$M = 2.08 \pm 0.07\,M_{\odot}$]{Cromartie2019, Fonseca2021}, discarding EOSs with a maximum mass $M_{\rm TOV} < 2.0\,M_{\odot}$. 
 In addition, we impose NICER radius constraints from J0740+6620~\citep{Miller2021, Riley2021} and J0030+0451~\citep{Riley2019, MCMiller2019b}, rejecting EOSs with $R < 10.75\,\rm km$ at $M = 2.0\,M_{\odot}$ or $R < 10.8\,\rm km$ at $M = 1.1\,M_{\odot}$.
-Unlike in~\citet{altiparmak22,Ecker:2022dlg} we do not impose any GW informed constraints on the binary tidal deformability in the construction of our proior.
+Unlike~\citet{altiparmak22,Ecker:2022dlg}, we do not impose any GW informed constraints on the binary tidal deformability in the construction of our prior.
 	
 In the neutron star binary case, the binary tidal deformability of the prior is computed as
 \begin{equation} 
  \tilde{\Lambda}_{\rm NSNS} = \frac{16}{13} \frac{ (12M_2 + M_1) M_1^4 \Lambda_1 + (12M_1 + M_2) M_2^4 \Lambda_2}{(M_1 + M_2)^5}\,,
 \end{equation}
-where $M_i$, $R_i$, and $\Lambda_i = \frac{2}{3} k_2 \left( R_i/M_i \right)^5$ ($i=1,2$) denote the component masses, radii, and tidal deformabilities, with $k_2$ being the second tidal Love number.
-The chirp mass is given by $\mathcal{M}_{\rm chirp} = (M_1 M_2)^{3/5} (M_1+M_2)^{-1/5}$ and we in the following we will use the mass ratio defined as $q = M_2/M_1$.
+where $M_i$, $R_i$, and $\Lambda_i = \frac{2}{3} k_2 \left( R_i/M_i \right)^5$ are the component masses, radii, and tidal deformabilities, respectively, and $k_2$ is the second tidal Love number.
+The chirp mass is $\mathcal{M}_{\rm chirp} = (M_1 M_2)^{3/5} (M_1+M_2)^{-1/5}$ and we define the mass ratio $q = M_2/M_1$ with $M_2\le M_1$.
 	
-In the mixed binary case, i.e., where one binary component is a neutron star and the other one a black hole, the formula for the binary tidal deformability simplifies, because black holes have zero tidal deformability $\Lambda_{\rm BH}=0$.
-The binary tidal deformability in this case becomes
+By definition, the tidal deformability of a black hole is zero $\Lambda_{\rm BH}=0$, implying the total tidal deformability for a neutron star -- black hole binary is
+% In the mixed binary case, i.e., where one binary component is a neutron star and the other one a black hole, the formula for the binary tidal deformability simplifies, because black holes have zero tidal deformability $\Lambda_{\rm BH}=0$.
+% The binary tidal deformability in this case becomes
 \begin{equation} 
  \tilde{\Lambda}_{\rm NSBH} = \frac{16}{13} \frac{ (12M_{\rm BH} + M_{\rm NS}) M_{\rm NS}^4 \Lambda_{\rm NS}}{(M_{\rm NS} + M_{\rm BH})^5}\,,
  \end{equation}
-where $M_{\rm NS}$ and $\Lambda_{\rm NS}$ are the neutron star mass and tidal defromability, respectively, and $M_{\rm BH}$ the black hole mass. 
-The expressions for the chirp mass and mass ratio remain intact, with the understanding that $M_1=M_{\rm NS}$ and $M_2=M_{\rm BH}$. 
+where $M_{\rm NS}$ and $\Lambda_{\rm NS}$ are the neutron star mass and tidal defromability, respectively, and $M_{\rm BH}$ is the black hole mass. 
+The expressions for the chirp mass and mass ratio are the same, with the understanding that $M_1=M_{\rm NS}$ and $M_2=M_{\rm BH}$. 
 	
 \subsection{Binary neutron star mergers}
 We use the probability distributions of the previous section as priors on chirp mass and effective tidal deformability as shown in Fig.~\ref{fig:priors}. We implement this in \textsc{Bilby} using the \verb!conditional_prior! function\footnote{\red{git link to our code!?}},
