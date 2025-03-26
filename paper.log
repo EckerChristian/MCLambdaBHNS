@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.8)  26 MAR 2025 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.8)  26 MAR 2025 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -574,27 +574,27 @@ File: Orcid-ID.png Graphic file (type png)
 Package pdftex.def Info: Orcid-ID.png  used on input line 51.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
  [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Orcid-ID.png>]
-Underfull \hbox (badness 1748) in paragraph at lines 105--107
+Underfull \hbox (badness 1748) in paragraph at lines 106--108
 \OT1/cmr/m/n/10 by ran-domly se-lect-ing the max-i-mum sound speed
  []
 
 
-Overfull \hbox (0.7835pt too wide) detected at line 115
+Overfull \hbox (0.7835pt too wide) detected at line 116
 [][][][] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 ;
  []
 
 
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 128--128
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 129--129
 [][]| [] [][][]| 
  []
 
-<Fig_1_Physics_priors.pdf, id=127, 909.32533pt x 914.14276pt>
+<Fig_1_Physics_priors.pdf, id=128, 909.32533pt x 914.14276pt>
 File: Fig_1_Physics_priors.pdf Graphic file (type pdf)
 <use Fig_1_Physics_priors.pdf>
-Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 132.
+Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 133.
 (pdftex.def)             Requested size: 242.26653pt x 243.5439pt.
 [2]
-Overfull \hbox (10.88353pt too wide) in paragraph at lines 146--146
+Overfull \hbox (10.88353pt too wide) in paragraph at lines 147--147
 [][]| [] [][][]| 
  []
 
@@ -602,24 +602,24 @@ Overfull \hbox (10.88353pt too wide) in paragraph at lines 146--146
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.153 W
-       e employ both the binary neutron star and the neutron star -- black h... <./Fig_1_Physics_priors.pdf>]
-Underfull \hbox (badness 1389) in paragraph at lines 156--158
+l.156 	
+        <./Fig_1_Physics_priors.pdf>]
+Underfull \hbox (badness 1389) in paragraph at lines 157--159
 []\OT1/cmr/m/n/10 We re-con-struct pressure--density and mass--radius
  []
 
-<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=250, 674.62985pt x 405.42586pt>
+<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=253, 674.62985pt x 405.42586pt>
 File: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf Graphic file (type pdf)
 <use Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>
-Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 168.
+Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 169.
 (pdftex.def)             Requested size: 242.26653pt x 145.5882pt.
-<GW170817_press_dens_MR.pdf, id=252, 722.7pt x 722.7pt>
+<GW170817_press_dens_MR.pdf, id=255, 722.7pt x 722.7pt>
 File: GW170817_press_dens_MR.pdf Graphic file (type pdf)
 <use GW170817_press_dens_MR.pdf>
-Package pdftex.def Info: GW170817_press_dens_MR.pdf  used on input line 182.
+Package pdftex.def Info: GW170817_press_dens_MR.pdf  used on input line 183.
 (pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
 \OT1/cmr/m/n/10 (top) and mass--radius (bot-tom) pos-te-ri-ors of
  []
 
@@ -627,54 +627,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--197
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.197 
+l.198 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.197 
+l.198 
        <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf> <./GW170817_press_dens_MR.pdf>]
-<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=298, 665.45746pt x 405.42586pt>
+<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=299, 665.45746pt x 405.42586pt>
 File: Fig_3_GW190425_lambda_tilde_posteriors.pdf Graphic file (type pdf)
 <use Fig_3_GW190425_lambda_tilde_posteriors.pdf>
-Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 203.
+Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 204.
 (pdftex.def)             Requested size: 242.26653pt x 147.59874pt.
-<GW190425_press_dens_MR.pdf, id=299, 722.7pt x 722.7pt>
+<GW190425_press_dens_MR.pdf, id=300, 722.7pt x 722.7pt>
 File: GW190425_press_dens_MR.pdf Graphic file (type pdf)
 <use GW190425_press_dens_MR.pdf>
-Package pdftex.def Info: GW190425_press_dens_MR.pdf  used on input line 211.
+Package pdftex.def Info: GW190425_press_dens_MR.pdf  used on input line 212.
 (pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
- [5
+
+
+LaTeX Warning: Reference `fig:mass ratio distrbution' on page 5 undefined on input line 237.
+
+<NSBH_mass_ratio_density.pdf, id=308, 641.3737pt x 407.16171pt>
+File: NSBH_mass_ratio_density.pdf Graphic file (type pdf)
+<use NSBH_mass_ratio_density.pdf>
+Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 240.
+(pdftex.def)             Requested size: 513.11743pt x 325.76707pt.
+[5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.236 W
-       e generate two relations, one with uniform priors on our population o...
+l.265 \section
+              {equation of state inference}\label{sec:EOS_inference} <./Fig_3_GW190425_lambda_tilde_posteriors.pdf>] [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.236 W
-       e generate two relations, one with uniform priors on our population o... <./Fig_3_GW190425_lambda_tilde_posteriors.pdf> <./GW190425_press_dens_MR.pdf>]
-
-LaTeX Warning: Reference `fig:mass ratio distrbution' on page 6 undefined on input line 236.
-
-<NSBH_mass_ratio_density.pdf, id=335, 641.3737pt x 407.16171pt>
-File: NSBH_mass_ratio_density.pdf Graphic file (type pdf)
-<use NSBH_mass_ratio_density.pdf>
-Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 239.
-(pdftex.def)             Requested size: 513.11743pt x 325.76707pt.
-[6
+l.285 \end{equation}
+                     <./GW190425_press_dens_MR.pdf>] [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.268 \end{equation}
-                     <./NSBH_mass_ratio_density.pdf>] (./paper.bbl
-Overfull \vbox (29.5745pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (29.5745pt too high) has occurred while \output is active []
-
- [7]) [8] (./paper.aux)
+l.315 \end{equation}
+                     <./NSBH_mass_ratio_density.pdf>] (./paper.bbl [8]) [9] (./paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -682,18 +676,18 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: B9D6DFF0F54F04A616C1A42F9C87979F;1582.
  ) 
 Here is how much of TeX's memory you used:
- 13808 strings out of 476025
- 207219 string characters out of 5790018
- 1895388 words of memory out of 5000000
+ 13809 strings out of 476025
+ 207223 string characters out of 5790018
+ 1882388 words of memory out of 5000000
  33988 multiletter control sequences out of 15000+600000
  522864 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,7n,90p,878b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,90p,881b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on paper.pdf (8 pages, 4403377 bytes).
+Output written on paper.pdf (9 pages, 4403846 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
+ 82 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
