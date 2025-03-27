@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{times}
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand\aastex{AAS\TeX}
 \newcommand\latex{La\TeX}
@@ -16,7 +17,8 @@
 
 \begin{document}
 	
-\title{Physics-inspired priors for neutron star mergers improves equation of state constraints}
+\title{Physics-inspired priors for neutron star mergers improves equation
+  of state constraints}
 
 \author[0009-0000-7037-1809]{Spencer J. Magnall}
 \affiliation{School of Physics and Astronomy, Monash University, Clayton
@@ -53,16 +55,21 @@
  neutron star mergers GW170817 and GW190425, constraints on the radius of
  a $1.4\,M_\odot$ neutron star improves from
  $R_{1.4}={12.54^{+1.05}_{-1.54}}\,{\rm km}$ to
- $12.11^{+0.91}_{-1.11}\,{\rm km}$ (90\% confidence intervals). We also
- show these priors can be used to perform model selection between binary
- neutron star and neutron star-black hole mergers, although the results
- for GW190425 are inconclusive with a Bayes factor of $1.33$ in favour of
- the binary neutron star merger hypothesis, representing only marginal
- evidence. We advocate for these physics-inspired priors to be used as
- standard in the literature, and provide open-source code for
+ $12.11^{+0.91}_{-1.11}\,{\rm km}$ (90\% confidence intervals). \lr{are
+   these the most stringent constraints? If so, we should mention it} We
+ also show these priors can be used to perform model selection between
+ binary neutron star and neutron star-black hole mergers, although the
+ results for GW190425 are inconclusive with a Bayes factor of $1.33$ in
+ favour of the binary neutron star merger hypothesis, representing only
+ marginal evidence. We advocate for these physics-inspired priors to be
+ used as standard in the literature, and provide open-source code for
  reproducibility and further adaptation of the method.
- %\CE{The abstract seems a bit optimisitc. Can we actually claim an improvement of the NS EOS and radius constraints?}
-%\SM{We should see some improvement compared to the LVK measurment as the posterior volume in $\mathcal{M}-\tilde{\Lambda}$ has decreased. Whether or not this improved constraint is significant when compared to the physics prior is less clear.}
+ %\CE{The abstract seems a bit optimisitc. Can we actually claim an
+%improvement of the NS EOS and radius constraints?}  \SM{We should see
+%some improvement compared to the LVK measurment as the posterior volume
+%in $\mathcal{M}-\tilde{\Lambda}$ has decreased. Whether or not this
+%improved constraint is significant when compared to the physics prior is
+%less clear.}
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
@@ -105,12 +112,21 @@ Constraints from astrophysical measurements of neutron-star masses and
 radii further tightens this correlation~\citep{altiparmak22,
   Ecker:2022dlg}.
 
-Motivated by this, we introduce physics-inspired joint priors on $\mathcal{M}$ and $\tilde{\Lambda}$ that incorporate microphysical constraints from nuclear theory and perturbative QCD, as well as astrophysical constraints on neutron star masses and radii into astrophysical GW parameter inference.
-We show an improvement on the measurement of the marginalized posterior on $\tilde{\Lambda}$ from the gravitational-wave observation of GW170817 from $\tilde{\Lambda}=466^{+901}_{-158}$ with the uniform priors to $\tilde{\Lambda} = 384^{+690}_{-226}$ with the new physics-inspired prior (confidence intervals are 90\% throughout).
-This corresponds to an improvement in the neutron star radius measurement
-of an equivalent $1.4\,{M_\odot}$ star from
-${R_{1.4}}=12.54^{+1.05}_{-1.54} \rm \ km  $ to
-$12.11^{+0.91}_{-1.11}. \ \rm{km}$
+Motivated by this, we introduce physics-inspired joint priors on
+$\mathcal{M}$ and $\tilde{\Lambda}$ that incorporate microphysical
+constraints from nuclear theory and perturbative QCD, as well as
+astrophysical constraints on neutron star masses and radii into
+astrophysical GW parameter inference.  We show an improvement on the
+measurement of the marginalized posterior on $\tilde{\Lambda}$ from the
+gravitational-wave observation of GW170817 from $\tilde{\Lambda} =
+466^{+901}_{-158}$ with the uniform priors to $\tilde{\Lambda} =
+384^{+690}_{-226}$ with the new physics-inspired prior (confidence
+intervals are 90\% throughout). This corresponds to an improvement in the
+neutron star radius measurement of an equivalent $1.4\,{M_\odot}$ star
+from ${R_{1.4}}=12.54^{+1.05}_{-1.54} \rm \ km $ \lr{where do these
+  estimates come from? A reference is needed} to
+$12.11^{+0.91}_{-1.11}. \ \rm{km}$ \lr{are these the most stringent
+  constraints? If so, we should mention it}
 
 %\CE{How to quantify this improvement?}. \SM{The easiest way is probably to compute 90\% CI of mass--radius curves from the posteriors of both the official and physics inspired PE. We can then make a direct $R_{1.4}$ comparison.}
 \pdl{The abstract quotes the above numbers as for GW170817 and GW190425,
