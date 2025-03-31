@@ -359,15 +359,12 @@ $\mathcal{M}$ -- $\tilde{\Lambda}$, enforcing
 $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal
 deformability of the neutron star.
 
-%-->
-\lr{up to here}
-
 %------------------------------------------------------------------------
 \subsection{Parameter estimation}
 %------------------------------------------------------------------------
 
-We perform Bayesian parameter estimation on the GW strain data of the two
-(likely) BNS merger events GW170817 and GW190425 using the
+We perform a Bayesian parameter-estimation analysis on the GW strain data
+of the two (likely) BNS merger events GW170817 and GW190425 using the
 publicly-available data from the GWOSC
 repository\footnote{\url{https://gwosc.org}}. We utilise the
 \texttt{Bilby} Bayesian inference framework~\citep{ashton19,romeroshaw20}
@@ -379,13 +376,12 @@ parameters~\citep{Planck} such that Hubble's constant and the matter
 density are respectively $H_0=67.66 \rm \ km \ s^{-1}$, $\Omega_M =
 0.30966$.
 	
-Parameter estimation for each run is performed using the \textsc{dynesty}
-nested sampler~\citep{Dynesty} and the \textsc{IMRPhenomPv2\_NRTidal}
+Parameter estimation for each run is performed using the \texttt{dynesty}
+nested sampler~\citep{Dynesty} and the \texttt{IMRPhenomPv2\_NRTidal}
 waveform~\citep{IMRPhenomP_NRtidal}. Analysis of BNS merger signals is
-computationally expensive and as such we utilise
-\texttt{pBilby}~\citep{pbilby}, a parallel implementation of
-\texttt{Bilby}.
-	
+computationally expensive and as such we utilise parallel implementation
+of \texttt{Bilby}, i.e., \texttt{pBilby}~\citep{pbilby}.
+%	
 % We employ both the binary neutron star and the neutron star -- black
 % hole merger priors in our analysis of GW190425. This facilitates a
 % model selection analysis between a binary neutron star, and neutron
@@ -393,14 +389,17 @@ computationally expensive and as such we utilise
 % selection analysis are described further in Appendix \ref{sec:Model
 % Selection}. For GW170817 we perform parameter estimation using the
 % binary neutron star prior only.
-	
-We reconstruct pressure--density and mass--radius curves from posterior
-samples of source--frame chirp mass, mass ratio, and effective tidal
-deformability by performing EOS inference on the posterior samples of
-mass and tidal deformability. We utilise a four-piece spectral
-parameterisation~\citep{Lindblom2010} stitched to an
-SLy~\citep{2001_SLy_EOS} crust at low densities. Further details may be
-found in Appendix~\ref{sec:EOS_inference}.
+%
+More specifically, we reconstruct pressure--density and mass--radius
+curves from posterior samples of source--frame chirp mass, mass ratio,
+and effective tidal deformability by performing an EOS inference on the
+posterior samples of mass and tidal deformability. We utilise a
+four-piece spectral parameterisation~\citep{Lindblom2010} stitched to an
+SLy~\citep{2001_SLy_EOS} crust at low densities (further details can
+be found in Appendix~\ref{sec:EOS_inference}).
+
+%-->
+\lr{up to here}
 
 %========================================================================
 \section{Results}
@@ -582,8 +581,8 @@ used for the generation of the prior.
 %========================================================================
 
 We perform parameter estimation of gravitational-wave strain data using
-the \textsc{dynesty} nested sampler. Unlike standard MCMC samplers,
-\textsc{dynesty} calculates the evidence for each parameter estimation
+the \texttt{dynesty} nested sampler. Unlike standard MCMC samplers,
+\texttt{dynesty} calculates the evidence for each parameter estimation
 run. To perform Bayesian model selection between BNS and NSBH mergers, we
 calculate the Bayes factor
 %
