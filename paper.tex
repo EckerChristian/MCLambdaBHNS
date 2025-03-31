@@ -278,31 +278,31 @@ NSBH binary is
 where $M_{\rm NS}$ and $\Lambda_{\rm NS}$ are the neutron-star mass and
 tidal deformability, respectively, and $M_{\rm BH}$ is the black-hole
 mass. The expressions for the chirp mass and mass ratio are the same,
-with the understanding that $M_2=M_{\rm NS}$ and $M_1=M_{\rm BH}$.
+with the understanding that $M_2=M_{\rm NS}$ and $M_1=M_{\rm BH}$. \lr{We
+  haven't reported the analytic expressions for the upper and lower
+  limits; I think we should as this allows everyone to use these
+  distributions. In the case of NSBH these would actually be new
+  expressions}
 	
-%-->
-\lr{up to here}
-
 %------------------------------------------------------------------------
-\subsection{Binary neutron-star mergers}
+\subsection{BNS and NSBH mergers}
 %------------------------------------------------------------------------
 
 We use the probability distributions described in the previous section as
 priors on the source-frame chirp mass and effective tidal deformability
 as shown in Fig.~\ref{fig:priors}. We implement this in \texttt{Bilby}
-using the \verb!conditional_prior! function\footnote{\red{git link to our
-  code!?}}, interpolating the $200\times200$ grid to draw from a joint
-prior on $\mathcal{M}$ and $\tilde{\Lambda}$.
+using the \texttt{conditional\_prior} function, interpolating the
+$200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
+$\tilde{\Lambda}$.
 
 \begin{figure}
   \centering
   \includegraphics[width=1.\linewidth]{Fig_1_Physics_priors.pdf}
   \caption{Coupled priors for the source-frame chirp mass $\mathcal{M}$
     and dimensionless tidal deformability $\tilde{\Lambda}$. Top: prior
-    for BNS mergers. Bottom: prior for NSBH
-    mergers. The horizontal grey bands are the 90\% credible intervals
-    for the measured chirp masses of
-    GW170817~\citep{abbott17_170817observation},
+    for BNS mergers. Bottom: prior for NSBH mergers. The horizontal grey
+    bands are the 90\% credible intervals for the measured chirp masses
+    of GW170817~\citep{abbott17_170817observation},
     GW190425~\citep{abbott20_190425}, GW200115~\citep{GW200115} and
     GW230529~\citep{GW230529}.}
   \label{fig:priors}
@@ -311,22 +311,26 @@ prior on $\mathcal{M}$ and $\tilde{\Lambda}$.
 We sample directly in source-frame chirp mass, mass ratio and the two
 tidal deformability parameters $\tilde{\Lambda}$ and
 $\delta\Lambda$~\citep[see][for explicit expressions for these
-  quantities]{favata14,wade14}. We note that $q$ is not a variable that
-depends on the equation of state, and we therefore take the standard
-approach of choosing a prior on $q$ uniform in the range
+  quantities]{favata14,wade14}. \lr{what is $\delta\Lambda$? We haven't
+  defined it. Also, later we use $\delta \tilde{\Lambda}$, which I guess
+  is the same quantity...} We note that $q$ is not a variable that
+depends on the EOS, and we therefore take the standard approach of
+choosing a prior on $q$ uniform in the range \lr{is this range for BNS
+  \textit{and} NSBH? The lower limit is very small for BNS and I think it
+  is unreasonable to expect $q \lesssim 0.3$}
 $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}\footnote{One
 \textit{could} choose a prior on $q$ motivated by astrophysical formation
 scenarios~\citep[e.g.,][]{}, however we choose here to do use the common
 approach instead \pdl{Are there references for this? If not, I suggest we
-  just delete this footnote.}}. Furthermore, while both
-$\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are related to the equation
-of state, we only impose a prior here on $\tilde{\Lambda}$. In general,
-$\tilde{\Lambda}$ is measured much better than $\delta\tilde{\Lambda}$,
-which can be understood because $\tilde{\Lambda}$ enters waveform
-approximates at the $5^{\rm th}$ post-Newtonian order, whereas
-$\delta\tilde{\Lambda}$ only enters at $6^{\rm th}$ order in linear
-combination with $\tilde{\Lambda}$~\citep{wade14}. In principle, one
-could set a combined prior on the three parameters
+  just delete this footnote.}}. Furthermore, while both $\tilde{\Lambda}$
+and $\delta\tilde{\Lambda}$ are related to the EOS, we only impose a
+prior here on $\tilde{\Lambda}$. In general, $\tilde{\Lambda}$ is
+measured much better than $\delta\tilde{\Lambda}$, which can be
+understood because $\tilde{\Lambda}$ enters waveform approximates at the
+$5^{\rm th}$ post-Newtonian order, whereas $\delta\tilde{\Lambda}$ only
+enters at $6^{\rm th}$ order in linear combination with
+$\tilde{\Lambda}$~\citep{wade14}. In principle, one could set a combined
+prior on the three parameters
 $(\mathcal{M},\,\tilde{\Lambda},\,\delta\tilde{\Lambda})$, however,
 adding this latter parameter would not add significantly to parameter
 estimation in the relatively low signal-to-noise regime. We therefore
@@ -334,25 +338,29 @@ leave exploration of physically-motivated priors on
 $\delta\tilde{\Lambda}$ for future work.
 	
 	
-%------------------------------------------------------------------------
-\subsection{Neutron-star--black-hole mergers}
-%------------------------------------------------------------------------
+%% %------------------------------------------------------------------------
+%% \subsection{Neutron-star--black-hole mergers}
+%% %------------------------------------------------------------------------
 
-The parameterisation in the previous Section does not go to large enough
-chirp-mass values as both stars are assumed to be neutron stars. We
-derive a new distribution for NSBH mergers by going back to the raw
-distributions of progenitor stellar masses and radii, and combining that
-progenitor with a black hole of mass $M_1$ and tidal deformability
-$\Lambda_1=0$. We again use a uniformly-distributed mass-ratio
-prior. Again, there are more sophisticated mass-ratio distributions, such
-as those informed by state-of-the-art binary population synthesis
-\citep[e.g.,][]{2021Broekgaarden+}, however we find such changes do not
-significantly impact the shape of the prior distribution \pdl{which prior
-  distribution?}. We demonstrate the independence of our results on the
-chosen population model in Appendix~\ref{sec:NSBH generation}. We choose
-once again to work with priors in $\mathcal{M}$ -- $\tilde{\Lambda}$,
-enforcing $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is
-the tidal deformability of the neutron star.
+What discussed so far refers to BNS mergers and the corresponding
+parameterisation does not go to large enough chirp-mass values. Hence, in
+the case of NSBH mergers we need to derive a new distribution by going
+back to the raw distributions of progenitor stellar masses and radii, and
+combine that progenitor distribution with that of a BH of mass $M_1$ and
+tidal deformability $\Lambda_1=0$. In principle, in this case we could
+use more sophisticated and realistic mass-ratio distributions, such as
+those informed by state-of-the-art binary population synthesis
+\citep[e.g.,][]{2021Broekgaarden+}. In practice, we have decided to use
+here a uniformly-distributed mass-ratio prior as we have found that our
+results do not depend significantly on the choice made for prior
+distribution on mass ratios (see discussion in Appendix~\ref{sec:NSBH
+  generation}). Finally, also for NSBHs we choose to work with priors in
+$\mathcal{M}$ -- $\tilde{\Lambda}$, enforcing
+$\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal
+deformability of the neutron star.
+
+%-->
+\lr{up to here}
 
 %------------------------------------------------------------------------
 \subsection{Parameter estimation}
@@ -388,9 +396,9 @@ computationally expensive and as such we utilise
 	
 We reconstruct pressure--density and mass--radius curves from posterior
 samples of source--frame chirp mass, mass ratio, and effective tidal
-deformability by performing equation of state inference on the posterior
-samples of mass and tidal deformability. We utilise a four-piece
-spectral parameterisation~\citep{Lindblom2010} stitched to an
+deformability by performing EOS inference on the posterior samples of
+mass and tidal deformability. We utilise a four-piece spectral
+parameterisation~\citep{Lindblom2010} stitched to an
 SLy~\citep{2001_SLy_EOS} crust at low densities. Further details may be
 found in Appendix~\ref{sec:EOS_inference}.
 
@@ -434,19 +442,18 @@ posteriors samples obtained using the physics inspired priors (teal) and
 uniform priors (orange). The dotted lines represent the 90\% credible
 intervals of the effective priors on the physics prior and uniform prior
 when sampled with the spectral parameterisation. The grey curves show the
-90\% credible interval of the true equation of state distribution of our
-priors; i.e., the distribution used to generate our
-chirp-mass--tidal-deformability relationship. We find that the radius of
-a $1.4 \, M_\odot$ neutron star can be constrained to
-$12.11^{+0.91}_{-1.11} \, {\rm km}$.
+90\% credible interval of the true EOS distribution of our priors; i.e.,
+the distribution used to generate our chirp-mass--tidal-deformability
+relationship. We find that the radius of a $1.4 \, M_\odot$ neutron star
+can be constrained to $12.11^{+0.91}_{-1.11} \, {\rm km}$.
 
 %\subsection{GW190425}
 
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{GW170817_press_dens_MR.pdf}
-  \caption{Posterior distributions of the cold nuclear equation of state
-    from analysis of GW170817 using the spectral
+  \caption{Posterior distributions of the cold nuclear EOS from analysis
+    of GW170817 using the spectral
     parameterisation~\citep{Lindblom2010}. The top panel shows the
     posterior distributions in pressure--density space, while the bottom
     panel shows the reconstructed mass--radius curves. The shaded regions
@@ -474,12 +481,11 @@ Figure \ref{fig:GW190425_massradius_BNS} shows the reconstructed
 pressure--density (top) and mass--radius (bottom) posteriors of
 GW190425. Equation of state the 90\% credible intervals of posteriors
 obtained using the BNS physics inspired prior are shown in teal, while
-the NSBH posteriors are shown in pink.  Once again the dashed curve
-represents our effective prior on the equation of state, while the grey
-curve shows the true prior. We find that the radius of $1.4 \, M_\odot$
-neutron star is constrained to $12.69^{+1.24}_{-1.22} \, {\rm km}$ using
-the BNS prior, and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH
-prior.
+the NSBH posteriors are shown in pink.  Once again, the dashed curve
+represents our effective prior on the EOS, while the grey curve shows the
+true prior. We find that the radius of $1.4 \, M_\odot$ neutron star is
+constrained to $12.69^{+1.24}_{-1.22} \, {\rm km}$ using the BNS prior,
+and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH prior.
 	
 \begin{figure}
   \centering
@@ -496,8 +502,8 @@ prior.
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{GW190425_press_dens_MR.pdf}
-  \caption{Posterior distributions of the cold nuclear equation of state
-    from analysis of GW190425 using the spectral
+  \caption{Posterior distributions of the cold nuclear EOS from analysis
+    of GW190425 using the spectral
     parameterisation~\citep{Lindblom2010}. The top panel shows the
     posterior distributions in pressure--density space, while the bottom
     panel shows the reconstructed mass--radius curves. The shaded regions
@@ -520,11 +526,11 @@ and GW190425 with our priors, constrains the effective
 tidal-deformability of GW170817 to $\tilde{\Lambda} = 384^{+690}_{-226}$
 and GW190425 to $\tilde{\Lambda} = 183^{+362}_{-82}$. Corresponding to a
 37\%, and 80\% decrease in the width of 90\% credible interval
-respectively when compared to uniform priors.  Performing equation of
-state inference, we find that the radius of a $1.4 M_\odot$ neutron star
-can be constrained to $12.11^{+0.91}_{-1.11}\,{\rm km}$ at a 90\%
-credible interval. \red{Which suggests a preference for softer/stiffer
-  equations of state ...}
+respectively when compared to uniform priors.  Performing EOS inference,
+we find that the radius of a $1.4 M_\odot$ neutron star can be
+constrained to $12.11^{+0.91}_{-1.11}\,{\rm km}$ at a 90\% credible
+interval. \red{Which suggests a preference for softer/stiffer equations
+  of state ...}
 	
 
 Model selection between a BNS and NSBH origin on
@@ -550,14 +556,14 @@ work. \appendix
   the prior distributions and potentially the resultant posterior
   distributions. Might be worth showing an extreme example to prove the
   point.} \pdl{Probably delete this appendix; make a comment in the
-  paper, and not include Fig.~\ref{fig:mass_ratio_distrbution}}
+  paper, and not include Fig.~\ref{fig:mass_ratio_distribution}}
 	
 We generate two relations, one with uniform priors on our population of
 NSBH mergers, and one directly informed by state-of-the-art binary
 population synthesis. We use the mass ratio distribution of
 \cite{2021Broekgaarden+} (\red{ what particular model are we using?}) for
 the generation of our population synthesis informed priors. Figure
-\ref{fig:mass ratio distrbution} shows the distribution in mass ratio
+\ref{fig:mass_ratio_distribution} shows the distribution in mass ratio
 used for the generation of the prior.
 
 \begin{figure}
@@ -567,7 +573,7 @@ used for the generation of the prior.
     NSBH mergers from \citep{2021Broekgaarden+}. \lr{I don't think we
       need this figure as we can simply refer to Fig. xxx
       of\citep{2021Broekgaarden+}} }
-  \label{fig:mass_ratio_distrbution}
+  \label{fig:mass_ratio_distribution}
 \end{figure}
 
 %========================================================================
@@ -616,15 +622,14 @@ the more agnostic approach of setting the prior odds to unity.
 \label{sec:EOS_inference}
 %========================================================================
 
-The posterior on the equation of state from the GW data is
+The posterior on the EOS from the GW data is
 %
 \begin{equation}
   p(\epsilon| d) = \frac{p(d|{\epsilon})\pi(\epsilon)}{\mathcal{Z}}\,,
 \end{equation}
 %
-where $\pi(\epsilon)$ is the prior on equation of state parameters
-$\epsilon$, and $\mathcal{Z}$ is the evidence. The likelihood is given
-by
+where $\pi(\epsilon)$ is the prior on the EOS parameters $\epsilon$, and
+$\mathcal{Z}$ is the evidence. The likelihood is given by
 %
 \begin{equation}
     p(d|\epsilon) = \int  d\theta \,p(d|\theta)\,\pi(\theta|\epsilon)\,,
@@ -641,7 +646,7 @@ Our likelihood reduces to
 %
 Since we a dealing with a small number of events (i.e 1-2), we may ignore
 the modelling of overall neutron-star population parameters without
-introducing significant biases into the equation of state inference (e.g
+introducing significant biases into the EOS inference (e.g
 \citealt{2015Agathos, 2020Wysocki, 2020Landry}). The marginalised
 likelihood transforms to
 %
@@ -653,10 +658,10 @@ likelihood transforms to
 
 We have two terms that need to be calculated;
 $\pi(\mathcal{M},q,\tilde{\Lambda}|\epsilon)$ a prior on chirp mass,
-mass-ratio and $\tilde{\Lambda}$ for a given equation of state
-$\epsilon$, and $p(d|\mathcal{M},q,\tilde{\Lambda})$ the likelihood.
-Typically, this likelihood would be obtained by reweighing posterior
-samples of parameter estimation runs
+mass-ratio and $\tilde{\Lambda}$ for a given EOS $\epsilon$, and
+$p(d|\mathcal{M},q,\tilde{\Lambda})$ the likelihood.  Typically, this
+likelihood would be obtained by reweighing posterior samples of parameter
+estimation runs
 %
 \begin{equation}
     p(d|\mathcal{M},q,\tilde{\Lambda}) =
@@ -707,11 +712,32 @@ from our integration
 which is now just an integral over mass ratio q.
 
 We evaluate the probability density of our marginalised posterior samples
-using a bounded kernel-density estimate, and parameterise our equation of
-state using the spectral parameterisation of \cite{Lindblom2010}. We use
-uniform priors for each equation of state parameter, and enforce a
-minimum TOV mass $M_{\rm TOV} \geq 2.0 M_{\odot}$ and causality.
+using a bounded kernel-density estimate, and parameterise our EOS using
+the spectral parameterisation of \cite{Lindblom2010}. We use uniform
+priors for each EOS parameter, and enforce a minimum TOV mass $M_{\rm
+  TOV} \geq 2.0 M_{\odot}$ and causality.
 	
+%============================================================
+\section*{Acknowledgements}
+%============================================================
+
+The authors acknowledges insightful discussions with xxx. Partial funding
+comes from the ERC Advanced Grant ``JETSET: Launching, propagation and
+emission of relativistic jets from binary mergers and across mass
+scales'' (Grant No. 884631), and the European Horizon Europe staff
+exchange (SE) programme HORIZON-MSCA2021-SE-01 Grant
+No. NewFunFiCO-101086251. CE acknowledges support by the Deutsche
+Forschungsgemeinschaft (DFG, German Research Foundation) through the
+CRC-TR 211 ``Strong-interaction matter under extreme conditions''--
+project number 315477589 -- TRR 211. LR acknowledges the Walter Greiner
+Gesellschaft zur F\"orderung der physikalischen Grundlagenforschung
+e.V. through the Carl W. Fueck Laureatus Chair.
+
+%------------------------------------------------------------------------
+\section*{Data Availability}
+%------------------------------------------------------------------------
+\lr{Here we can add information about the code repository on github}
+
 \bibliography{references}{}
 \bibliographystyle{aasjournal}
 	
