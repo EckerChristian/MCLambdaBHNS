@@ -14,7 +14,6 @@
 \newcommand{\lr}[1]{\textcolor{magenta}{LR: #1}}
 
 
-
 \begin{document}
 	
 \title{Physics-inspired priors for neutron star mergers improves equation
@@ -64,12 +63,6 @@
  advocate for these physics-inspired priors to be used as standard in the
  literature, and provide open-source code for reproducibility and further
  adaptation of the method.
- %\CE{The abstract seems a bit optimisitc. Can we actually claim an
-%improvement of the NS EOS and radius constraints?}  \SM{We should see
-%some improvement compared to the LVK measurment as the posterior volume
-%in $\mathcal{M}-\tilde{\Lambda}$ has decreased. Whether or not this
-%improved constraint is significant when compared to the physics prior is
-%less clear.}
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
@@ -79,9 +72,6 @@
 \label{sec:Intro}
 %========================================================================
 	
-%\red{Some background sentences here on the importance and constraints of
-%pQCD and nuclear theory.}
-
 One of the main goals of gravitational wave (GW) astronomy is to infer
 constraints on the neutron-star equation of state (EOS) from observations
 of binary neutron star mergers (BNS). The baryon density in neutron stars
@@ -146,10 +136,6 @@ from ${R_{1.4}}=12.54^{+1.05}_{-1.54} \rm \ km $ \lr{where do these
 $12.11^{+0.91}_{-1.11}. \, {\rm km}$ \lr{are these the most stringent
   constraints? If so, we should mention it}
 
-%\CE{How to quantify this improvement?}. \SM{The easiest way is probably
-%to compute 90\% CI of mass--radius curves from the posteriors of both
-%the official and physics inspired PE. We can then make a direct
-%$R_{1.4}$ comparison.}
 \pdl{The abstract quotes the above numbers as for GW170817 and GW190425,
   but here is it only GW170817 -- please check.}  For GW190425, the
 effective tidal deformability improves from $\tilde{\Lambda} =
@@ -264,11 +250,6 @@ define the mass ratio $q := M_2/M_1$ with $M_2\le M_1$.
 By definition, the tidal deformability of a black hole is zero
 $\Lambda_{\rm BH}=0$, implying the total tidal deformability for a
 NSBH binary is
-% In the mixed binary case, i.e., where one binary component is a neutron
-% star and the other one a black hole, the formula for the binary tidal
-% deformability simplifies, because black holes have zero tidal
-% deformability $\Lambda_{\rm BH}=0$.  The binary tidal deformability in
-% this case becomes
 %
 \begin{equation} 
  \tilde{\Lambda}_{_{\rm NSBH}} := \frac{16}{13} \frac{ (12M_{\rm BH} + M_{\rm
@@ -278,12 +259,17 @@ NSBH binary is
 where $M_{\rm NS}$ and $\Lambda_{\rm NS}$ are the neutron-star mass and
 tidal deformability, respectively, and $M_{\rm BH}$ is the black-hole
 mass. The expressions for the chirp mass and mass ratio are the same,
-with the understanding that $M_2=M_{\rm NS}$ and $M_1=M_{\rm BH}$. \lr{We
+with the understanding that $M_2=M_{\rm NS}$ and $M_1=M_{\rm BH}$. 
+\lr{We
   haven't reported the analytic expressions for the upper and lower
   limits; I think we should as this allows everyone to use these
   distributions. In the case of NSBH these would actually be new
   expressions}
-	
+\CE{Indeed, we can report fitting formulas for the upper and lower bounds 
+of $90\%$ CI of both distributions. Note that we actually didn't report neither
+of these before, since we previously imposed GW constrains, which we do not do here.
+I'll add these fitting formulas soon.}	
+
 %------------------------------------------------------------------------
 \subsection{BNS and NSBH mergers}
 %------------------------------------------------------------------------
@@ -457,7 +443,12 @@ can be constrained to $12.11^{+0.91}_{-1.11} \, {\rm km}$.
     intervals of the effective priors, whilst the grey curve shows the
     90\% credible interval of the true distribution used to generate the
     priors. \pdl{bigger labels on everything. And let's discuss colour
-      choices.}
+	choices.}\CE{I suggest to show here only the comparison of the 
+	physics informed vs. uninformed posteriors. I assume the Altiparmak+ curves
+	are the posteriors of our old paper which also includes the GW constraint.
+	Showing them together would open a can of worms, namely that we don't use the
+	same parametrization for prior and posterior EOS.
+	}
     \label{fig:GW170817_massradius}}
 \end{figure}
 
@@ -506,7 +497,7 @@ and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH prior.
     (teal) and the NSBH prior (orange). The black dashed curve shows the
     90\% credible intervals of the effective priors, whilst the grey
     curve shows the 90\% credible interval of the true distribution used
-    to generate the priors.}
+	to generate the priors.}\CE{Same comment as for Fig.3.}
   \label{fig:GW190425_massradius_BNS}
 \end{figure}
 
