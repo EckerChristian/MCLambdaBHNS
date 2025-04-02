@@ -58,17 +58,19 @@
  priors are used in gravitational-wave astrophysical inference, we show a
  significant improvement on nuclear equation of state constraints.
  Applying these to the first observed gravitational-wave binary
- neutron-star merger GW170817, the constraints on the
- radius of a $1.4\,M_\odot$ neutron star improve from $R_{1.4} =
- {12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $12.11^{+0.91}_{-1.11}\,{\rm km}$
- (90\% confidence intervals). We also show these priors can be used to
- perform model selection between binary neutron star and neutron
- star-black hole mergers; in the case of GW190425, the results are
- inconclusive with a Bayes factor of $1.33$ in favour of the binary
- neutron star merger hypothesis, representing only marginal evidence. We
- advocate for these physics-inspired priors to be used as standard in the
- literature, and provide open-source code for reproducibility and further
- adaptation of the method.
+ neutron-star merger GW170817, the constraints on the radius of a
+ $1.4\,M_\odot$ neutron star improve from $R_{1.4} =
+ {12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $R_{1.4} =
+ 12.11^{+0.91}_{-1.11}\,{\rm km}$ and those on the tidal deformability
+ from $\tilde{\Lambda}_{1.186} < 720$ to $226 \leq
+ \tilde{\Lambda}_{1.186} \leq 690$. (90\% confidence intervals). We also
+ show these priors can be used to perform model selection between binary
+ neutron star and neutron star-black hole mergers; in the case of
+ GW190425, the results are inconclusive with a Bayes factor of $1.33$ in
+ favour of the binary neutron star merger hypothesis, representing only
+ marginal evidence. We advocate for these physics-inspired priors to be
+ used as standard in the literature, and provide open-source code for
+ reproducibility and further adaptation of the method.
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
@@ -175,12 +177,13 @@ in the next Section.
 %========================================================================
 	
 The construction of our physics-inspired prior closely follows that
-of~\citet{Altiparmak:2022}, which we briefly review here~\citep[see][for additional details]{Ecker:2022, Ecker:2022dlg}. We begin by
-building a large set of EOSs by stitching together various components.
-At the lowest densities ($n<0.5\,n_s$) we adopt the
-Baym-Pethick-Sutherland (BPS) model~\citep{Baym71} for the neutron-star
-crust. In the range $0.5\,n_s\le n < 1.1\,n_s$, we randomly sample
-polytropes to span the range between the softest and stiffest EOSs
+of~\citet{Altiparmak:2022}, which we briefly review here~\citep[see][for
+  additional details]{Ecker:2022, Ecker:2022dlg}. We begin by building a
+large set of EOSs by stitching together various components.  At the
+lowest densities ($n<0.5\,n_s$) we adopt the Baym-Pethick-Sutherland
+(BPS) model~\citep{Baym71} for the neutron-star crust. In the range
+$0.5\,n_s\le n < 1.1\,n_s$, we randomly sample polytropes to span the
+range between the softest and stiffest EOSs
 from~\citet{Hebeler:2013nza}. At high densities ($n \gtrsim 40\,n_s$),
 corresponding to a baryon chemical potential of $\mu = 2.6\,\rm GeV$, we
 impose the perturbative QCD constraint from~\citet{Fraga2014} on the
@@ -236,9 +239,10 @@ impose NICER radius constraints from J0740+6620~\citep{Miller2021,
   Riley2021} and J0030+0451~\citep{Riley2019, MCMiller2019b}, rejecting
 EOSs with $R < 10.75\,\rm km$ at $M = 2.0\,M_{\odot}$ or $R < 10.8\,\rm
 km$ at $M = 1.1\,M_{\odot}$. We note that, unlike what was done
-in~\citet{altiparmak22} and \citet{Ecker:2022dlg}, we do not impose
-any GW-informed constraints on the binary tidal deformability in the
-construction of our prior as we are reanalysing these data using the constructed prior.
+in~\citet{altiparmak22} and \citet{Ecker:2022dlg}, we do not impose any
+GW-informed constraints on the binary tidal deformability in the
+construction of our prior as we are reanalysing these data using the
+constructed prior.
 	
 In the BNS case, the binary tidal deformability of the prior is computed
 as
@@ -290,12 +294,13 @@ be fitted by a simple power law
 \begin{equation}
 	\tilde\Lambda_{{\rm min}(\rm max)}=a + b \,(\mathcal{M}_{\rm chirp})^c\,,
 \end{equation}
-where the fitting coefficients are $a=-57\,(-23)$, $b=583\,(2690)$ 
-and $c=-3.9\,(-4.5)$ for the BNS case and $a=6\,(-5)$, $b=296\,(1700)$
- and $c=-6.6\,(-4.9)$ for the BHNS case.
-For comparison we also show contours for $a=-41\,(-0.55)$, $b=539\,(2091)$ 
-and $c=-4.5\,(-5.5)$ (dashed gray lines) corresponding to imposing in 
-addition constraints of the GW170817 event already on the prior.
+where the fitting coefficients are $a=-57\,(-23)$, $b=583\,(2690)$ and
+$c=-3.9\,(-4.5)$ for the BNS case and $a=6\,(-5)$, $b=296\,(1700)$ and
+$c=-6.6\,(-4.9)$ for the BHNS case. For comparison we also show contours
+for $a=-41\,(-0.55)$, $b=539\,(2091)$ and $c=-4.5\,(-5.5)$ (dashed gray
+lines) corresponding to a prior in which the constraint on the tidal
+deformability from the GW170817 event, i.e., $\tilde{\Lambda} < 720$, is
+imposed; this corresponds to what done in~\citet{altiparmak22}.
 
 \begin{figure}
   \centering
@@ -426,21 +431,9 @@ posterior is not significantly different at large tidal deformabilities
 values of $\tilde{\Lambda}$, essentially excluding values
 $\tilde{\Lambda} \lesssim 200$. As a result, the $90\%$ lower and upper
 limits on the tidal deformability are now set to $226 \leq
-\tilde{\Lambda} \leq 690$.
-%  \lr{please report the correct lower limit; we
-%   need to report this result also in the abstract as it is one of the
-%   most important results of our paper}
-   These arguably represent the most
+\tilde{\Lambda}_{1.186} \leq 690$. These arguably represent the most
 interesting consequence of the physics-informed prior on the
 $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
-
-%% \lr{what is the upper limit on $\tilde{\Lambda}$? Previous estimates
-%%   were $\tilde{\Lambda} \lesssim 720$. What are the new ones? We need
-%%   to provide also the lower limit on $\tilde{\Lambda}$.}  \SM{We can't
-%%   say much about the lower limit of $\tilde{\Lambda}$ as
-%%   $\tilde{\Lambda} \leq 200$ is already enforced by our priors.  We
-%%   can make comments about the upper limits though, as we can see from
-%%   Fig 2 that the posterior is constrained relative to the prior.}
 
 \begin{figure}
   \centering
