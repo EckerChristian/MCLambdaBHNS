@@ -58,17 +58,19 @@
  priors are used in gravitational-wave astrophysical inference, we show a
  significant improvement on nuclear equation of state constraints.
  Applying these to the first observed gravitational-wave binary
- neutron-star merger GW170817, the constraints on the
- radius of a $1.4\,M_\odot$ neutron star improve from $R_{1.4} =
- {12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $12.11^{+0.91}_{-1.11}\,{\rm km}$
- (90\% confidence intervals). We also show these priors can be used to
- perform model selection between binary neutron star and neutron
- star-black hole mergers; in the case of GW190425, the results are
- inconclusive with a Bayes factor of $1.33$ in favour of the binary
- neutron star merger hypothesis, representing only marginal evidence. We
- advocate for these physics-inspired priors to be used as standard in the
- literature, and provide open-source code for reproducibility and further
- adaptation of the method.
+ neutron-star merger GW170817, the constraints on the radius of a
+ $1.4\,M_\odot$ neutron star improve from $R_{1.4} =
+ {12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $R_{1.4} =
+ 12.11^{+0.91}_{-1.11}\,{\rm km}$ and those on the tidal deformability
+ from $\tilde{\Lambda}_{1.186} < 720$ to $226 \leq
+ \tilde{\Lambda}_{1.186} \leq 690$. (90\% confidence intervals). We also
+ show these priors can be used to perform model selection between binary
+ neutron star and neutron star-black hole mergers; in the case of
+ GW190425, the results are inconclusive with a Bayes factor of $1.33$ in
+ favour of the binary neutron star merger hypothesis, representing only
+ marginal evidence. We advocate for these physics-inspired priors to be
+ used as standard in the literature, and provide open-source code for
+ reproducibility and further adaptation of the method.
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
@@ -127,9 +129,9 @@ from the GW observation of GW170817 from $\tilde{\Lambda} =
 intervals are 90\% throughout). We infer a posterior on the EOS, and find
 that the neutron-star radius measurement of an equivalent
 $1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,
-{\rm km}$ when using uniform priors to $12.11^{+0.91}_{-1.11} \, {\rm
-  km}$ with our physics-inspired priors~\citep[see also][for some of the
-  first alternative estimates]{Most2018,Capano2020}.
+{\rm km}$ when using uniform priors~\citep[see also][for some of the
+  first alternative estimates]{Most2018,Capano2020} to ${R_{1.4}} =
+12.11^{+0.91}_{-1.11} \, {\rm km}$ with our physics-inspired priors.
 %% \lr{where do these estimates come from? A reference is needed}
 %%   \SM{These estimates come from calculating a posterior on equation of
 %%   state parameters, using the offical LVK posterior samples. I've
@@ -175,12 +177,13 @@ in the next Section.
 %========================================================================
 	
 The construction of our physics-inspired prior closely follows that
-of~\citet{Altiparmak:2022}, which we briefly review here~\citep[see][for additional details]{Ecker:2022, Ecker:2022dlg}. We begin by
-building a large set of EOSs by stitching together various components.
-At the lowest densities ($n<0.5\,n_s$) we adopt the
-Baym-Pethick-Sutherland (BPS) model~\citep{Baym71} for the neutron-star
-crust. In the range $0.5\,n_s\le n < 1.1\,n_s$, we randomly sample
-polytropes to span the range between the softest and stiffest EOSs
+of~\citet{Altiparmak:2022}, which we briefly review here~\citep[see][for
+  additional details]{Ecker:2022, Ecker:2022dlg}. We begin by building a
+large set of EOSs by stitching together various components.  At the
+lowest densities ($n<0.5\,n_s$) we adopt the Baym-Pethick-Sutherland
+(BPS) model~\citep{Baym71} for the neutron-star crust. In the range
+$0.5\,n_s\le n < 1.1\,n_s$, we randomly sample polytropes to span the
+range between the softest and stiffest EOSs
 from~\citet{Hebeler:2013nza}. At high densities ($n \gtrsim 40\,n_s$),
 corresponding to a baryon chemical potential of $\mu = 2.6\,\rm GeV$, we
 impose the perturbative QCD constraint from~\citet{Fraga2014} on the
@@ -236,9 +239,10 @@ impose NICER radius constraints from J0740+6620~\citep{Miller2021,
   Riley2021} and J0030+0451~\citep{Riley2019, MCMiller2019b}, rejecting
 EOSs with $R < 10.75\,\rm km$ at $M = 2.0\,M_{\odot}$ or $R < 10.8\,\rm
 km$ at $M = 1.1\,M_{\odot}$. We note that, unlike what was done
-in~\citet{altiparmak22} and \citet{Ecker:2022dlg}, we do not impose
-any GW-informed constraints on the binary tidal deformability in the
-construction of our prior as we are reanalysing these data using the constructed prior.
+in~\citet{altiparmak22} and \citet{Ecker:2022dlg}, we do not impose any
+GW-informed constraints on the binary tidal deformability in the
+construction of our prior as we are reanalysing these data using the
+constructed prior.
 	
 In the BNS case, the binary tidal deformability of the prior is computed
 as
@@ -290,12 +294,13 @@ be fitted by a simple power law
 \begin{equation}
 	\tilde\Lambda_{{\rm min}(\rm max)}=a + b \,(\mathcal{M}_{\rm chirp})^c\,,
 \end{equation}
-where the fitting coefficients are $a=-57\,(-23)$, $b=583\,(2690)$ 
-and $c=-3.9\,(-4.5)$ for the BNS case and $a=6\,(-5)$, $b=296\,(1700)$
- and $c=-6.6\,(-4.9)$ for the BHNS case.
-For comparison we also show contours for $a=-41\,(-0.55)$, $b=539\,(2091)$ 
-and $c=-4.5\,(-5.5)$ (dashed gray lines) corresponding to imposing in 
-addition constraints of the GW170817 event already on the prior.
+where the fitting coefficients are $a=-57\,(-23)$, $b=583\,(2690)$ and
+$c=-3.9\,(-4.5)$ for the BNS case and $a=6\,(-5)$, $b=296\,(1700)$ and
+$c=-6.6\,(-4.9)$ for the BHNS case. For comparison we also show contours
+for $a=-41\,(-0.55)$, $b=539\,(2091)$ and $c=-4.5\,(-5.5)$ (dashed gray
+lines) corresponding to a prior in which the constraint on the tidal
+deformability from the GW170817 event, i.e., $\tilde{\Lambda} < 720$, is
+imposed; this corresponds to what done in~\citet{altiparmak22}.
 
 \begin{figure}
   \centering
@@ -314,8 +319,8 @@ We sample directly in source-frame chirp mass, mass ratio and the two
 tidal deformability parameters $\tilde{\Lambda}$ and
 $\delta\Lambda$.\footnote{The quantity $\delta\tilde{\Lambda}$ is another
 tidal deformability parameter that enters at sixth-order post-Newtonian,
-cf. $\tilde{\Lambda}$ that enters at fifth order. For definitions of the
-these quantities, see \citet{favata14,wade14}.}  We note that $q$ is not
+cf. $\tilde{\Lambda}$ that enters at fifth order~\citep[see][for definitions of the
+these quantities]{favata14,wade14}.}  We note that $q$ is not
 a variable that depends on the EOS, and we therefore take the standard
 approach of choosing a prior on $q$ uniform in the range
 $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}\footnote{One
@@ -358,11 +363,13 @@ those informed by state-of-the-art binary population synthesis
 \citep[e.g.,][]{2021Broekgaarden+}. In practice, we have decided to use
 here a uniformly-distributed mass-ratio prior as we have found that our
 results do not depend significantly on the choice made for prior
-distribution on mass ratios (see discussion in Appendix~\ref{sec:NSBH
-  generation}). Finally, also for NSBHs we choose to work with priors in
-$\mathcal{M}$ -- $\tilde{\Lambda}$, enforcing
-$\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal
-deformability of the neutron star.
+distribution on mass ratios.
+%
+ %% (see discussion in Appendix~\ref{sec:NSBH generation})
+%
+Finally, also for NSBHs we choose to work with priors in $\mathcal{M}\!-
+\!\tilde{\Lambda}$, enforcing $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$
+where $\Lambda_2$ is the tidal deformability of the neutron star.
 
 %------------------------------------------------------------------------
 \subsection{Parameter estimation}
@@ -398,7 +405,7 @@ approach for the EOS inference (i.e., four-piece spectral
 parameterisation) that is different from that used in the EOS
 construction (i.e., seven-segment sound-speed parameterisation) follows a
 precise logic. In particular, this has the advantage that it is possible
-to compare directly with the LVK inference analysis and hence can clearly
+to compare directly with the LVK inference analysis and hence clearly
 distinguish the assumptions behind the definition of the priors from
 those employed in the inference. At the same time, this also implies that
 the posteriors obtained for the EOSs will be different from the
@@ -424,21 +431,9 @@ posterior is not significantly different at large tidal deformabilities
 values of $\tilde{\Lambda}$, essentially excluding values
 $\tilde{\Lambda} \lesssim 200$. As a result, the $90\%$ lower and upper
 limits on the tidal deformability are now set to $226 \leq
-\tilde{\Lambda} \leq 690$.
-%  \lr{please report the correct lower limit; we
-%   need to report this result also in the abstract as it is one of the
-%   most important results of our paper}
-   These arguably represent the most
+\tilde{\Lambda}_{1.186} \leq 690$. These arguably represent the most
 interesting consequence of the physics-informed prior on the
 $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
-
-%% \lr{what is the upper limit on $\tilde{\Lambda}$? Previous estimates
-%%   were $\tilde{\Lambda} \lesssim 720$. What are the new ones? We need
-%%   to provide also the lower limit on $\tilde{\Lambda}$.}  \SM{We can't
-%%   say much about the lower limit of $\tilde{\Lambda}$ as
-%%   $\tilde{\Lambda} \leq 200$ is already enforced by our priors.  We
-%%   can make comments about the upper limits though, as we can see from
-%%   Fig 2 that the posterior is constrained relative to the prior.}
 
 \begin{figure}
   \centering
@@ -582,35 +577,35 @@ by the LVK typically involves both galactic ``low-spin'' and
 ``high-spin'' BNS and NSBH priors to future
 work. \appendix
 	
-%========================================================================
-\section{Neutron star -- black hole merger prior generation}
-\label{sec:NSBH generation}
-%========================================================================
+%% %========================================================================
+%% \section{Neutron star -- black hole merger prior generation}
+%% \label{sec:NSBH generation}
+%% %========================================================================
 	
-\red{We should detail the prior generation for NSBH here, in particular
-  the independence of a mass ratio informed by population synthesis on
-  the prior distributions and potentially the resultant posterior
-  distributions. Might be worth showing an extreme example to prove the
-  point.} \pdl{Probably delete this appendix; make a comment in the
-  paper, and not include Fig.~\ref{fig:mass_ratio_distribution}}
+%% \red{We should detail the prior generation for NSBH here, in particular
+%%   the independence of a mass ratio informed by population synthesis on
+%%   the prior distributions and potentially the resultant posterior
+%%   distributions. Might be worth showing an extreme example to prove the
+%%   point.} \pdl{Probably delete this appendix; make a comment in the
+%%   paper, and not include Fig.~\ref{fig:mass_ratio_distribution}}
 	
-We generate two relations, one with uniform priors on our population of
-NSBH mergers, and one directly informed by state-of-the-art binary
-population synthesis. We use the mass ratio distribution of
-\cite{2021Broekgaarden+} (\red{ what particular model are we using?}) for
-the generation of our population synthesis informed priors. Figure
-\ref{fig:mass_ratio_distribution} shows the distribution in mass ratio
-used for the generation of the prior.
+%% We generate two relations, one with uniform priors on our population of
+%% NSBH mergers, and one directly informed by state-of-the-art binary
+%% population synthesis. We use the mass ratio distribution of
+%% \cite{2021Broekgaarden+} (\red{ what particular model are we using?}) for
+%% the generation of our population synthesis informed priors. Figure
+%% \ref{fig:mass_ratio_distribution} shows the distribution in mass ratio
+%% used for the generation of the prior.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.5\columnwidth]{NSBH_mass_ratio_density.pdf}
-  \caption{Probability density function of the mass ratio for detectable
-    NSBH mergers from \citep{2021Broekgaarden+}. \lr{I don't think we
-      need this figure as we can simply refer to Fig. xxx
-      of\citep{2021Broekgaarden+}} }
-  \label{fig:mass_ratio_distribution}
-\end{figure}
+%% \begin{figure}
+%%   \centering
+%%   \includegraphics[width=0.5\columnwidth]{NSBH_mass_ratio_density.pdf}
+%%   \caption{Probability density function of the mass ratio for detectable
+%%     NSBH mergers from \citep{2021Broekgaarden+}. \lr{I don't think we
+%%       need this figure as we can simply refer to Fig. xxx
+%%       of\citep{2021Broekgaarden+}} }
+%%   \label{fig:mass_ratio_distribution}
+%% \end{figure}
 
 %========================================================================
 \section{Model Selection}
@@ -640,7 +635,7 @@ Formally, for model selection we should be computing the odds ratio,
 which is defined as
 %
 \begin{equation}
-  \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} \equiv \frac{\mathcal{Z_{_{\rm
+  \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} := \frac{\mathcal{Z_{_{\rm
           BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}} \frac{\pi_{_{\rm
         BNS}}}{\pi_{_{\rm NSBH}}}\,,
 \end{equation}
