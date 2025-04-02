@@ -309,14 +309,20 @@ tidal deformability parameters $\tilde{\Lambda}$ and
 $\delta\Lambda$.\footnote{The quantity $\delta\tilde{\Lambda}$ is another tidal deformability parameter that enters at sixth-order post-Newtonian, cf. $\tilde{\Lambda}$ that enters at fifth order. For definitions of the these quantities, see \citep{favata14,wade14}.}
 We note that $q$ is not a variable that
 depends on the EOS, and we therefore take the standard approach of
-choosing a prior on $q$ uniform in the range \lr{is this range for BNS
-  \textit{and} NSBH? The lower limit is very small for BNS and I think it
-  is unreasonable to expect $q \lesssim 0.3$}
+choosing a prior on $q$ uniform in the range 
 $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}\footnote{One
 \textit{could} choose a prior on $q$ motivated by astrophysical formation
 scenarios~\citep[e.g.,][]{}, however we choose here to do use the common
 approach instead \pdl{Are there references for this? If not, I suggest we
-  just delete this footnote.}}. Furthermore, while both $\tilde{\Lambda}$
+  just delete this footnote.}}.
+The choice of a lower limit of $q=0.125$ is due to waveform limitations and is not astrophysical motivated. 
+
+\lr{is this range for BNS
+\textit{and} NSBH? The lower limit is very small for BNS and I think it
+is unreasonable to expect $q \lesssim 0.3$}
+\SM{This is really just to replicate the standard LVK analysis, which is done as agnostically as possible.
+i.e not astrophysically motivated. The lower limit of $q=0.125$ is a limit of the IMRPhenom waveform used.}
+Furthermore, while both $\tilde{\Lambda}$
 and $\delta\tilde{\Lambda}$ are related to the EOS, we only impose a
 prior here on $\tilde{\Lambda}$, as $\tilde{\Lambda}$ is
 measured much better than $\delta\tilde{\Lambda}$~\citep[e.g.,][]{wade14}. In principle, one could set a combined prior on the three parameters
@@ -410,8 +416,11 @@ represents the most interesting consequence of the physics-informed prior
 on the $\mathcal{M}\!-\!\tilde{\Lambda}$ relation. \lr{what is the upper
   limit on $\tilde{\Lambda}$? Previous estimates were $\tilde{\Lambda}
   \lesssim 720$. What are the new ones? We need to provide also the lower
-  limit on $\tilde{\Lambda}$}
-
+  limit on $\tilde{\Lambda}$.}
+  \SM{We can't say much about the lower limit of $\tilde{\Lambda}$
+   as $\tilde{\Lambda} \leq 200$ is already enforced by our priors.
+   We can make comments about the upper limits though, as we can see from Fig 2 that the posterior is constrained relative to the prior.}
+We find that the $90\%$ upper limit on effectively tidal deformability is now  $\tilde{\Lambda} \leq 618$.
 \begin{figure}
   \centering
   \includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
