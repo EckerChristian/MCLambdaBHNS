@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex paper"] 1743552759 "paper.aux" "paper.bbl" "paper" 1743552760 0
+["bibtex paper"] 1743553386 "paper.aux" "paper.bbl" "paper" 1743553961 0
   "./aasjournal.bst" 1743552696 36130 1e2d4614828005814bd64e3c665b8e99 ""
   "./references.bib" 1743552696 39175 49c31448c649960f378e96174e9f9b71 ""
-  "paper.aux" 1743552759 12526 f8787ac7fb8c17d22fa74fc9cb2dd736 "pdflatex"
+  "paper.aux" 1743553961 12526 16a5f966aae1aa7022f81be5f4267e4a "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1743552759 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1743552760 0
-  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1743552758 35772 5c938c38fe36ce2924da0f8c68a682bd ""
+["pdflatex"] 1743553960 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1743553961 0
+  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1743553960 35812 db8a65cc202b937e3a7b50c4c5b99de6 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -153,10 +153,10 @@
   "NSBH_mass_ratio_density.pdf" 1743552696 70517 74acc1169448ef1f7cb36290d20cc742 ""
   "Orcid-ID.png" 1743552696 27604 8527c7c3c14d5c207af947385c09fd77 ""
   "aastex631.cls" 1743552696 231673 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "paper.aux" 1743552759 12526 f8787ac7fb8c17d22fa74fc9cb2dd736 "pdflatex"
-  "paper.bbl" 1743552759 11631 ca0772ebbd91fd5d0a3d13f42e443211 "bibtex paper"
-  "paper.out" 1743552759 1306 b18d431dff6d7fefb78583e80bc45316 "pdflatex"
-  "paper.tex" 1743552758 35772 5c938c38fe36ce2924da0f8c68a682bd ""
+  "paper.aux" 1743553961 12526 16a5f966aae1aa7022f81be5f4267e4a "pdflatex"
+  "paper.bbl" 1743553386 11631 ca0772ebbd91fd5d0a3d13f42e443211 "bibtex paper"
+  "paper.out" 1743553961 1306 b18d431dff6d7fefb78583e80bc45316 "pdflatex"
+  "paper.tex" 1743553960 35812 db8a65cc202b937e3a7b50c4c5b99de6 ""
   (generated)
   "paper.aux"
   "paper.log"
