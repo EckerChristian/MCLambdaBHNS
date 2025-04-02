@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.8)  2 APR 2025 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.8)  2 APR 2025 13:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -603,32 +603,37 @@ File: Fig_1_Physics_priors.pdf Graphic file (type pdf)
 Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 290.
 (pdftex.def)             Requested size: 242.26653pt x 245.77048pt.
 
-Overfull \hbox (9.84802pt too wide) in paragraph at lines 315--315
+Overfull \hbox (9.84802pt too wide) in paragraph at lines 303--303
 [][]| [] [][][]| 
  []
 
 
-Overfull \hbox (9.84802pt too wide) in paragraph at lines 359--359
+Overfull \hbox (9.84802pt too wide) in paragraph at lines 313--313
 [][]| [] [][][]| 
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 356--368
+Overfull \hbox (9.84802pt too wide) in paragraph at lines 352--352
+[][]| [] [][][]| 
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 349--361
 \OT1/ptm/m/n/10 GW170817 and GW190425 us-ing the publicly-available
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 369--390
+Underfull \hbox (badness 2285) in paragraph at lines 362--383
 []\OT1/ptm/m/n/10 Parameter es-ti-ma-tion for each run is per-formed us-
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 369--390
+Underfull \hbox (badness 1852) in paragraph at lines 362--383
 \OT1/ptm/m/n/10 ing the \OT1/pcr/m/n/10 dynesty \OT1/ptm/m/n/10 nested sam-pler ([][]Spea-gle[][] [][]2020[][]) and
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 369--390
+Underfull \hbox (badness 1087) in paragraph at lines 362--383
 \OT1/ptm/m/n/10 we re-con-struct pressure--density and mass--radius curves
  []
 
@@ -636,64 +641,64 @@ Underfull \hbox (badness 1087) in paragraph at lines 369--390
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.390 
+l.383 
        <./Fig_1_Physics_priors.pdf>]
-<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=268, 666.679pt x 423.0481pt>
+<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=272, 666.679pt x 423.0481pt>
 File: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf Graphic file (type pdf)
 <use Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>
-Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 410.
+Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 403.
 (pdftex.def)             Requested size: 242.26653pt x 153.73024pt.
 
-Underfull \hbox (badness 5359) in paragraph at lines 422--433
+Underfull \hbox (badness 5359) in paragraph at lines 415--426
 \OT1/ptm/m/n/10 panel) and mass--radius (bot-tom panel) pos-te-ri-ors of
  []
 
-<GW170817_press_dens_MR.pdf, id=270, 722.7pt x 722.7pt>
+<GW170817_press_dens_MR.pdf, id=274, 722.7pt x 722.7pt>
 File: GW170817_press_dens_MR.pdf Graphic file (type pdf)
 <use GW170817_press_dens_MR.pdf>
-Package pdftex.def Info: GW170817_press_dens_MR.pdf  used on input line 438.
+Package pdftex.def Info: GW170817_press_dens_MR.pdf  used on input line 431.
 (pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
 [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.480 	
+l.473 	
        
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.480 	
+l.473 	
         <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf> <./GW170817_press_dens_MR.pdf>]
-<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=311, 657.50667pt x 423.0481pt>
+<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=315, 657.50667pt x 423.0481pt>
 File: Fig_3_GW190425_lambda_tilde_posteriors.pdf Graphic file (type pdf)
 <use Fig_3_GW190425_lambda_tilde_posteriors.pdf>
-Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 483.
+Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 476.
 (pdftex.def)             Requested size: 242.26653pt x 155.87337pt.
-<GW190425_press_dens_MR.pdf, id=312, 722.7pt x 722.7pt>
+<GW190425_press_dens_MR.pdf, id=316, 722.7pt x 722.7pt>
 File: GW190425_press_dens_MR.pdf Graphic file (type pdf)
 <use GW190425_press_dens_MR.pdf>
-Package pdftex.def Info: GW190425_press_dens_MR.pdf  used on input line 495.
+Package pdftex.def Info: GW190425_press_dens_MR.pdf  used on input line 488.
 (pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
-<NSBH_mass_ratio_density.pdf, id=321, 641.3737pt x 407.16171pt>
+<NSBH_mass_ratio_density.pdf, id=325, 641.3737pt x 407.16171pt>
 File: NSBH_mass_ratio_density.pdf Graphic file (type pdf)
 <use NSBH_mass_ratio_density.pdf>
-Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 562.
+Package pdftex.def Info: NSBH_mass_ratio_density.pdf  used on input line 555.
 (pdftex.def)             Requested size: 256.55872pt x 162.87422pt.
  [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.620 \end{equation}
+l.613 \end{equation}
                      <./Fig_3_GW190425_lambda_tilde_posteriors.pdf>] [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.627 \end{equation}
+l.620 \end{equation}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.627 \end{equation}
+l.620 \end{equation}
                      <./GW190425_press_dens_MR.pdf> <./NSBH_mass_ratio_density.pdf>] (./paper.bbl
 Overfull \vbox (60.58098pt too high) has occurred while \output is active []
 
@@ -705,18 +710,18 @@ Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: B18D431DFF6D7FEFB78583E80BC45316;1306.
  ) 
 Here is how much of TeX's memory you used:
- 13930 strings out of 476025
- 209252 string characters out of 5790018
+ 13931 strings out of 476025
+ 209271 string characters out of 5790018
  1899388 words of memory out of 5000000
  34084 multiletter control sequences out of 15000+600000
  542373 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,7n,90p,1380b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 1616415 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (8 pages, 1624840 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 85 named destinations out of 1000 (max. 500000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 474 compressed objects within 5 object streams
+ 86 named destinations out of 1000 (max. 500000)
  108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
