@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex paper"] 1743561974 "paper.aux" "paper.bbl" "paper" 1743561975 0
+["bibtex paper"] 1743635957 "paper.aux" "paper.bbl" "paper" 1743636080 0
   "./aasjournal.bst" 1743552696 36130 1e2d4614828005814bd64e3c665b8e99 ""
-  "./references.bib" 1743552696 39175 49c31448c649960f378e96174e9f9b71 ""
-  "paper.aux" 1743561975 12526 16a5f966aae1aa7022f81be5f4267e4a "pdflatex"
+  "./references.bib" 1743634851 41398 011d5d50cdf43e7a0595935acd9c2a83 ""
+  "paper.aux" 1743636079 11222 b0676c478c70d32c3d13535e1e4aabd0 "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1743561974 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1743561975 0
-  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1743561973 35612 b03bdd2b5781b1c6edf6e9df916d1f95 ""
+["pdflatex"] 1743636079 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1743636080 0
+  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1743636079 38080 3bf647bd637add401f5a657713e9e4db ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -146,18 +146,17 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1691466230 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1691466162 7883469 5b3fbfb35fa6cf48797d061a32dad879 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Fig_1_Physics_priors.pdf" 1743552696 1132331 87a1871f790315adafed73317da530a0 ""
+  "Fig_1_Physics_priors.pdf" 1743634851 1191223 4e6f7af9758fe02b5e46c7eb9733ba25 ""
   "Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf" 1743552696 72506 4580d4088164583e7fb3cec04e55b252 ""
   "Fig_3_GW190425_lambda_tilde_posteriors.pdf" 1743552696 70809 ca3b92b96b95233664f28bddccb79e53 ""
   "GW170817_press_dens_MR.pdf" 1743552696 216288 5a766aa1e61a525451caecfe74ee5275 ""
   "GW190425_press_dens_MR.pdf" 1743552696 279751 415f910003fde09f0dfad62994c52a4b ""
-  "NSBH_mass_ratio_density.pdf" 1743552696 70517 74acc1169448ef1f7cb36290d20cc742 ""
   "Orcid-ID.png" 1743552696 27604 8527c7c3c14d5c207af947385c09fd77 ""
   "aastex631.cls" 1743552696 231673 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "paper.aux" 1743561975 12526 16a5f966aae1aa7022f81be5f4267e4a "pdflatex"
-  "paper.bbl" 1743561974 11631 ca0772ebbd91fd5d0a3d13f42e443211 "bibtex paper"
-  "paper.out" 1743561975 1306 b18d431dff6d7fefb78583e80bc45316 "pdflatex"
-  "paper.tex" 1743561973 35612 b03bdd2b5781b1c6edf6e9df916d1f95 ""
+  "paper.aux" 1743636079 11222 b0676c478c70d32c3d13535e1e4aabd0 "pdflatex"
+  "paper.bbl" 1743635957 12354 b43fd11cf306094fe4a30e7b8d06f3be "bibtex paper"
+  "paper.out" 1743636079 993 d4684f266de27b79109904a9d0aec7a8 "pdflatex"
+  "paper.tex" 1743636079 38080 3bf647bd637add401f5a657713e9e4db ""
   (generated)
   "paper.aux"
   "paper.log"
