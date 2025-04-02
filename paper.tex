@@ -127,9 +127,9 @@ from the GW observation of GW170817 from $\tilde{\Lambda} =
 intervals are 90\% throughout). We infer a posterior on the EOS, and find
 that the neutron-star radius measurement of an equivalent
 $1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,
-{\rm km}$ when using uniform priors to $12.11^{+0.91}_{-1.11} \, {\rm
-  km}$ with our physics-inspired priors~\citep[see also][for some of the
-  first alternative estimates]{Most2018,Capano2020}.
+{\rm km}$ when using uniform priors~\citep[see also][for some of the
+  first alternative estimates]{Most2018,Capano2020} to ${R_{1.4}} =
+12.11^{+0.91}_{-1.11} \, {\rm km}$ with our physics-inspired priors.
 %% \lr{where do these estimates come from? A reference is needed}
 %%   \SM{These estimates come from calculating a posterior on equation of
 %%   state parameters, using the offical LVK posterior samples. I've
@@ -314,8 +314,8 @@ We sample directly in source-frame chirp mass, mass ratio and the two
 tidal deformability parameters $\tilde{\Lambda}$ and
 $\delta\Lambda$.\footnote{The quantity $\delta\tilde{\Lambda}$ is another
 tidal deformability parameter that enters at sixth-order post-Newtonian,
-cf. $\tilde{\Lambda}$ that enters at fifth order. For definitions of the
-these quantities, see \citet{favata14,wade14}.}  We note that $q$ is not
+cf. $\tilde{\Lambda}$ that enters at fifth order~\citep[see][for definitions of the
+these quantities]{favata14,wade14}.}  We note that $q$ is not
 a variable that depends on the EOS, and we therefore take the standard
 approach of choosing a prior on $q$ uniform in the range
 $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}\footnote{One
@@ -358,11 +358,13 @@ those informed by state-of-the-art binary population synthesis
 \citep[e.g.,][]{2021Broekgaarden+}. In practice, we have decided to use
 here a uniformly-distributed mass-ratio prior as we have found that our
 results do not depend significantly on the choice made for prior
-distribution on mass ratios (see discussion in Appendix~\ref{sec:NSBH
-  generation}). Finally, also for NSBHs we choose to work with priors in
-$\mathcal{M}$ -- $\tilde{\Lambda}$, enforcing
-$\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal
-deformability of the neutron star.
+distribution on mass ratios.
+%
+ %% (see discussion in Appendix~\ref{sec:NSBH generation})
+%
+Finally, also for NSBHs we choose to work with priors in $\mathcal{M}\!-
+\!\tilde{\Lambda}$, enforcing $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$
+where $\Lambda_2$ is the tidal deformability of the neutron star.
 
 %------------------------------------------------------------------------
 \subsection{Parameter estimation}
@@ -398,7 +400,7 @@ approach for the EOS inference (i.e., four-piece spectral
 parameterisation) that is different from that used in the EOS
 construction (i.e., seven-segment sound-speed parameterisation) follows a
 precise logic. In particular, this has the advantage that it is possible
-to compare directly with the LVK inference analysis and hence can clearly
+to compare directly with the LVK inference analysis and hence clearly
 distinguish the assumptions behind the definition of the priors from
 those employed in the inference. At the same time, this also implies that
 the posteriors obtained for the EOSs will be different from the
@@ -582,35 +584,35 @@ by the LVK typically involves both galactic ``low-spin'' and
 ``high-spin'' BNS and NSBH priors to future
 work. \appendix
 	
-%========================================================================
-\section{Neutron star -- black hole merger prior generation}
-\label{sec:NSBH generation}
-%========================================================================
+%% %========================================================================
+%% \section{Neutron star -- black hole merger prior generation}
+%% \label{sec:NSBH generation}
+%% %========================================================================
 	
-\red{We should detail the prior generation for NSBH here, in particular
-  the independence of a mass ratio informed by population synthesis on
-  the prior distributions and potentially the resultant posterior
-  distributions. Might be worth showing an extreme example to prove the
-  point.} \pdl{Probably delete this appendix; make a comment in the
-  paper, and not include Fig.~\ref{fig:mass_ratio_distribution}}
+%% \red{We should detail the prior generation for NSBH here, in particular
+%%   the independence of a mass ratio informed by population synthesis on
+%%   the prior distributions and potentially the resultant posterior
+%%   distributions. Might be worth showing an extreme example to prove the
+%%   point.} \pdl{Probably delete this appendix; make a comment in the
+%%   paper, and not include Fig.~\ref{fig:mass_ratio_distribution}}
 	
-We generate two relations, one with uniform priors on our population of
-NSBH mergers, and one directly informed by state-of-the-art binary
-population synthesis. We use the mass ratio distribution of
-\cite{2021Broekgaarden+} (\red{ what particular model are we using?}) for
-the generation of our population synthesis informed priors. Figure
-\ref{fig:mass_ratio_distribution} shows the distribution in mass ratio
-used for the generation of the prior.
+%% We generate two relations, one with uniform priors on our population of
+%% NSBH mergers, and one directly informed by state-of-the-art binary
+%% population synthesis. We use the mass ratio distribution of
+%% \cite{2021Broekgaarden+} (\red{ what particular model are we using?}) for
+%% the generation of our population synthesis informed priors. Figure
+%% \ref{fig:mass_ratio_distribution} shows the distribution in mass ratio
+%% used for the generation of the prior.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.5\columnwidth]{NSBH_mass_ratio_density.pdf}
-  \caption{Probability density function of the mass ratio for detectable
-    NSBH mergers from \citep{2021Broekgaarden+}. \lr{I don't think we
-      need this figure as we can simply refer to Fig. xxx
-      of\citep{2021Broekgaarden+}} }
-  \label{fig:mass_ratio_distribution}
-\end{figure}
+%% \begin{figure}
+%%   \centering
+%%   \includegraphics[width=0.5\columnwidth]{NSBH_mass_ratio_density.pdf}
+%%   \caption{Probability density function of the mass ratio for detectable
+%%     NSBH mergers from \citep{2021Broekgaarden+}. \lr{I don't think we
+%%       need this figure as we can simply refer to Fig. xxx
+%%       of\citep{2021Broekgaarden+}} }
+%%   \label{fig:mass_ratio_distribution}
+%% \end{figure}
 
 %========================================================================
 \section{Model Selection}
@@ -640,7 +642,7 @@ Formally, for model selection we should be computing the odds ratio,
 which is defined as
 %
 \begin{equation}
-  \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} \equiv \frac{\mathcal{Z_{_{\rm
+  \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} := \frac{\mathcal{Z_{_{\rm
           BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}} \frac{\pi_{_{\rm
         BNS}}}{\pi_{_{\rm NSBH}}}\,,
 \end{equation}
