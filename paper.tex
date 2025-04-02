@@ -279,7 +279,13 @@ priors on the source-frame chirp mass and effective tidal deformability
 as shown in Fig.~\ref{fig:priors}. We implement this in \texttt{Bilby}
 using the \texttt{conditional\_prior} function, interpolating the
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
-$\tilde{\Lambda}$.
+$\tilde{\Lambda}$. The $90\%$ propability contours (dashed black lines) can 
+be fitted by a simple power law 
+\begin{equation}
+	\tilde\Lambda_{{\rm min}(\rm max)}=a + b \,(\mathcal{M}_{\rm chirp})^c\,,
+\end{equation}
+where the fitting coefficients $a=-57\,(-23)$, $b=583\,(2690)$ 
+and $c=-3.9\,(-4.5)$ for the BNS case and \ldots \CE{BHNS case follows soon.}.
 
 \begin{figure}
   \centering
