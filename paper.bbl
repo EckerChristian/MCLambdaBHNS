@@ -50,6 +50,9 @@ Akutsu, T., Ando, M., Arai, K., {et~al.} 2020, Progress of Theoretical and Exper
 \bibitem[{{Ashton} {et~al.}(2019){Ashton}, {H{\"u}bner}, {Lasky}, {Talbot}, {Ackley}, {Biscoveanu}, {Chu}, {Divakarla}, {Easter}, {Goncharov}, {Hernandez Vivanco}, {Harms}, {Lower}, {Meadors}, {Melchor}, {Payne}, {Pitkin}, {Powell}, {Sarin}, {Smith}, \& {Thrane}}]{ashton19}
 {Ashton}, G., {H{\"u}bner}, M., {Lasky}, P.~D., {et~al.} 2019, \apjs, 241, 27, \dodoi{10.3847/1538-4365/ab06fc}
 
+\bibitem[{Baiotti \& Rezzolla(2017)}]{Baiotti2016}
+Baiotti, L., \& Rezzolla, L. 2017, Rept. Prog. Phys., 80, 096901, \dodoi{10.1088/1361-6633/aa67bb}
+
 \bibitem[{{Baym} {et~al.}(1971){Baym}, {Pethick}, \& {Sutherland}}]{Baym71}
 {Baym}, G., {Pethick}, C., \& {Sutherland}, P. 1971, \apj, 170, 299, \dodoi{10.1086/151216}
 
@@ -64,6 +67,9 @@ Akutsu, T., Ando, M., Arai, K., {et~al.} 2020, Progress of Theoretical and Exper
 
 \bibitem[{{Douchin} \& {Haensel}(2001)}]{2001_SLy_EOS}
 {Douchin}, F., \& {Haensel}, P. 2001, \aap, 380, 151, \dodoi{10.1051/0004-6361:20011402}
+
+\bibitem[{{Ecker} \& {Rezzolla}(2022)}]{Ecker:2022}
+{Ecker}, C., \& {Rezzolla}, L. 2022, Astrophys. J. Lett., 939, L35, \dodoi{10.3847/2041-8213/ac8674}
 
 \bibitem[{Ecker \& Rezzolla(2022)}]{Ecker:2022dlg}
 Ecker, C., \& Rezzolla, L. 2022, Mon. Not. Roy. Astron. Soc., 519, 2615, \dodoi{10.1093/mnras/stac3755}
@@ -91,6 +97,9 @@ Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys. J.
 
 \bibitem[{{Miller} {et~al.}(2021){Miller}, {Lamb}, {Dittmann}, {Bogdanov}, {Arzoumanian}, {Gendreau}, {Guillot}, {Ho}, {Lattimer}, {Loewenstein}, {Morsink}, {Ray}, {Wolff}, {Baker}, {Cazeau}, {Manthripragada}, {Markwardt}, {Okajima}, {Pollard}, {Cognard}, {Cromartie}, {Fonseca}, {Guillemot}, {Kerr}, {Parthasarathy}, {Pennucci}, {Ransom}, \& {Stairs}}]{Miller2021}
 ---. 2021, Astrophys. J. Lett., 918, L28, \dodoi{10.3847/2041-8213/ac089b}
+
+\bibitem[{{Paschalidis}(2017)}]{Paschalidis2016}
+{Paschalidis}, V. 2017, Classical and Quantum Gravity, 34, 084002, \dodoi{10.1088/1361-6382/aa61ce}
 
 \bibitem[{{Planck Collaboration} {et~al.}(2020)}]{Planck}
 {Planck Collaboration}, {et~al.} 2020, \aap, 641, A6, \dodoi{10.1051/0004-6361/201833910}
