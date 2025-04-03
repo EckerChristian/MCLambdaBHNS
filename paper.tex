@@ -303,12 +303,8 @@ cf. $\tilde{\Lambda}$ that enters at fifth order~\citep[see][for definitions of 
 these quantities]{favata14,wade14}.}  We note that $q$ is not
 a variable that depends on the EOS, and we therefore take the standard
 approach of choosing a prior on $q$ uniform in the range
-$q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}\footnote{One
-\textit{could} choose a prior on $q$ motivated by astrophysical formation
-scenarios~\citep[e.g.,][]{}, however we choose here to do use the common
-approach instead \pdl{Are there references for this? If not, I suggest we
-  just delete this footnote.}}. The choice of a lower limit of $q=0.125$
-is due to waveform limitations and is not astrophysically motivated.
+$q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}. The choice of a lower limit of $q=0.125$ is due to waveform
+limitations and is not astrophysically motivated.
 
 Furthermore, while both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are
 related to the EOS, we only impose a prior here on $\tilde{\Lambda}$, as
@@ -434,10 +430,12 @@ uniform priors (blue).
 
 The dotted lines represent the 90\% credible intervals
 of the effective priors on the physics prior and uniform prior when
-sampled with the spectral parameterisation. The grey curves show the 90\%
-credible interval of the true EOS distribution of our priors; i.e., the
-distribution used to generate our chirp-mass--tidal-deformability
-relationship. We find that the radius of a $1.4 \, M_\odot$ neutron star
+sampled with the spectral parameterisation. 
+% The grey curves show the 90\%
+% credible interval of the true EOS distribution of our priors; i.e., the
+% distribution used to generate our chirp-mass--tidal-deformability
+% relationship.
+ We find that the radius of a $1.4 \, M_\odot$ neutron star
 can be constrained to $12.11^{+0.91}_{-1.11} \, {\rm km}$.
 
 %\subsection{GW190425}
@@ -461,8 +459,8 @@ can be constrained to $12.11^{+0.91}_{-1.11} \, {\rm km}$.
 
 Figure \ref{fig:GW190425_tides} shows the posterior distribution of the
 intrinsic tidal parameter of GW190425 when analyzed using both the BNS
-prior (teal) and NSBH prior (pink). We show the
-official posterior distribution of the LVK obtained using uniform priors
+prior (red) and NSBH prior (green). We show the
+official posterior distribution of the LVK collaboration obtained using uniform priors
 in blue.
 	% log Z_BNS = -576535.277281933
 	% log Z_NSBH = -576535.5652987232
@@ -483,10 +481,9 @@ Regardless, any choice of prior odds remains uniformative for determining the na
 Figure \ref{fig:GW190425_massradius_BNS} shows the reconstructed
 pressure--density (top) and mass--radius (bottom) posteriors of
 GW190425. The EOS 90\% credible intervals of posteriors obtained using
-the BNS physics inspired prior are shown in teal, while the NSBH
-posteriors are shown in pink.  Once again, the dashed curve represents
-our effective prior on the EOS, while the grey curve shows the true
-prior. We find that the radius of $1.4 \, M_\odot$ neutron star is
+the BNS physics inspired prior are shown in red, while the NSBH
+posteriors are shown in green.  Once again, the dashed curve represents
+our effective prior on the EOS. We find that the radius of $1.4 \, M_\odot$ neutron star is
 constrained to $12.69^{+1.24}_{-1.22} \, {\rm km}$ using the BNS prior,
 and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH prior.
 	
@@ -515,7 +512,7 @@ and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH prior.
     (teal) and the NSBH prior (orange). The black dashed curve shows the
     90\% credible intervals of the effective priors, whilst the grey
     curve shows the 90\% credible interval of the true distribution used
-	to generate the priors.}\CE{Same comment as for Fig.3.}
+	to generate the priors.}
   \label{fig:GW190425_massradius_BNS}
 \end{figure}
 
@@ -614,11 +611,7 @@ which is defined as
 %
 where $\pi_{_{\rm BNS}}$ and $\pi_{_{\rm NSBH}}$ are the prior odds for each
 hypothesis; i.e our relative belief about which hypothesis is more
-likely. In this work we set the prior odds to unity, so the odds ratio is
-the Bayes factor. We could in principle construct an odds ratio where the
-prior odds was informed by the relative rates of BNS and NSBH
-mergers. However since these rates are still highly uncertain, we choose
-the more agnostic approach of setting the prior odds to unity.
+likely. The prior odds is calculated by considering the observed number of binary neutron star mergers, relative to the observed number of neutron star black hole mergers.
 
 %========================================================================
 \section{Equation of state inference}
@@ -724,8 +717,9 @@ priors for each EOS parameter, and enforce a minimum TOV mass $M_{\rm
 \section*{Acknowledgements}
 %============================================================
 
-The authors acknowledges insightful discussions with xxx. Partial funding
-comes from the ERC Advanced Grant ``JETSET: Launching, propagation and
+The authors acknowledges insightful discussions with xxx.
+SJM receives support from the Australian Government Research Training Program.
+Partial funding comes from the ERC Advanced Grant ``JETSET: Launching, propagation and
 emission of relativistic jets from binary mergers and across mass
 scales'' (Grant No. 884631), and the European Horizon Europe staff
 exchange (SE) programme HORIZON-MSCA2021-SE-01 Grant
@@ -735,6 +729,8 @@ CRC-TR 211 ``Strong-interaction matter under extreme conditions''--
 project number 315477589 -- TRR 211. LR acknowledges the Walter Greiner
 Gesellschaft zur F\"orderung der physikalischen Grundlagenforschung
 e.V. through the Carl W. Fueck Laureatus Chair.
+We also acknowledge CPU time on OzSTAR, funded by Swinburne University and
+the Australian Government.
 
 %------------------------------------------------------------------------
 \section*{Data Availability}
