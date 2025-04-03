@@ -505,8 +505,19 @@ official posterior distribution of the LVK obtained using uniform priors
 in blue.
 	% log Z_BNS = -576535.277281933
 	% log Z_NSBH = -576535.5652987232
+
 Bayesian-model selection between the BNS and NSBH merger gives a Bayes
 factor of 1.33, marginally in favour of a BNS merger origin.
+Formally, what should be calculated is the odds ratio: the product of the Bayes factor 
+and our prior odds ratio.
+The prior odds ratio is just a ratio of observed events, in our case the ratio of observed binary neutron star
+and observed neutron star--black hole mergers. 
+The total number of binary neutron star mergers (excluding GW190425) is one,
+and the total number of publicly released confirmed neutron star--black holes mergers is four.
+Thus the prior odds ratio is 1/4 and the odds ratio is 0.33, which represents margnal evidence for a neutron star--black hole merger.  
+To make an apples to apples comparision, one might argue that only mass-gap events like GW230529 should be included.
+In which case the prior odds is unity and the odds ratio is again 1.33, in favour of a binary neutron star origin.
+Regardless, any choice of prior odds remains uniformative for determining the nature of GW190425. 
 
 Figure \ref{fig:GW190425_massradius_BNS} shows the reconstructed
 pressure--density (top) and mass--radius (bottom) posteriors of
