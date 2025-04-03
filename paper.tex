@@ -126,16 +126,16 @@ on the measurement of the marginalised posterior on $\tilde{\Lambda}$
 from the GW observation of GW170817 from $\tilde{\Lambda} =
 466^{+308}_{-434}$ with the uniform priors to $\tilde{\Lambda} =
 384^{+306}_{-158}$ with the new physics-inspired prior (confidence
-intervals are 90\% throughout). We infer a posterior on the EOS, and find
-that the neutron-star radius measurement of an equivalent
+intervals are $90\%$ throughout). We infer a posterior on the EOS, and
+find that the neutron-star radius measurement of an equivalent
 $1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,
-{\rm km}$ when using uniform priors~\citep[see also][for some of the
-  first alternative estimates]{Most2018,Capano2020} to ${R_{1.4}} =
-12.11^{+0.91}_{-1.11} \, {\rm km}$ with our physics-inspired priors.
-For GW190425, the effective tidal deformability improves from
-$\tilde{\Lambda} = 381^{+1065}_{-271}$ to $\tilde{\Lambda} =
-183^{+180}_{-100}$, a fractional improvement of \red{XXX} on the 90\%
-uncertainties.
+{\rm km}$ \lr{please use a precise reference here} when using uniform
+priors~\citep[see also][for some of the first alternative
+  estimates]{Most2018,Capano2020} to ${R_{1.4}} = 12.11^{+0.91}_{-1.11}
+\, {\rm km}$ with our physics-inspired priors.  For GW190425, the
+effective tidal deformability improves from $\tilde{\Lambda} =
+381^{+1065}_{-271}$ to $\tilde{\Lambda} = 183^{+180}_{-100}$, a
+fractional improvement of \red{XXX} on the 90\% uncertainties.
 
 In addition to astrophysical inference, we show that these priors can be
 used to perform model selection, and hence distinguish between GW-source
@@ -237,10 +237,11 @@ as
 \end{equation}
 %
 where $M_i$, $R_i$, and $\Lambda_i = \frac{2}{3} k_2 \left( R_i/M_i
-\right)^5$ are the component source-frame masses, radii, and tidal deformabilities,
-respectively, and $k_2$ is the second tidal Love number. The source-frame chirp mass
-is $\mathcal{M}_{\rm chirp} := (M_1 M_2)^{3/5} (M_1+M_2)^{-1/5}$ and we
-define the mass ratio $q := M_2/M_1$ with $M_2\le M_1$.
+\right)^5$ are the component source-frame masses, radii, and tidal
+deformabilities, respectively, and $k_2$ is the second tidal Love
+number. The source-frame chirp mass is $\mathcal{M}_{\rm chirp} := (M_1
+M_2)^{3/5} (M_1+M_2)^{-1/5}$ and we define the mass ratio $q := M_2/M_1$
+with $M_2\le M_1$.
 	
 By definition, the tidal deformability of a black hole is zero
 $\Lambda_{\rm BH}=0$, implying the total tidal deformability for a
@@ -344,6 +345,20 @@ where $\Lambda_2$ is the tidal deformability of the neutron star.
 \subsection{Parameter estimation}
 %------------------------------------------------------------------------
 
+\begin{figure}
+  \centering
+  \includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
+  \caption{Marginalised posterior distributions of the tidal
+    deformability $\tilde{\Lambda}$ obtained from Bayesian parameter
+    estimation for GW170817. The posterior using a nuclear, microphysics,
+    and astrophysics inspired prior is shown in red, while the posterior
+    using uniform priors from the LIGO-Virgo-KAGRA collaboration is shown
+    in blue. We show the (marginalised) prior with the black curve. Note,
+    the posterior samples from the LVK show support up to
+    $\tilde{\Lambda}$ = 2000.}
+  \label{fig:GW170817_tides}
+\end{figure}	
+
 We perform a Bayesian parameter-estimation analysis on the GW strain data
 of the two (likely) BNS merger events GW170817 and GW190425 using the
 publicly-available data from the GWOSC
@@ -405,43 +420,6 @@ $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
 
 \begin{figure}
   \centering
-  \includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
-  \caption{Marginalised posterior distributions of the tidal
-    deformability $\tilde{\Lambda}$ obtained from Bayesian parameter
-    estimation for GW170817. The posterior using a nuclear, microphysics,
-    and astrophysics inspired prior is shown in red, while the posterior
-    using uniform priors from the LIGO-Virgo-KAGRA collaboration is shown
-    in blue. We show the (marginalised) prior with the black curve. Note, the posterior samples from the LVK show support up
-    to $\tilde{\Lambda}$ = 2000.}
-  \label{fig:GW170817_tides}
-\end{figure}	
-
-Figure \ref{fig:GW170817_massradius} shows the impact of the
-$\mathcal{M}\!-\!\tilde{\Lambda}$ relation on the reconstructed posterior
-distributions of the pressure and energy density (top panel) and of the
-mass and radius (bottom panel) relative to the GW170817 event. More
-specifically, the shaded regions show the 90\% credible intervals for the
-posteriors samples obtained using the physics inspired priors (red) and
-uniform priors (blue).
-%-->
-\lr{up to here}
-
-
-
-The dotted lines represent the 90\% credible intervals
-of the effective priors on the physics prior and uniform prior when
-sampled with the spectral parameterisation. 
-% The grey curves show the 90\%
-% credible interval of the true EOS distribution of our priors; i.e., the
-% distribution used to generate our chirp-mass--tidal-deformability
-% relationship.
- We find that the radius of a $1.4 \, M_\odot$ neutron star
-can be constrained to $12.11^{+0.91}_{-1.11} \, {\rm km}$.
-
-%\subsection{GW190425}
-
-\begin{figure}
-  \centering
   \includegraphics[width=\linewidth]{GW170817_press_dens_MR.pdf}
   \caption{Posterior distributions of the cold nuclear EOS from analysis
     of GW170817 using the spectral
@@ -457,36 +435,25 @@ can be constrained to $12.11^{+0.91}_{-1.11} \, {\rm km}$.
     \label{fig:GW170817_massradius}
 \end{figure}
 
-Figure \ref{fig:GW190425_tides} shows the posterior distribution of the
-intrinsic tidal parameter of GW190425 when analyzed using both the BNS
-prior (red) and NSBH prior (green). We show the
-official posterior distribution of the LVK collaboration obtained using uniform priors
-in blue.
-	% log Z_BNS = -576535.277281933
-	% log Z_NSBH = -576535.5652987232
+Figure~\ref{fig:GW170817_massradius} shows the impact of the
+$\mathcal{M}\!-\!\tilde{\Lambda}$ relation on the reconstructed posterior
+distributions of the pressure and energy density (top panel) and of the
+mass and radius (bottom panel) relative to the GW170817 event. More
+specifically, the shaded regions show the $90\%$ credible intervals for
+the posteriors samples obtained using the physics inspired priors (red)
+and uniform priors (blue). In this way, we can improve the constraints on
+the radius of a $1.4\,M_\odot$ neutron star from the values provided by
+LVK $R_{1.4} = {12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $R_{1.4} =
+12.11^{+0.91}_{-1.11}\,{\rm km}$. The dashed lines in
+Fig.~\ref{fig:GW170817_massradius} represent instead the $90\%$ credible
+intervals of the effective priors on the physics-informed prior (red) and
+on the uniform prior (blue) when sampled with the spectral
+parameterisation.
 
-Bayesian-model selection between the BNS and NSBH merger gives a Bayes
-factor of 1.33, marginally in favour of a BNS merger origin.
-Formally, what should be calculated is the odds ratio: the product of the Bayes factor 
-and our prior odds ratio.
-The prior odds ratio is just a ratio of observed events, in our case the ratio of observed binary neutron star
-and observed neutron star--black hole mergers. 
-The total number of binary neutron star mergers (excluding GW190425) is one,
-and the total number of publicly released confirmed neutron star--black holes mergers is four.
-Thus the prior odds ratio is 1/4 and the odds ratio is 0.33, which represents margnal evidence for a neutron star--black hole merger.  
-To make an apples to apples comparision, one might argue that only mass-gap events like GW230529 should be included.
-In which case the prior odds is unity and the odds ratio is again 1.33, in favour of a binary neutron star origin.
-Regardless, any choice of prior odds remains uniformative for determining the nature of GW190425. 
+%-->
+\lr{up to here}
 
-Figure \ref{fig:GW190425_massradius_BNS} shows the reconstructed
-pressure--density (top) and mass--radius (bottom) posteriors of
-GW190425. The EOS 90\% credible intervals of posteriors obtained using
-the BNS physics inspired prior are shown in red, while the NSBH
-posteriors are shown in green.  Once again, the dashed curve represents
-our effective prior on the EOS. We find that the radius of $1.4 \, M_\odot$ neutron star is
-constrained to $12.69^{+1.24}_{-1.22} \, {\rm km}$ using the BNS prior,
-and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH prior.
-	
+
 \begin{figure}
   \centering
   \includegraphics[width=1.\linewidth]{Fig_3_GW190425_lambda_tilde_posteriors.pdf}
@@ -498,6 +465,40 @@ and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH prior.
   uniform priors from the LVK is shown in blue.}
   \label{fig:GW190425_tides}
 \end{figure}
+
+Figure \ref{fig:GW190425_tides} shows the posterior distribution of the
+intrinsic tidal parameter of GW190425 when analyzed using both the BNS
+prior (red) and NSBH prior (green). We show the
+official posterior distribution of the LVK collaboration obtained using uniform priors
+in blue.
+	% log Z_BNS = -576535.277281933
+	% log Z_NSBH = -576535.5652987232
+
+Bayesian-model selection between the BNS and NSBH merger gives a Bayes
+factor of 1.33, marginally in favour of a BNS merger origin.  Formally,
+what should be calculated is the odds ratio: the product of the Bayes
+factor and our prior odds ratio.  The prior odds ratio is just a ratio of
+observed events, in our case the ratio of observed binary neutron star
+and observed neutron star--black hole mergers.  The total number of
+binary neutron star mergers (excluding GW190425) is one, and the total
+number of publicly released confirmed neutron star--black holes mergers
+is four.  Thus the prior odds ratio is 1/4 and the odds ratio is 0.33,
+which represents margnal evidence for a neutron star--black hole merger.
+To make an apples to apples comparision, one might argue that only
+mass-gap events like GW230529 should be included.  In which case the
+prior odds is unity and the odds ratio is again 1.33, in favour of a
+binary neutron star origin.  Regardless, any choice of prior odds remains
+uniformative for determining the nature of GW190425.
+
+Figure \ref{fig:GW190425_massradius_BNS} shows the reconstructed
+pressure--density (top) and mass--radius (bottom) posteriors of
+GW190425. The EOS 90\% credible intervals of posteriors obtained using
+the BNS physics inspired prior are shown in red, while the NSBH
+posteriors are shown in green.  Once again, the dashed curve represents
+our effective prior on the EOS. We find that the radius of $1.4 \, M_\odot$ neutron star is
+constrained to $12.69^{+1.24}_{-1.22} \, {\rm km}$ using the BNS prior,
+and $12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH prior.
+	
 
 \begin{figure}
   \centering
@@ -546,36 +547,6 @@ by the LVK typically involves both galactic ``low-spin'' and
 ``high-spin'' BNS and NSBH priors to future
 work. \appendix
 	
-%% %========================================================================
-%% \section{Neutron star -- black hole merger prior generation}
-%% \label{sec:NSBH generation}
-%% %========================================================================
-	
-%% \red{We should detail the prior generation for NSBH here, in particular
-%%   the independence of a mass ratio informed by population synthesis on
-%%   the prior distributions and potentially the resultant posterior
-%%   distributions. Might be worth showing an extreme example to prove the
-%%   point.} \pdl{Probably delete this appendix; make a comment in the
-%%   paper, and not include Fig.~\ref{fig:mass_ratio_distribution}}
-	
-%% We generate two relations, one with uniform priors on our population of
-%% NSBH mergers, and one directly informed by state-of-the-art binary
-%% population synthesis. We use the mass ratio distribution of
-%% \cite{2021Broekgaarden+} (\red{ what particular model are we using?}) for
-%% the generation of our population synthesis informed priors. Figure
-%% \ref{fig:mass_ratio_distribution} shows the distribution in mass ratio
-%% used for the generation of the prior.
-
-%% \begin{figure}
-%%   \centering
-%%   \includegraphics[width=0.5\columnwidth]{NSBH_mass_ratio_density.pdf}
-%%   \caption{Probability density function of the mass ratio for detectable
-%%     NSBH mergers from \citep{2021Broekgaarden+}. \lr{I don't think we
-%%       need this figure as we can simply refer to Fig. xxx
-%%       of\citep{2021Broekgaarden+}} }
-%%   \label{fig:mass_ratio_distribution}
-%% \end{figure}
-
 %========================================================================
 \section{Model Selection}
 \label{sec:Model Selection}
@@ -717,20 +688,19 @@ priors for each EOS parameter, and enforce a minimum TOV mass $M_{\rm
 \section*{Acknowledgements}
 %============================================================
 
-The authors acknowledges insightful discussions with xxx.
-SJM receives support from the Australian Government Research Training Program.
-Partial funding comes from the ERC Advanced Grant ``JETSET: Launching, propagation and
-emission of relativistic jets from binary mergers and across mass
-scales'' (Grant No. 884631), and the European Horizon Europe staff
-exchange (SE) programme HORIZON-MSCA2021-SE-01 Grant
+SJM receives support from the Australian Government Research Training
+Program. Partial funding comes from the ERC Advanced Grant ``JETSET:
+Launching, propagation and emission of relativistic jets from binary
+mergers and across mass scales'' (Grant No. 884631), and the European
+Horizon Europe staff exchange (SE) programme HORIZON-MSCA2021-SE-01 Grant
 No. NewFunFiCO-101086251. CE acknowledges support by the Deutsche
 Forschungsgemeinschaft (DFG, German Research Foundation) through the
 CRC-TR 211 ``Strong-interaction matter under extreme conditions''--
 project number 315477589 -- TRR 211. LR acknowledges the Walter Greiner
 Gesellschaft zur F\"orderung der physikalischen Grundlagenforschung
-e.V. through the Carl W. Fueck Laureatus Chair.
-We also acknowledge CPU time on OzSTAR, funded by Swinburne University and
-the Australian Government.
+e.V. through the Carl W. Fueck Laureatus Chair. We also acknowledge CPU
+time on OzSTAR, funded by Swinburne University and the Australian
+Government.
 
 %------------------------------------------------------------------------
 \section*{Data Availability}
