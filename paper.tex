@@ -61,14 +61,14 @@
  $1.4\,M_\odot$ neutron star improve from $R_{1.4} =
  {12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $R_{1.4} =
  12.11^{+0.91}_{-1.11}\,{\rm km}$ and those on the tidal deformability
- from $\tilde{\Lambda}_{1.186} < 720$ to $226 \leq
- \tilde{\Lambda}_{1.186} \leq 690$. (90\% confidence intervals). We also
- show these priors can be used to perform model selection between binary
- neutron star and neutron star-black hole mergers; in the case of
- GW190425, the results are inconclusive with a Bayes factor of $1.33$ in
- favour of the binary neutron star merger hypothesis, representing only
- marginal evidence. We advocate for these physics-inspired priors to be
- used as standard in the literature, and provide open-source code for
+ from $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.1186} =
+ 384^{+306}_{-158}$. (90\% confidence intervals). We also show these
+ priors can be used to perform model selection between binary neutron
+ star and neutron star-black hole mergers; in the case of GW190425, the
+ results are inconclusive with a Bayes factor of $1.33$ in favour of the
+ binary neutron star merger hypothesis, representing only marginal
+ evidence. We advocate for these physics-inspired priors to be used as
+ standard in the literature, and provide open-source code for
  reproducibility and further adaptation of the method.
 \end{abstract}
 	
@@ -89,14 +89,6 @@ MeV~\citep[see, e.g.,][for reviews]{Baiotti2016,
 inaccessible to terrestrial experiments and also to ab initio
 calculations due to the infamous fermionic sign problem, which prevents
 direct quantum Chromodynamics (QCD) solutions on the lattice.
-
-%The major challenge lies in extracting information about the EOS at such
-%densities from the GW signal of these events.
-
-%When performing astrophyiscal GW inference of binary neutron star
-%mergers~\citep[e.g.,][]{abbott17_170817observation, abbott18_170817EOS,
-%abbott19_170817Properties,abbott20_190425}, it is common to use
-%`agnostic' priors on their GW observables.
 
 A common approach to astrophysical GW inference is to use agnostic priors
 for some GW observables. For example, analyses of the first two observed
@@ -319,10 +311,6 @@ parameter would not add significantly to parameter estimation in the
 relatively low signal-to-noise regime. We therefore leave exploration of
 physically-motivated priors on $\delta\tilde{\Lambda}$ for future work.
 	
-	
-%% %------------------------------------------------------------------------
-%% \subsection{Neutron-star--black-hole mergers}
-%% %------------------------------------------------------------------------
 
 What discussed so far refers to BNS mergers and the corresponding
 parameterisation does not go to large enough chirp-mass values. Hence, in
@@ -335,13 +323,10 @@ those informed by state-of-the-art binary population synthesis
 \citep[e.g.,][]{2021Broekgaarden+}. In practice, we have decided to use
 here a uniformly-distributed mass-ratio prior as we have found that our
 results do not depend significantly on the choice made for prior
-distribution on mass ratios.
-%
- %% (see discussion in Appendix~\ref{sec:NSBH generation})
-%
-Finally, also for NSBHs we choose to work with priors in $\mathcal{M}\!-
-\!\tilde{\Lambda}$, enforcing $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$
-where $\Lambda_2$ is the tidal deformability of the neutron star.
+distribution on mass ratios. Finally, also for NSBHs we choose to work
+with priors in $\mathcal{M}\!- \!\tilde{\Lambda}$, enforcing
+$\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal
+deformability of the neutron star.
 
 %------------------------------------------------------------------------
 \subsection{Parameter estimation}
@@ -429,7 +414,7 @@ $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
     posterior distributions in pressure--density space, while the bottom
     panel shows the reconstructed mass--radius curves. The shaded regions
     show the 90\% credible intervals of the posterior distributions
-    obtained from the analysis using the physics inspired priors (teal)
+    obtained from the analysis using the physics-inspired priors (teal)
     and uniform priors (orange). The dashed curves show the 90\% credible
     intervals of the effective priors, whilst the grey curve shows the
     90\% credible interval of the true distribution used to generate the
@@ -442,7 +427,7 @@ $\mathcal{M}\!-\!\tilde{\Lambda}$ relation on the reconstructed posterior
 distributions of the pressure and energy density (top panel) and of the
 mass and radius (bottom panel) relative to the GW170817 event. More
 specifically, the shaded regions show the $90\%$ credible intervals for
-the posteriors samples obtained using the physics inspired priors (red)
+the posteriors samples obtained using the physics-inspired priors (red)
 and uniform priors (blue). In this way, we can improve the constraints on
 the radius of a $1.4\,M_\odot$ neutron star from the values provided by
 LVK $R_{1.4} = {12.54^{+1.05}_{-1.54}}\,{\rm km}$ \lr{please use a
@@ -464,8 +449,6 @@ with the spectral parameterisation.
   \label{fig:GW190425_tides}
 \end{figure}
 
-% log Z_BNS = -576535.277281933
-% log Z_NSBH = -576535.5652987232
 Figure \ref{fig:GW190425_tides} offers a complementary view to
 Fig.~\ref{fig:GW170817_tides} and shows the posterior distribution of the
 intrinsic tidal parameter of GW190425 when analyzed using both the BNS
@@ -493,16 +476,13 @@ Fig.~\ref{fig:GW170817_massradius}, but contrasting BNS and NSBH mergers
 interpretations for the GW190425 event. Hence, it shows the
 reconstructed pressure--density (top) and mass--radius (bottom)
 posteriors of GW190425. The EOS $90\%$ credible intervals of posteriors
-obtained using the BNS physics inspired prior are shown in red, while the
+obtained using the BNS physics-inspired prior are shown in red, while the
 NSBH posteriors are shown in green. Once again, the dashed curve
 represents our effective prior on the EOS. Overall, we find that the
 posterior distributions constrain $R_{1.4} = 12.69^{+1.24}_{-1.22} \,
 {\rm km}$ using the BNS prior and $R_{1.4} = 12.06^{+1.44}_{-1.15} \,
 {\rm km}$ using the NSBH prior.
 	
-%-->
-\lr{up to here}
-
 
 \begin{figure}
   \centering
@@ -513,7 +493,7 @@ posterior distributions constrain $R_{1.4} = 12.69^{+1.24}_{-1.22} \,
     posterior distributions in pressure--density space, while the bottom
     panel shows the reconstructed mass--radius curves. The shaded regions
     show the 90\% credible intervals of the posterior distributions
-    obtained from the analysis using the physics inspired BNS priors
+    obtained from the analysis using the physics-inspired BNS priors
     (teal) and the NSBH prior (orange). The black dashed curve shows the
     90\% credible intervals of the effective priors, whilst the grey
     curve shows the 90\% credible interval of the true distribution used
@@ -525,31 +505,40 @@ posterior distributions constrain $R_{1.4} = 12.69^{+1.24}_{-1.22} \,
 \section{Conclusions}
 %========================================================================
 
-We have constructed new physics inspired priors for the analysis of GW
+
+\lr{This section is still incomplete; will someone complete it or should
+  I do it?}\\
+
+%-->
+\lr{up to here}
+
+We have constructed new physics-inspired priors for the analysis of GW
 strain data of BNS mergers. Analysis of the neutron star mergers GW170817
 and GW190425 with our priors, constrains the effective
-tidal-deformability of GW170817 to $\tilde{\Lambda} = 384^{+306}_{-158}$
-and GW190425 to $\tilde{\Lambda} = 183^{+180}_{-100}$. Corresponding to a
-37\%, and 80\% decrease in the width of 90\% credible interval
-respectively when compared to uniform priors. Performing EOS inference,
-we find that the radius of a $1.4 M_\odot$ neutron star can be
-constrained to $12.11^{+0.91}_{-1.11}\,{\rm km}$ at a 90\% credible
-interval. \red{Which suggests a preference for softer/stiffer equations
-  of state ...}
+tidal-deformability of GW170817 to $\tilde{\Lambda}_{1.1186} =
+384^{+306}_{-158}$ and GW190425 to $\tilde{\Lambda} =
+183^{+180}_{-100}$. Corresponding to a 37\%, and 80\% decrease in the
+width of 90\% credible interval respectively when compared to uniform
+priors. Performing EOS inference, we find that the radius of a $1.4
+M_\odot$ neutron star can be constrained to $12.11^{+0.91}_{-1.11}\,{\rm
+  km}$ at a 90\% credible interval. \red{Which suggests a preference for
+  softer/stiffer equations of state ...}
 	
 
-Model selection between a BNS and NSBH origin on
-GW190425, yields marginal support for a BNS origin. However, such a
-result is not unexpected given the low signal to noise of the event and
-lack of significant tidal measurements.
-	
+Model selection between a BNS and NSBH origin on GW190425, yields
+marginal support for a BNS origin. However, such a result is not
+unexpected given the low signal to noise of the event and lack of
+significant tidal measurements.
 
 In this work, we have constructed priors using binaries containing
 neutron stars with low spins ($\chi \leq 0.05$) only. However, analysis
 by the LVK typically involves both galactic ``low-spin'' and
 ``high-spin'' ($\chi \leq 0.89$) priors. We leave the development of
 ``high-spin'' BNS and NSBH priors to future
-work. \appendix
+work.
+
+
+\appendix
 	
 %========================================================================
 \section{Model Selection}
@@ -557,13 +546,13 @@ work. \appendix
 %========================================================================
 
 We perform parameter estimation of gravitational-wave strain data using
-the \texttt{dynesty} nested sampler. Unlike standard Markov-chain-MonteCarlo (MCMC) samplers,
-\texttt{dynesty} calculates the evidence for each parameter estimation
-run. To perform Bayesian model selection between BNS and NSBH mergers, we
-calculate the Bayes factor
+the \texttt{dynesty} nested sampler. Unlike standard
+Markov-chain-MonteCarlo (MCMC) samplers, \texttt{dynesty} calculates the
+evidence for each parameter estimation run. To perform Bayesian model
+selection between BNS and NSBH mergers, we calculate the Bayes factor
 %
 \begin{equation}
-  \rm BF^{^{\rm BNS}}_{_{\rm NSBH}} = \frac{\mathcal{Z_{_{\rm
+  \mathcal{BF}^{^{\rm BNS}}_{_{\rm NSBH}} = \frac{\mathcal{Z_{_{\rm
           BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}}\,,
 \end{equation}
 %
