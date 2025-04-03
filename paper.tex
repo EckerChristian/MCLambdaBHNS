@@ -132,26 +132,10 @@ $1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,
 {\rm km}$ when using uniform priors~\citep[see also][for some of the
   first alternative estimates]{Most2018,Capano2020} to ${R_{1.4}} =
 12.11^{+0.91}_{-1.11} \, {\rm km}$ with our physics-inspired priors.
-%% \lr{where do these estimates come from? A reference is needed}
-%%   \SM{These estimates come from calculating a posterior on equation of
-%%   state parameters, using the offical LVK posterior samples. I've
-%%   added some clariying sentences.}  \pdl{The abstract quotes the above
-%%   numbers as for GW170817 and GW190425, but here is it only GW170817
-%%   -- please check.}
 For GW190425, the effective tidal deformability improves from
 $\tilde{\Lambda} = 381^{+1065}_{-271}$ to $\tilde{\Lambda} =
 183^{+180}_{-100}$, a fractional improvement of \red{XXX} on the 90\%
 uncertainties.
-
-%% \lr{are these the most stringent constraints? If so, we should mention
-%%    it} \SM{I don't believe so, Biswas and Rosswog have $R_{1.4} =
-%%    12.5^{+0.3}_{-0.3}$ but this involves also modeling the NS
-%%    population. \lr{we need to be careful here as there are dozens of
-%%    papers that deal with such estimates. One of the most cited ones is
-%%    Most+~\cite{Most2018}. My suggestion is to report only the LVK
-%%    estimates and to compare with those}
-
-%\SM{Do we constrain GW190425 relative to the BNS prior?}
 
 In addition to astrophysical inference, we show that these priors can be
 used to perform model selection, and hence distinguish between GW-source
@@ -271,14 +255,6 @@ where $M_{\rm NS}$ and $\Lambda_{\rm NS}$ are the neutron-star mass and
 tidal deformability, respectively, and $M_{\rm BH}$ is the black-hole
 mass. The expressions for the chirp mass and mass ratio are the same,
 with the understanding that $M_2=M_{\rm NS}$ and $M_1=M_{\rm BH}$. 
-%% \lr{We haven't reported the analytic expressions for the upper and
-%%   lower limits; I think we should as this allows everyone to use these
-%%   distributions. In the case of NSBH these would actually be new
-%%   expressions} \CE{Indeed, we can report fitting formulas for the
-%%   upper and lower bounds of $90\%$ CI of both distributions. Note that
-%%   we actually didn't report neither of these before, since we
-%%   previously imposed GW constrains, which we do not do here.  I'll add
-%%   these fitting formulas soon.} \lr{ok!}
 
 %------------------------------------------------------------------------
 \subsection{BNS and NSBH mergers}
@@ -291,7 +267,7 @@ using the \texttt{conditional\_prior} function, interpolating a
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
 $\tilde{\Lambda}$. The $90\%$ propability contours (dashed black lines) can 
 be fitted by a simple power law 
-\begin{equation}
+\begin{equation}\label{eq:fit}
 	\tilde\Lambda_{{\rm min}(\rm max)}=a + b \,(\mathcal{M}_{\rm chirp})^c\,,
 \end{equation}
 where the fitting coefficients are $a=-57\,(-23)$, $b=583\,(2690)$ and
@@ -300,18 +276,22 @@ $c=-6.6\,(-4.9)$ for the BHNS case. For comparison we also show contours
 for $a=-41\,(-0.55)$, $b=539\,(2091)$ and $c=-4.5\,(-5.5)$ (dashed gray
 lines) corresponding to a prior in which the constraint on the tidal
 deformability from the GW170817 event, i.e., $\tilde{\Lambda} < 720$, is
-imposed; this corresponds to what done in~\citet{altiparmak22}.
+imposed; this corresponds to the analysis in~\citet{altiparmak22}.
 
 \begin{figure}
   \centering
   \includegraphics[width=1.\linewidth]{Fig_1_Physics_priors.pdf}
   \caption{Coupled priors for the source-frame chirp mass $\mathcal{M}$
     and dimensionless tidal deformability $\tilde{\Lambda}$. Top: prior
-    for BNS mergers. Bottom: prior for NSBH mergers. The horizontal grey
-    bands are the 90\% credible intervals for the measured chirp masses
-    of GW170817~\citep{abbott17_170817observation},
-    GW190425~\citep{abbott20_190425}, GW200115~\citep{GW200115} and
-	GW230529~\citep{GW230529}.}
+    for BNS mergers. Bottom: prior for NSBH mergers. 
+    Dashed black lines indicate the $90\%$ contours of the distribution 
+    given in Eq.~\ref{eq:fit}.
+    For comparison, the upper panel also shows the corresponding contour 
+    obtained by imposing the GW170817 constraint on the prior,
+    following~\citep{Altiparmak:2022}. Horizontal red bands represent 
+    the $90\%$ credible intervals for the measured chirp masses of 
+    GW170817~\citep{abbott17_170817observation}, GW190425~\citep{abbott20_190425}, 
+    GW200115~\citep{GW200115}, and GW230529~\citep{GW230529}.}
   \label{fig:priors}
 \end{figure}
 	
@@ -329,13 +309,6 @@ scenarios~\citep[e.g.,][]{}, however we choose here to do use the common
 approach instead \pdl{Are there references for this? If not, I suggest we
   just delete this footnote.}}. The choice of a lower limit of $q=0.125$
 is due to waveform limitations and is not astrophysically motivated.
-
-%% \lr{is this range for BNS \textit{and} NSBH? The lower limit is very
-%%   small for BNS and I think it is unreasonable to expect $q \lesssim
-%%   0.3$} \SM{This is really just to replicate the standard LVK
-%%   analysis, which is done as agnostically as possible.  i.e not
-%%   astrophysically motivated. The lower limit of $q=0.125$ is a limit
-%%   of the IMRPhenom waveform used.}
 
 Furthermore, while both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are
 related to the EOS, we only impose a prior here on $\tilde{\Lambda}$, as
@@ -399,9 +372,8 @@ effective tidal deformability by performing an EOS inference on the
 posterior samples of mass and tidal deformability. We utilise a
 four-piece spectral parameterisation~\citep{Lindblom2010} stitched to an
 SLy~\citep{2001_SLy_EOS} crust at low densities (further details can be
-found in Appendix~\ref{sec:EOS_inference}). \lr{note important caveat in
-  the paragraph below!}  We should remark that the choice of adopting an
-approach for the EOS inference (i.e., four-piece spectral
+found in Appendix~\ref{sec:EOS_inference}). We should remark that the choice 
+of adopting an approach for the EOS inference (i.e., four-piece spectral
 parameterisation) that is different from that used in the EOS
 construction (i.e., seven-segment sound-speed parameterisation) follows a
 precise logic. In particular, this has the advantage that it is possible
@@ -420,14 +392,14 @@ inference in future work.
 	
 Figure \ref{fig:GW170817_tides} shows the posterior distributions of the
 tidal deformability of GW170817 analyzed using the physics-inspired BNS
-(black), the publicly-released uniform priors from the LIGO-Virgo-KAGRA
+(red), the publicly-released uniform priors from the LIGO-Virgo-KAGRA
 collaboration~\citep[blue;][]{abbott17_170817observation}, and the
-marginalised prior for $\tilde{\Lambda}$ (red).  While we show only the
+marginalised prior for $\tilde{\Lambda}$ (black).  While we show only the
 tidal posteriors, we sample over all binary parameters. Posterior
 distributions for all other binary parameters, including the chirp mass
 and mass ratio, are identical. Note that, as expected, the marginalised
 posterior is not significantly different at large tidal deformabilities
-(compare blue and red lines), but shows significant changes at small
+(compare blue and black lines), but shows significant changes at small
 values of $\tilde{\Lambda}$, essentially excluding values
 $\tilde{\Lambda} \lesssim 200$. As a result, the $90\%$ lower and upper
 limits on the tidal deformability are now set to $226 \leq
@@ -441,9 +413,9 @@ $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
   \caption{Marginalised posterior distributions of the tidal
     deformability $\tilde{\Lambda}$ obtained from Bayesian parameter
     estimation for GW170817. The posterior using a nuclear, microphysics,
-    and astrophysics inspired prior is shown in black, while the posterior
+    and astrophysics inspired prior is shown in red, while the posterior
     using uniform priors from the LIGO-Virgo-KAGRA collaboration is shown
-    in blue. We show the (marginalised) prior with the light red curve. Note, the posterior samples from the LVK show support up
+    in blue. We show the (marginalised) prior with the black curve. Note, the posterior samples from the LVK show support up
     to $\tilde{\Lambda}$ = 2000.}
   \label{fig:GW170817_tides}
 \end{figure}	
@@ -484,16 +456,6 @@ can be constrained to $12.11^{+0.91}_{-1.11} \, {\rm km}$.
     intervals of the effective priors, whilst the grey curve shows the
     90\% credible interval of the true distribution used to generate the
     priors.}
-    %% \pdl{bigger labels on everything. And let's discuss colour
-      %% choices.}\CE{I suggest to show here only the comparison of the
-      %% physics informed vs. uninformed posteriors. I assume the
-      %% Altiparmak+ curves are the posteriors of our old paper which
-      %% also includes the GW constraint.  Showing them together would
-      %% open a can of worms, namely that we don't use the same
-      %% parametrization for prior and posterior EOS.} \lr{I agree; we
-      %% don't need to compare with Altiparmak at least in the main text;
-      %% I will revise the figures; we can make a comparison in the
-      %% appendix if we fancy}}
     \label{fig:GW170817_massradius}
 \end{figure}
 
