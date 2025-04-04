@@ -120,7 +120,12 @@ from the GW observation of GW170817 from $\tilde{\Lambda} =
 intervals are $90\%$ throughout). We infer a posterior on the EOS, and
 find that the neutron-star radius measurement of an equivalent
 $1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,
-{\rm km}$ \lr{please use a precise reference here} when using uniform
+{\rm km}$ \SM{This is probably closest to the \citep{abbott18_170817EOS} paper.
+ Unfortunately they don't quote a $R_{1.4}$ value, and instead give $R_1$ and $R_2$.
+ I've obtained the results quoted here from passing the LVK posterior samples~\citep{abbott19_170817Properties} 
+ and the physics inspired posterior samples into a spectral EOS inference pipeline.
+ We could quote a $R_1 \approx R_{1.4}$ in which case $R_{1.4} =11.9^{+1.4}_{-1.4} \  \rm{km} $,
+ but it's a stronger argument if we show the improvement between physics and uniform with exactly the same pipeline. } when using uniform
 priors~\citep[see also][for some of the first alternative
   estimates]{Most2018,Capano2020} to ${R_{1.4}} = 12.11^{+0.91}_{-1.11}
 \, {\rm km}$ with our physics-inspired priors. For GW190425, the
@@ -430,8 +435,7 @@ specifically, the shaded regions show the $90\%$ credible intervals for
 the posteriors samples obtained using the physics-inspired priors (red)
 and uniform priors (blue). In this way, we can improve the constraints on
 the radius of a $1.4\,M_\odot$ neutron star from the values provided by
-LVK $R_{1.4} = {12.54^{+1.05}_{-1.54}}\,{\rm km}$ \lr{please use a
-  precise reference here} to $R_{1.4} = 12.11^{+0.91}_{-1.11}\,{\rm
+LVK $R_{1.4} = {12.54^{+1.05}_{-1.54}}\,{\rm km}$ \SM{See comment in intro.} to $R_{1.4} = 12.11^{+0.91}_{-1.11}\,{\rm
   km}$. The dashed lines in Fig.~\ref{fig:GW170817_massradius} represent
 instead the $90\%$ credible intervals of the effective priors on the
 physics-informed prior (red) and on the uniform prior (blue) when sampled
@@ -517,7 +521,7 @@ strain data of BNS mergers. Analysis of the neutron star mergers GW170817
 and GW190425 with our priors, constrains the effective
 tidal-deformability of GW170817 to $\tilde{\Lambda}_{1.1186} =
 384^{+306}_{-158}$ and GW190425 to $\tilde{\Lambda} =
-183^{+180}_{-100}$. Corresponding to a 37\%, and 80\% decrease in the
+183^{+180}_{-100}$. Corresponding to a \red{XX}\%, and \red{XX}\% decrease in the
 width of 90\% credible interval respectively when compared to uniform
 priors. Performing EOS inference, we find that the radius of a $1.4
 M_\odot$ neutron star can be constrained to $12.11^{+0.91}_{-1.11}\,{\rm
@@ -700,7 +704,10 @@ Government.
 %------------------------------------------------------------------------
 \section*{Data Availability}
 %------------------------------------------------------------------------
-\lr{Here we can add information about the code repository on github}
+The implementation of our physics inspired priors into the \texttt{bilby} Bayesian inference library,
+ along with doccumentation and example scripts can be found at \url{https://github.com/spencermagnall/physics\_informed\_priors}. 
+ \SM{This is an older repo that currently has a minimal example, that hasn't be properly tested.
+ I'll work on making a well-tested, well-documented fully reproducibile BNS and NSBH examples available here soon.  }
 
 \bibliography{references}{}
 \bibliographystyle{aasjournal}
