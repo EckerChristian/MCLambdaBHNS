@@ -62,17 +62,16 @@
  {12.54^{+1.05}_{-1.54}} \, {\rm km}$ to $R_{1.4} = 12.11^{+0.91}_{-1.11}
  \,{\rm km}$ and those on the tidal deformability from
  $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.186} =
-384^{+306}_{-158}$ (90\% confidence intervals) at 
-the events measured chirp mass $\mathcal{M}=1.186\,M_\odot$. We also show these
- priors can be used to perform model selection between binary neutron
- star and neutron star-black hole mergers; in the case of GW190425, the
- results are inconclusive with a Bayes factor $\mathcal{BF}=1.33$ in
- favour of the binary neutron star merger hypothesis, representing only
- marginal evidence. Given their ability to improve the parameter
- estimation of gravitational-wave events involving neutron stars, we
- advocate for these physics-inspired priors to be used as standard in the
- literature, and provide open-source code for reproducibility and further
- adaptation of the method.
+ 384^{+306}_{-158}$ (90\% confidence intervals) at the events measured
+ chirp mass $\mathcal{M}=1.186\,M_\odot$. We also show these priors can
+ be used to perform model selection between binary neutron star and
+ neutron star-black hole mergers; in the case of GW190425, the results
+ provide only marginal evidence with a Bayes factor $\mathcal{BF}=1.33$
+ in favour of the binary neutron star merger hypothesis. Given their
+ ability to improve the parameter estimation of binary mergers involving
+ neutron stars, we advocate for these physics-inspired priors to be used
+ as standard in the literature, and provide open-source code for
+ reproducibility and further adaptation of the method.
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
@@ -130,22 +129,12 @@ pipeline~\citep[see also][for some of the first estimates made after the
   GW170817 event]{Most2018,Capano2020} -- to ${R_{1.4}} =
 12.11^{+0.91}_{-1.11} \, {\rm km}$ -- as obtained with our
 physics-inspired priors
-%, a fractional improvement of \red{XXX} on the 90\% uncertainties. 
+%, a fractional improvement of \red{XXX} on the $90\%$ uncertainties. 
 Similarly, for GW190425, the effective tidal
 deformability improves from $\tilde{\Lambda} = 381^{+1065}_{-271}$ to
 $\tilde{\Lambda} = 183^{+180}_{-100}$.
-%, a fractional improvement of \red{XXX} on the 90\% uncertainties.
+%, a fractional improvement of \red{XXX} on the $90\%$ uncertainties.
 
-
-%% \SM{This is probably closest to the \citep{abbott18_170817EOS} paper.
-%%   Unfortunately they don't quote a $R_{1.4}$ value, and instead give
-%%   $R_1$ and $R_2$.  I've obtained the results quoted here from passing
-%%   the LVK posterior samples~\citep{abbott19_170817Properties} and the
-%%   physics inspired posterior samples into a spectral EOS inference
-%%   pipeline.  We could quote a $R_1 \approx R_{1.4}$ in which case
-%%   $R_{1.4} =11.9^{+1.4}_{-1.4} \ \rm{km} $, but it's a stronger
-%%   argument if we show the improvement between physics and uniform with
-%%   exactly the same pipeline. }
 
 In addition to astrophysical inference, we show that these priors can be
 used to perform model selection, and hence distinguish between GW-source
@@ -257,14 +246,13 @@ The tidal deformability of a black hole is zero $\Lambda_{\rm BH}=0$,
 implying the total tidal deformability for a NSBH binary is
 %
 \begin{equation} 
- \tilde{\Lambda}_{{\rm NSBH}} := \frac{16}{13} \frac{ (12M_{1} + M_{2}) M_{2}^4 \Lambda_{2}}{(M_{2} + M_{1})^5}\,,
+ \tilde{\Lambda}_{{\rm NSBH}} := \frac{16}{13} \frac{ (12M_{1} + M_{2})
+   M_{2}^4 \Lambda_{2}}{(M_{2} + M_{1})^5}\,,
  \end{equation}
 %
 where $M_{2}$ and $\Lambda_{2}$ are the neutron-star mass and
 tidal deformability, respectively, and $M_{1}$ is the black-hole
 mass. 
-%The expressions for the chirp mass and mass ratio are the same,
-%with the understanding that $M_2=M_{\rm NS}$ and $M_1=M_{\rm BH}$. 
 
 %------------------------------------------------------------------------
 \subsection{BNS and NSBH mergers}
@@ -279,7 +267,7 @@ $\tilde{\Lambda}$. The $90\%$ probability contours (dashed black lines) can
 be fitted by a simple power law 
 %
 \begin{equation}\label{eq:fit}
-	\tilde\Lambda_{{\rm min}(\rm max)}=a + b \,\mathcal{M}^c\,,
+  \tilde\Lambda_{{\rm min}(\rm max)}=a + b \,\mathcal{M}^c\,,
 \end{equation}
 %
 where the fitting coefficients are $a=-57\,(-23)$, $b=583\,(2690)$ and
@@ -288,20 +276,23 @@ $c=-6.6\,(-4.9)$ for the BHNS case. For comparison we also show contours
 for $a=-41\,(-0.55)$, $b=539\,(2091)$ and $c=-4.5\,(-5.5)$ (dashed grey
 lines) corresponding to a prior in which the constraint on the tidal
 deformability from the GW170817 event, i.e., $\tilde{\Lambda} < 720$, is
-imposed; this corresponds to the analysis in~\citet{altiparmak22}.
+imposed; this corresponds to the analysis in~\citet{altiparmak22} and
+highlights that while the estimate of $\tilde\Lambda_{\rm min}$ is hardly
+affected, that for $\tilde\Lambda_{\rm max}$ is significantly smaller.
 
 \begin{figure}
   \centering
   \includegraphics[width=1.\linewidth]{Fig_1_Physics_priors.pdf}
-  \caption{Coupled priors for the source-frame chirp mass $\mathcal{M}$
-    and dimensionless tidal deformability $\tilde{\Lambda}$. Top: prior
-    for BNS mergers. Bottom: prior for NSBH mergers. Dashed black lines
-    indicate the $90\%$ contours of the distribution given in
-    Eq.~\ref{eq:fit}. For comparison, the upper panel also shows the
-    corresponding contour obtained by imposing the GW170817 constraint on
-    the prior, following~\citep{Altiparmak:2022}. Horizontal red bands
-    represent the $90\%$ credible intervals for the measured chirp masses
-    of GW170817~\citep{abbott17_170817observation},
+  \caption{Priors for the source-frame chirp mass $\mathcal{M}$ and the
+    dimensionless tidal deformability $\tilde{\Lambda}$ in the case of
+    BNSs (top panel) or NSBH binaries (bottom panel). In both panels,
+    dashed black lines indicate analytic fits to the $90\%$ contours of
+    the distribution given in Eq.~\ref{eq:fit}, while the dashed grey
+    lines are the corresponding fits obtained when imposing the GW170817
+    constraint on the prior,
+    following~\citep{Altiparmak:2022}. Horizontal red bands represent the
+    $90\%$ credible intervals for the measured chirp masses of
+    GW170817~\citep{abbott17_170817observation},
     GW190425~\citep{abbott20_190425}, GW200115~\citep{GW200115}, and
     GW230529~\citep{GW230529}.}
   \label{fig:priors}
@@ -355,12 +346,11 @@ deformability of the neutron star.
   \includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
   \caption{Marginalised posterior distributions of the tidal
     deformability $\tilde{\Lambda}$ obtained from Bayesian parameter
-    estimation for GW170817. The posterior using a nuclear, microphysics,
-    and astrophysics inspired prior is shown in red, while the posterior
-    using uniform priors from the LVK collaboration is shown in blue. We
-    show the (marginalised) prior with the black curve. Note, the
-    posterior samples from the LVK show support up to $\tilde{\Lambda}$ =
-    2000.}
+    estimation for GW170817. The posterior using a physics-informed prior
+    is shown in red, while the posterior using uniform priors from the
+    LVK is shown in blue; we show the (marginalised) prior with the black
+    curve. Note that the posterior from the LVK show support up to
+    $\tilde{\Lambda} = 2000$.}
   \label{fig:GW170817_tides}
 \end{figure}	
 
@@ -426,17 +416,15 @@ $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{GW170817_press_dens_MR.pdf}
-  \caption{Posterior distributions of the cold nuclear EOS from analysis
-    of GW170817 using the spectral
-    parameterisation~\citep{Lindblom2010}. The top panel shows the
-    posterior distributions in pressure--density space, while the bottom
-    panel shows the reconstructed mass--radius curves. The shaded regions
-    show the 90\% credible intervals of the posterior distributions
-    obtained from the analysis using the physics-inspired priors (teal)
-    and uniform priors (orange). The dashed curves show the 90\% credible
-    intervals of the effective priors, whilst the grey curve shows the
-    90\% credible interval of the true distribution used to generate the
-    priors.}
+  \caption{Posterior distributions of the range of pressures and energy
+    densities for a nuclear-matter EOS (top panel) and of the
+    corresponding masses and radii (bottom panel) in the case of
+    GW170817. In both panels, the shaded regions show the $90\%$ credible
+    intervals of the posterior distributions obtained using the
+    physics-inspired priors (red) or the uniform priors (blue), while the
+    dashed curves show the $90\%$ credible intervals of the effective
+    priors. \lr{is there a better name for ``effective priors''? These
+      are all effective priors}}
     \label{fig:GW170817_massradius}
 \end{figure}
 
@@ -458,12 +446,11 @@ parameterisation.
 \begin{figure}
   \centering
   \includegraphics[width=1.\linewidth]{Fig_3_GW190425_lambda_tilde_posteriors.pdf}
-  \caption{The posterior distributions of the tidal deformability
-    $\tilde{\Lambda}$ obtained from Bayesian parameter estimation for
-    GW190425. The posterior using a nuclear, microphysics, and
-    astrophysics inspired BNS prior is shown in red, and the
-    corresponding posterior using the NSBH prior is shown in green. The
-    posterior using uniform priors from the LVK is shown in blue.}
+  \caption{The same as in Fig.~\ref{fig:GW170817_tides} but for the
+    GW190425 event. The posterior using a physics-informed prior for BNS
+    mergers is shown in red, while the posterior for NSBH mergers is
+    shown in green. The posterior using uniform priors from the LVK is
+    reported in blue.}
   \label{fig:GW190425_tides}
 \end{figure}
 
@@ -505,17 +492,15 @@ posterior distributions constrain $R_{1.4} = 12.69^{+1.24}_{-1.22} \,
 \begin{figure}
   \centering
   \includegraphics[width=\linewidth]{GW190425_press_dens_MR.pdf}
-  \caption{Posterior distributions of the cold nuclear EOS from analysis
-    of GW190425 using the spectral
-    parameterisation~\citep{Lindblom2010}. The top panel shows the
-    posterior distributions in pressure--density space, while the bottom
-    panel shows the reconstructed mass--radius curves. The shaded regions
-    show the 90\% credible intervals of the posterior distributions
-    obtained from the analysis using the physics-inspired BNS priors
-    (teal) and the NSBH prior (orange). The black dashed curve shows the
-    90\% credible intervals of the effective priors, whilst the grey
-    curve shows the 90\% credible interval of the true distribution used
-	to generate the priors.}
+  \caption{The same as in Fig.~\ref{fig:GW170817_massradius} but for the
+    GW190425 event. The top panel shows the posterior distributions in
+    pressure--density space, while the bottom panel shows the
+    reconstructed mass--radius curves. The shaded regions show the $90\%$
+    credible intervals of the posterior distributions obtained from the
+    analysis using the physics-inspired BNS priors (red) and the NSBH
+    prior (green). The black dashed curve shows the $90\%$ credible
+    intervals of the effective priors. \lr{is there a better name for
+      ``effective priors''? These are all effective priors}}
   \label{fig:GW190425_massradius_BNS}
 \end{figure}
 
@@ -580,26 +565,6 @@ extensions in future work.
 
 %-->
 \lr{up to here}
-
-%% We have constructed new physics-inspired priors for the analysis of GW
-%% strain data of BNS mergers. Analysis of the neutron star mergers
-%% GW170817 and GW190425 with our priors, constrains the effective
-%% tidal-deformability of GW170817 to $\tilde{\Lambda}_{1.186} =
-%% 384^{+306}_{-158}$ and GW190425 to $\tilde{\Lambda} =
-%% 183^{+180}_{-100}$. Corresponding to a \red{XX}\%, and \red{XX}\%
-%% decrease in the width of 90\% credible interval respectively when
-%% compared to uniform priors. Performing EOS inference, we find that the
-%% radius of a $1.4 M_\odot$ neutron star can be constrained to
-%% $12.11^{+0.91}_{-1.11}\,{\rm km}$ at a 90\% credible
-%% interval. \red{Which suggests a preference for softer/stiffer
-%% equations of state ...}
-	
-
-%% Model selection between a BNS and NSBH origin on GW190425, yields
-%% marginal support for a BNS origin. However, such a result is not
-%% unexpected given the low signal to noise of the event and lack of
-%% significant tidal measurements.
-
 
 
 \appendix
@@ -769,9 +734,9 @@ Bayesian inference library, along with doccumentation and example scripts
 can be found at
 \url{https://github.com/spencermagnall/physics\_informed\_priors}.
 %% \SM{This is an older repo that currently has a minimal example, that
-%%   hasn't be properly tested.  I'll work on making a well-tested,
+%%   hasn't be properly tested. I'll work on making a well-tested,
 %%   well-documented fully reproducibile BNS and NSBH examples available
-%%   here soon.  }
+%%   here soon. }
 
 \bibliography{references}{}
 \bibliographystyle{aasjournal}
