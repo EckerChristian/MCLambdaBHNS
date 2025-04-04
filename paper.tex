@@ -52,7 +52,7 @@
  Gravitational-wave astronomy shows great promise in determining nuclear
  physics in a regime not accessible to terrestrial experiments. We
  introduce physics-inspired priors informed by nuclear theory and
- perturbative quantum chromodynamics calculations, as well as
+ perturbative Quantum Chromodynamics calculations, as well as
  astrophysical measurements of neutron-star masses and radii. When these
  priors are used in gravitational-wave astrophysical inference, we show a
  significant improvement on nuclear equation of state constraints.
@@ -67,9 +67,11 @@
  star and neutron star-black hole mergers; in the case of GW190425, the
  results are inconclusive with a Bayes factor of $1.33$ in favour of the
  binary neutron star merger hypothesis, representing only marginal
- evidence. We advocate for these physics-inspired priors to be used as
- standard in the literature, and provide open-source code for
- reproducibility and further adaptation of the method.
+ evidence. Given their ability to improve the parameter estimation of
+ gravitational-wave events involving neutron stars, we advocate for these
+ physics-inspired priors to be used as standard in the literature, and
+ provide open-source code for reproducibility and further adaptation of
+ the method.
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
@@ -88,7 +90,7 @@ MeV~\citep[see, e.g.,][for reviews]{Baiotti2016,
   Paschalidis2016,Radice2020b}. Such densities and temperatures are
 inaccessible to terrestrial experiments and also to ab initio
 calculations due to the infamous fermionic sign problem, which prevents
-direct quantum Chromodynamics (QCD) solutions on the lattice.
+direct Quantum Chromodynamics (QCD) solutions on the lattice.
 
 A common approach to astrophysical GW inference is to use agnostic priors
 for some GW observables. For example, analyses of the first two observed
@@ -120,18 +122,31 @@ from the GW observation of GW170817 from $\tilde{\Lambda} =
 intervals are $90\%$ throughout). We infer a posterior on the EOS, and
 find that the neutron-star radius measurement of an equivalent
 $1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,
-{\rm km}$ \SM{This is probably closest to the \citep{abbott18_170817EOS} paper.
- Unfortunately they don't quote a $R_{1.4}$ value, and instead give $R_1$ and $R_2$.
- I've obtained the results quoted here from passing the LVK posterior samples~\citep{abbott19_170817Properties} 
- and the physics inspired posterior samples into a spectral EOS inference pipeline.
- We could quote a $R_1 \approx R_{1.4}$ in which case $R_{1.4} =11.9^{+1.4}_{-1.4} \  \rm{km} $,
- but it's a stronger argument if we show the improvement between physics and uniform with exactly the same pipeline. } when using uniform
-priors~\citep[see also][for some of the first alternative
-  estimates]{Most2018,Capano2020} to ${R_{1.4}} = 12.11^{+0.91}_{-1.11}
-\, {\rm km}$ with our physics-inspired priors. For GW190425, the
-effective tidal deformability improves from $\tilde{\Lambda} =
-381^{+1065}_{-271}$ to $\tilde{\Lambda} = 183^{+180}_{-100}$, a
-fractional improvement of \red{XXX} on the 90\% uncertainties.
+{\rm km}$ -- as obtained when using the LVK posterior
+samples~\citep{abbott19_170817Properties} and the physics inspired
+posterior samples~\citep{altiparmak22} into a spectral EOS inference
+pipeline~\citep[see also][for some of the first estimates made after the
+  GW170817 event]{Most2018,Capano2020} -- to ${R_{1.4}} =
+12.11^{+0.91}_{-1.11} \, {\rm km}$ -- as obtained with our
+physics-inspired priors, a fractional improvement of \red{XXX} on the
+90\% uncertainties. Similarly, for GW190425, the effective tidal
+deformability improves from $\tilde{\Lambda} = 381^{+1065}_{-271}$ to
+$\tilde{\Lambda} = 183^{+180}_{-100}$, a fractional improvement of
+\red{XXX} on the 90\% uncertainties.
+
+
+%% \SM{This is probably closest to the \citep{abbott18_170817EOS} paper.
+%%   Unfortunately they don't quote a $R_{1.4}$ value, and instead give
+%%   $R_1$ and $R_2$.  I've obtained the results quoted here from passing
+%%   the LVK posterior samples~\citep{abbott19_170817Properties} and the
+%%   physics inspired posterior samples into a spectral EOS inference
+%%   pipeline.  We could quote a $R_1 \approx R_{1.4}$ in which case
+%%   $R_{1.4} =11.9^{+1.4}_{-1.4} \ \rm{km} $, but it's a stronger
+%%   argument if we show the improvement between physics and uniform with
+%%   exactly the same pipeline. }
+
+
+
 
 In addition to astrophysical inference, we show that these priors can be
 used to perform model selection, and hence distinguish between GW-source
