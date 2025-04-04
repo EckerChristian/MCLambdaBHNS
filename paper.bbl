@@ -59,6 +59,9 @@ Baiotti, L., \& Rezzolla, L. 2017, Rept. Prog. Phys., 80, 096901, \dodoi{10.1088
 \bibitem[{{Broekgaarden} {et~al.}(2021){Broekgaarden}, {Berger}, {Neijssel}, {Vigna-G{\'o}mez}, {Chattopadhyay}, {Stevenson}, {Chruslinska}, {Justham}, {de Mink}, \& {Mandel}}]{2021Broekgaarden+}
 {Broekgaarden}, F.~S., {Berger}, E., {Neijssel}, C.~J., {et~al.} 2021, \mnras, 508, 5028, \dodoi{10.1093/mnras/stab2716}
 
+\bibitem[{{Capano} {et~al.}(2020){Capano}, {Tews}, {Brown}, {Margalit}, {De}, {Kumar}, {Brown}, {Krishnan}, \& {Reddy}}]{Capano2020}
+{Capano}, C.~D., {Tews}, I., {Brown}, S.~M., {et~al.} 2020, Nature Astronomy, \dodoi{10.1038/s41550-020-1014-6}
+
 \bibitem[{{Cromartie} {et~al.}(2020){Cromartie}, {Fonseca}, {Ransom}, {Demorest}, {Arzoumanian}, {Blumer}, {Brook}, {DeCesar}, {Dolch}, {Ellis}, {Ferdman}, {Ferrara}, {Garver-Daniels}, {Gentile}, {Jones}, {Lam}, {Lorimer}, {Lynch}, {McLaughlin}, {Ng}, {Nice}, {Pennucci}, {Spiewak}, {Stairs}, {Stovall}, {Swiggum}, \& {Zhu}}]{Cromartie2019}
 {Cromartie}, H.~T., {Fonseca}, E., {Ransom}, S.~M., {et~al.} 2020, Nature Astronomy, 4, 72, \dodoi{10.1038/s41550-019-0880-2}
 
@@ -98,11 +101,17 @@ Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys. J.
 \bibitem[{{Miller} {et~al.}(2021){Miller}, {Lamb}, {Dittmann}, {Bogdanov}, {Arzoumanian}, {Gendreau}, {Guillot}, {Ho}, {Lattimer}, {Loewenstein}, {Morsink}, {Ray}, {Wolff}, {Baker}, {Cazeau}, {Manthripragada}, {Markwardt}, {Okajima}, {Pollard}, {Cognard}, {Cromartie}, {Fonseca}, {Guillemot}, {Kerr}, {Parthasarathy}, {Pennucci}, {Ransom}, \& {Stairs}}]{Miller2021}
 ---. 2021, Astrophys. J. Lett., 918, L28, \dodoi{10.3847/2041-8213/ac089b}
 
+\bibitem[{{Most} {et~al.}(2018){Most}, {Weih}, {Rezzolla}, \& {Schaffner-Bielich}}]{Most2018}
+{Most}, E.~R., {Weih}, L.~R., {Rezzolla}, L., \& {Schaffner-Bielich}, J. 2018, Phys. Rev. Lett., 120, 261103, \dodoi{10.1103/PhysRevLett.120.261103}
+
 \bibitem[{{Paschalidis}(2017)}]{Paschalidis2016}
 {Paschalidis}, V. 2017, Classical and Quantum Gravity, 34, 084002, \dodoi{10.1088/1361-6382/aa61ce}
 
 \bibitem[{{Planck Collaboration} {et~al.}(2020)}]{Planck}
 {Planck Collaboration}, {et~al.} 2020, \aap, 641, A6, \dodoi{10.1051/0004-6361/201833910}
+
+\bibitem[{{Radice} {et~al.}(2020){Radice}, {Bernuzzi}, \& {Perego}}]{Radice2020b}
+{Radice}, D., {Bernuzzi}, S., \& {Perego}, A. 2020, Annual Review of Nuclear and Particle Science, 70, 95, \dodoi{10.1146/annurev-nucl-013120-114541}
 
 \bibitem[{{Riley} {et~al.}(2019){Riley}, {Watts}, {Bogdanov}, {Ray}, {Ludlam}, {Guillot}, {Arzoumanian}, {Baker}, {Bilous}, {Chakrabarty}, {Gendreau}, {Harding}, {Ho}, {Lattimer}, {Morsink}, \& {Strohmayer}}]{Riley2019}
 {Riley}, T.~E., {Watts}, A.~L., {Bogdanov}, S., {et~al.} 2019, Astrophys. J. Lett., 887, L21, \dodoi{10.3847/2041-8213/ab481c}

@@ -838,11 +838,6 @@ INPUT ./GW190425_press_dens_MR.pdf
 INPUT GW190425_press_dens_MR.pdf
 INPUT ./GW190425_press_dens_MR.pdf
 INPUT ./GW190425_press_dens_MR.pdf
-INPUT ./NSBH_mass_ratio_density.pdf
-INPUT ./NSBH_mass_ratio_density.pdf
-INPUT NSBH_mass_ratio_density.pdf
-INPUT ./NSBH_mass_ratio_density.pdf
-INPUT ./NSBH_mass_ratio_density.pdf
 INPUT ./paper.bbl
 INPUT paper.bbl
 INPUT ./paper.bbl
