@@ -563,9 +563,6 @@ an electromagnetic counterpart~\citep{Bauswein2013, Koeppel2019,
   Tootle2021, Kashyap:2021wzs, Koelsch2021}. We plan to explore these
 extensions in future work.
 
-%-->
-\lr{up to here}
-
 
 \appendix
 	
@@ -574,11 +571,11 @@ extensions in future work.
 \label{sec:Model Selection}
 %========================================================================
 
-We perform parameter estimation of gravitational-wave strain data using
-the \texttt{dynesty} nested sampler. Unlike standard
-Markov-chain-MonteCarlo (MCMC) samplers, \texttt{dynesty} calculates the
-evidence for each parameter estimation run. To perform Bayesian model
-selection between BNS and NSBH mergers, we calculate the Bayes factor
+We perform parameter estimation of GW strain data using the
+\texttt{dynesty} nested sampler. Unlike standard Markov-chain-MonteCarlo
+(MCMC) samplers, \texttt{dynesty} calculates the evidence for each
+parameter estimation run. To perform Bayesian model selection between BNS
+and NSBH mergers, we calculate the Bayes factor
 %
 \begin{equation}
   \mathcal{BF}^{^{\rm BNS}}_{_{\rm NSBH}} = \frac{\mathcal{Z_{_{\rm
@@ -587,14 +584,8 @@ selection between BNS and NSBH mergers, we calculate the Bayes factor
 %
 where $\mathcal{Z}_{_{\rm BNS}}$ and $\mathcal{Z}_{_{\rm NSBH}}$ are the
 Bayesian evidences obtained for the parameter estimation runs using the
-BNS and NSBH priors respectively.
-%  In practice we compute the log Bayes factor
-% \begin{equation}
-% 	\log \ (\rm BF) = \log (Z_{_{\rm BNS}} ) - \log (Z_{_{\rm NSBH}}).
-% \end{equation} 
-
-Formally, for model selection we should be computing the odds ratio,
-which is defined as
+BNS and NSBH priors respectively. Formally, for model selection we should
+be computing the odds ratio, which is defined as
 %
 \begin{equation}
   \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} := \frac{\mathcal{Z_{_{\rm
@@ -634,24 +625,26 @@ Our likelihood reduces to
     \ dq \ d \tilde{\Lambda}\,.
 \end{equation}
 %
-Since we a dealing with a small number of events (i.e 1-2), we may ignore
-the modelling of overall neutron-star population parameters without
-introducing significant biases into the EOS inference (e.g
+Since we a dealing with a small number of events (i.e., $1-2$), we may
+ignore the modelling of overall neutron-star population parameters
+without introducing significant biases into the EOS inference (e.g.,
 \citealt{2015Agathos, 2020Wysocki, 2020Landry}). The marginalised
 likelihood transforms to
 %
 \begin{equation}
     p(d|\epsilon) = \int \ p(d|\mathcal{M},q,\tilde{\Lambda})
     \ \pi(\mathcal{M},q,\tilde{\Lambda}|\epsilon)\ d\mathcal{M} \ dq \ d
-    \tilde{\Lambda}\,,
+    \tilde{\Lambda}\,.
+    \label{eq:P_d_eps}
 \end{equation}
 
-We have two terms that need to be calculated; $\pi(\mathcal{M}, q,
-\tilde{\Lambda}|\epsilon)$ a prior on chirp mass, mass-ratio and
-$\tilde{\Lambda}$ for a given EOS $\epsilon$, and
-$p(d|\mathcal{M},q,\tilde{\Lambda})$ the likelihood. Typically, this
-likelihood would be obtained by reweighing posterior samples of parameter
-estimation runs
+In expression~\eqref{eq:P_d_eps} there are two terms that need to be
+calculated. The first one is $\pi(\mathcal{M}, q,
+\tilde{\Lambda}|\epsilon)$, that represents a prior on chirp mass,
+mass-ratio and $\tilde{\Lambda}$ for a given EOS $\epsilon$. The second
+one is the likelihood $p(d|\mathcal{M},q,\tilde{\Lambda})$. Typically,
+this likelihood would be obtained by reweighing posterior samples of
+parameter estimation runs
 %
 \begin{equation}
     p(d|\mathcal{M},q,\tilde{\Lambda}) =
@@ -661,7 +654,7 @@ estimation runs
 %
 however if we did this we would be removing any of our prior information
 from the posterior samples. Since our prior on $\tilde{\Lambda}$ and
-$\mathcal{M}$ is actually physical motivated, we set
+$\mathcal{M}$ is actually physically motivated, we set
 %
 \begin{equation}
     \pi_{\rm PE}(\mathcal{M},q,\tilde{\Lambda}) =
@@ -692,20 +685,21 @@ which simplifies the integral to
 \end{equation}
 %
 We note that we can also express the tidal deformability as a function of
-$\bar{\mathcal{M}}$, $q$ and $\epsilon$ which removes another dimension
-from our integration
+$\bar{\mathcal{M}}$, $q$ and $\epsilon$, which removes another dimension
+from our integration, namely,
+%
 \begin{equation}
         p(d|\epsilon) = \int
         p(q,\tilde{\Lambda}(\bar{\mathcal{M}},q,\epsilon)|d)\ d q\,,
 \end{equation}
 %
-which is now just an integral over mass ratio q.
+which is now just an integral over the mass ratio $q$.
 
 We evaluate the probability density of our marginalised posterior samples
-using a bounded kernel-density estimate, and parameterise our EOS using
+using a bounded kernel-density estimate and parameterise our EOS using
 the spectral parameterisation of \cite{Lindblom2010}. We use uniform
-priors for each EOS parameter, and enforce a minimum TOV mass $M_{\rm
-  TOV} \geq 2.0 M_{\odot}$ and causality.
+priors for each EOS parameter and enforce a minimum TOV mass $M_{\rm TOV}
+\geq 2.0 M_{\odot}$ and causality.
 	
 %============================================================
 \section*{Acknowledgements}
@@ -733,10 +727,6 @@ The implementation of our physics inspired priors into the \texttt{bilby}
 Bayesian inference library, along with doccumentation and example scripts
 can be found at
 \url{https://github.com/spencermagnall/physics\_informed\_priors}.
-%% \SM{This is an older repo that currently has a minimal example, that
-%%   hasn't be properly tested. I'll work on making a well-tested,
-%%   well-documented fully reproducibile BNS and NSBH examples available
-%%   here soon. }
 
 \bibliography{references}{}
 \bibliographystyle{aasjournal}
