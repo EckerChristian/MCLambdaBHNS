@@ -16,13 +16,6 @@
 
 \begin{document}
 	
-%% \title{physics-informed priors for neutron star mergers improve equation
-%%   of state constraints\\
-%% \CE{Physics-Informed Priors Improve Gravitational-Wave Constraints on Neutron Star Matter}
-%% \\
-%% \CE{Physics-Informed Priors Improve Gravitational-Wave Constraints on Neutron Star Matter and Source Classification}
-%%   }
-
 \title{Physics-Informed Priors Improve Gravitational-Wave Constraints on Neutron-Star
   Matter and Source Classification}
 
@@ -71,7 +64,7 @@
  {12.54^{+1.05}_{-1.54}} \, {\rm km}$ to $R_{1.4} = 12.11^{+0.91}_{-1.11}
  \,{\rm km}$ and those on the tidal deformability from
  $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.186} =
- 384^{+306}_{-158}$ (90\% confidence intervals) at the events measured
+ 384^{+306}_{-158}$ ($90\%$ confidence intervals) at the events measured
  chirp mass $\mathcal{M}=1.186\,M_\odot$. We also show these priors can
  be used to perform model selection between binary neutron star and
  neutron star-black hole mergers; in the case of GW190425, the results
@@ -130,35 +123,27 @@ from the GW observation of GW170817 from $\tilde{\Lambda} =
 384^{+306}_{-158}$ with the new physics-informed prior (confidence
 intervals are $90\%$ throughout). 
 
-%We infer a posterior on the EOS, and
-%find that the neutron-star radius measurement of an equivalent
-%$1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,
-%{\rm km}$ -- as obtained when using the LVK posterior
-%samples~\citep{abbott19_170817Properties} and the physics inspired
-%posterior samples~\citep{Altiparmak:2022} into a spectral EOS inference
-%pipeline~\citep[see also][for some of the first estimates made after the
-%  GW170817 event]{Most2018,Capano2020} -- to ${R_{1.4}} =
-%12.11^{+0.91}_{-1.11} \, {\rm km}$ -- as obtained with our
-%physics-informed priors.
-
-
-We infer a posterior on the EOS and find that the neutron-star radius 
-measurement for a $1.4\,{M_\odot}$ star improves from ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,{\rm km}$,
-as reported in the original LVK analysis~\citep{abbott19_170817Properties},
-to ${R_{1.4}}=12.11^{+0.91}_{-1.11}\,{\rm km}$ when using physics-informed priors 
- within a spectral EOS inference pipeline~\citep[see also][for some of the first estimates made after the
-  GW170817 event]{Most2018,Capano2020}.
-Similarly, for GW190425, the effective tidal deformability improves 
-from $\tilde{\Lambda} = 381^{+1065}_{-271}$ to $\tilde{\Lambda} = 183^{+180}_{-100}$.
+We infer a posterior on the EOS and find that the neutron-star radius
+measurement for a $1.4\,{M_\odot}$ star improves from
+${R_{1.4}}=12.54^{+1.05}_{-1.54}\,{\rm km}$, as reported in the original
+LVK analysis~\citep{abbott19_170817Properties}, to
+${R_{1.4}}=12.11^{+0.91}_{-1.11}\,{\rm km}$ when using physics-informed
+priors within a spectral EOS inference pipeline~\citep[see also][for some
+  of the first estimates made after the GW170817
+  event]{Most2018,Capano2020}. Similarly, for GW190425, the effective
+tidal deformability improves from $\tilde{\Lambda} = 381^{+1065}_{-271}$
+to $\tilde{\Lambda} = 183^{+180}_{-100}$.
 
 In addition to astrophysical inference, we show that these priors can be
 used to perform model selection, and hence distinguish between GW-source
 types. We perform model selection between a BNS and a neutron star --
-black hole (NSBH) origin for GW190425 and find a Bayes factor of $1.33$ in
-favour of a BNS origin. When folding in the rates as the prior odds, we
-find an odds ratio of 0.33, when considering the full population of NSBH mergers, indicating marginal support for a NSBH origin.
-When considering only mass-gap NSBH mergers, the odds ratio is $1.33$, marginally in favour of a BNS merger origin.
-Regardless, we find that model selection for the origin of GW190425 remains uninformative.
+black hole (NSBH) origin for GW190425 and find a Bayes factor of $1.33$
+in favour of a BNS origin. When folding in the rates as the prior odds,
+we find an odds ratio of $0.33$, when considering the full population of
+NSBH mergers, indicating marginal support for a NSBH origin.  When
+considering only mass-gap NSBH mergers, the odds ratio is $1.33$,
+marginally in favour of a BNS merger origin. Regardless, we find that
+model selection for the origin of GW190425 remains uninformative.
 	
 In advocating for this prior becoming standard in the literature, we
 provide an open-source configuration for the \texttt{Bilby} Bayesian
@@ -439,8 +424,9 @@ $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
     GW170817. In both panels, the shaded regions show the $90\%$ credible
     intervals of the posterior distributions obtained using the
     physics-informed priors (red) or the uniform priors (blue), while the
-    dashed curves show the $90\%$ credible intervals of the effective
-    priors on chirp mass and tidal deformability when mapped to the spectral parameterisation.}
+    dashed curves show the $90\%$ credible intervals of the priors on
+    chirp mass and tidal deformability when mapped to the spectral
+    parameterisation.}
     \label{fig:GW170817_massradius}
 \end{figure}
 
@@ -455,9 +441,8 @@ the radius of a $1.4\,M_\odot$ neutron star from the values provided by
 LVK $R_{1.4} = {12.54^{+1.05}_{-1.54}}\,{\rm km}$ to $R_{1.4} =
 12.11^{+0.91}_{-1.11}\,{\rm km}$. The dashed lines in
 Fig.~\ref{fig:GW170817_massradius} represent instead the $90\%$ credible
-intervals of the effective priors on the physics-informed prior (red) and
-on the uniform prior (blue) when sampled with the spectral
-parameterisation.
+intervals of the priors on the physics-informed prior (red) and on the
+uniform prior (blue) when sampled with the spectral parameterisation.
 
 \begin{figure}
   \centering
@@ -494,15 +479,15 @@ additional observables [e.g., on the properties of the ejected
 
 Figure \ref{fig:GW190425_massradius_BNS} is logically equivalent to
 Fig.~\ref{fig:GW170817_massradius}, but contrasting BNS and NSBH mergers
-interpretations for the GW190425 event. Hence, it shows the
-reconstructed pressure--density (top) and mass--radius (bottom)
-posteriors of GW190425. The EOS $90\%$ credible intervals of posteriors
-obtained using the BNS physics-informed prior are shown in red, while the
-NSBH posteriors are shown in green. Once again, the dashed curve
-represents our effective prior on the EOS. Overall, we find that the
-posterior distributions constrain $R_{1.4} = 12.69^{+1.24}_{-1.22} \,
-{\rm km}$ using the BNS prior and $R_{1.4} = 12.06^{+1.44}_{-1.15} \,
-{\rm km}$ using the NSBH prior.
+interpretations for the GW190425 event. Hence, it shows the reconstructed
+pressure--density (top) and mass--radius (bottom) posteriors of
+GW190425. The EOS $90\%$ credible intervals of posteriors obtained using
+the BNS physics-informed prior are shown in red, while the NSBH
+posteriors are shown in green. Once again, the dashed curve represents
+our prior on the EOS. Overall, we find that the posterior distributions
+constrain $R_{1.4} = 12.69^{+1.24}_{-1.22} \, {\rm km}$ using the BNS
+prior and $R_{1.4} = 12.06^{+1.44}_{-1.15} \, {\rm km}$ using the NSBH
+prior.
 	
 
 \begin{figure}
@@ -515,8 +500,8 @@ posterior distributions constrain $R_{1.4} = 12.69^{+1.24}_{-1.22} \,
     credible intervals of the posterior distributions obtained from the
     analysis using the physics-informed BNS priors (red) and the NSBH
     prior (green). The black dashed curve shows the $90\%$ credible
-    intervals of the effective priors on chirp mass and tidal deformability
-	when mapped to a spectral parameterisation.}
+    intervals of the priors on chirp mass and tidal deformability when
+    mapped to a spectral parameterisation.}
   \label{fig:GW190425_massradius_BNS}
 \end{figure}
 
@@ -740,7 +725,7 @@ Government.
 \section*{Data Availability}
 %------------------------------------------------------------------------
 
-The implementation of our physics inspired priors into the \texttt{bilby}
+The implementation of our physics inspired priors into the \texttt{Bilby}
 Bayesian inference library, along with documentation and example scripts
 can be found at
 \url{https://github.com/spencermagnall/physics\_informed\_priors}.
