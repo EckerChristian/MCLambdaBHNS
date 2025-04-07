@@ -814,15 +814,15 @@ INPUT ./Fig_1_Physics_priors.pdf
 INPUT ./Fig_1_Physics_priors.pdf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT ./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf
 INPUT ./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf
 INPUT Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf
 INPUT ./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf
 INPUT ./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./GW170817_press_dens_MR.pdf
 INPUT ./GW170817_press_dens_MR.pdf
 INPUT GW170817_press_dens_MR.pdf
@@ -838,6 +838,7 @@ INPUT ./GW190425_press_dens_MR.pdf
 INPUT GW190425_press_dens_MR.pdf
 INPUT ./GW190425_press_dens_MR.pdf
 INPUT ./GW190425_press_dens_MR.pdf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT ./paper.bbl
 INPUT paper.bbl
 INPUT ./paper.bbl

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.8)  3 APR 2025 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.8)  7 APR 2025 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -549,167 +549,163 @@ Package hyperref Info: Link coloring ON on input line 17.
 Class revtex4-1 Info: Overriding lineo.sty, restoring output routine, on input line 17.
 Class revtex4-1 Info: Line numbering not turned on yet on input line 17.
 Class revtex4-1 Info: Overriding \@LN@LLerror on input line 17.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 62.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 63.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <Orcid-ID.png, id=37, 220.825pt x 220.825pt>
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 79.
+Package pdftex.def Info: Orcid-ID.png  used on input line 82.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 79.
+Package pdftex.def Info: Orcid-ID.png  used on input line 82.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 79.
+Package pdftex.def Info: Orcid-ID.png  used on input line 82.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 79.
+Package pdftex.def Info: Orcid-ID.png  used on input line 82.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
 File: Orcid-ID.png Graphic file (type png)
 <use Orcid-ID.png>
-Package pdftex.def Info: Orcid-ID.png  used on input line 79.
+Package pdftex.def Info: Orcid-ID.png  used on input line 82.
 (pdftex.def)             Requested size: 9.0pt x 8.99997pt.
  [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Orcid-ID.png>]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 164.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 149.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 1968) in paragraph at lines 232--246
+Underfull \hbox (badness 1968) in paragraph at lines 217--231
 \OT1/ptm/m/n/10 Tolman-Oppenheimer-Volkoff (TOV) equa-tions for each
- []
-
-
-Overfull \hbox (3.56128pt too wide) detected at line 253
-[][][][] \OT1/cmr/m/n/10 := [][] \OML/cmm/m/it/10 ;
  []
 
 [2]
 <Fig_1_Physics_priors.pdf, id=174, 890.44473pt x 910.30139pt>
 File: Fig_1_Physics_priors.pdf Graphic file (type pdf)
 <use Fig_1_Physics_priors.pdf>
-Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 307.
+Package pdftex.def Info: Fig_1_Physics_priors.pdf  used on input line 287.
 (pdftex.def)             Requested size: 242.26653pt x 247.65982pt.
 
-Overfull \hbox (9.84802pt too wide) in paragraph at lines 323--323
+Overfull \hbox (9.84802pt too wide) in paragraph at lines 308--308
+[][]| [] [][][]| 
+ []
+
+<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=208, 666.679pt x 398.97005pt>
+File: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf Graphic file (type pdf)
+<use Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>
+Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 348.
+(pdftex.def)             Requested size: 242.26653pt x 144.98059pt.
+
+Overfull \hbox (9.84802pt too wide) in paragraph at lines 362--362
 [][]| [] [][][]| 
  []
 
 
-Overfull \hbox (9.84802pt too wide) in paragraph at lines 330--330
-[][]| [] [][][]| 
- []
-
-
-Overfull \hbox (9.84802pt too wide) in paragraph at lines 381--381
-[][]| [] [][][]| 
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 378--390
+Underfull \hbox (badness 1033) in paragraph at lines 359--371
 \OT1/ptm/m/n/10 GW170817 and GW190425 us-ing the publicly-available
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 391--415
-[]\OT1/ptm/m/n/10 Parameter es-ti-ma-tion for each run is per-formed us-
- []
-
-
-Underfull \hbox (badness 1852) in paragraph at lines 391--415
-\OT1/ptm/m/n/10 ing the \OT1/pcr/m/n/10 dynesty \OT1/ptm/m/n/10 nested sam-pler ([][]Spea-gle[][] [][]2020[][]) and
- []
-
-
-Underfull \hbox (badness 1087) in paragraph at lines 391--415
-\OT1/ptm/m/n/10 we re-con-struct pressure--density and mass--radius curves
  []
 
 [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.415 
-       <./Fig_1_Physics_priors.pdf>]
-<Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf, id=278, 666.679pt x 423.0481pt>
-File: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf Graphic file (type pdf)
-<use Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>
-Package pdftex.def Info: Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf  used on input line 440.
-(pdftex.def)             Requested size: 242.26653pt x 153.73024pt.
-<GW170817_press_dens_MR.pdf, id=280, 722.7pt x 722.7pt>
-File: GW170817_press_dens_MR.pdf Graphic file (type pdf)
-<use GW170817_press_dens_MR.pdf>
-Package pdftex.def Info: GW170817_press_dens_MR.pdf  used on input line 476.
-(pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
-<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=287, 657.50667pt x 423.0481pt>
-File: Fig_3_GW190425_lambda_tilde_posteriors.pdf Graphic file (type pdf)
-<use Fig_3_GW190425_lambda_tilde_posteriors.pdf>
-Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 523.
-(pdftex.def)             Requested size: 242.26653pt x 155.87337pt.
-<GW190425_press_dens_MR.pdf, id=288, 722.7pt x 722.7pt>
-File: GW190425_press_dens_MR.pdf Graphic file (type pdf)
-<use GW190425_press_dens_MR.pdf>
-Package pdftex.def Info: GW190425_press_dens_MR.pdf  used on input line 535.
-(pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
- [4
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.565 	
-        <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf>]
+l.371 	
+        <./Fig_1_Physics_priors.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 565.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 371.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 565.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 371.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-[5
+
+Underfull \hbox (badness 2285) in paragraph at lines 372--395
+[]\OT1/ptm/m/n/10 Parameter es-ti-ma-tion for each run is per-formed us-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 372--395
+\OT1/ptm/m/n/10 ing the \OT1/pcr/m/n/10 dynesty \OT1/ptm/m/n/10 nested sam-pler ([][]Spea-gle[][] [][]2020[][]) and
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 372--395
+\OT1/ptm/m/n/10 we re-con-struct pressure--density and mass--radius curves
+ []
+
+<GW170817_press_dens_MR.pdf, id=280, 722.7pt x 722.7pt>
+File: GW170817_press_dens_MR.pdf Graphic file (type pdf)
+<use GW170817_press_dens_MR.pdf>
+Package pdftex.def Info: GW170817_press_dens_MR.pdf  used on input line 420.
+(pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
+[4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.446 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.578 work. \appendix
-                     
+l.446 
+       <./Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf> <./GW170817_press_dens_MR.pdf>]
+<Fig_3_GW190425_lambda_tilde_posteriors.pdf, id=317, 657.50667pt x 398.97005pt>
+File: Fig_3_GW190425_lambda_tilde_posteriors.pdf Graphic file (type pdf)
+<use Fig_3_GW190425_lambda_tilde_posteriors.pdf>
+Package pdftex.def Info: Fig_3_GW190425_lambda_tilde_posteriors.pdf  used on input line 449.
+(pdftex.def)             Requested size: 242.26653pt x 147.00174pt.
+<GW190425_press_dens_MR.pdf, id=327, 722.7pt x 722.7pt>
+File: GW190425_press_dens_MR.pdf Graphic file (type pdf)
+<use GW190425_press_dens_MR.pdf>
+Package pdftex.def Info: GW190425_press_dens_MR.pdf  used on input line 495.
+(pdftex.def)             Requested size: 242.26653pt x 242.26314pt.
+ [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.578 work. \appendix
-                     
+l.548 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.578 work. \appendix
-                      <./GW170817_press_dens_MR.pdf> <./Fig_3_GW190425_lambda_tilde_posteriors.pdf> <./GW190425_press_dens_MR.pdf>] [6] (./paper.bbl [7]) [8] (./paper.aux)
+l.548 
+       <./Fig_3_GW190425_lambda_tilde_posteriors.pdf> <./GW190425_press_dens_MR.pdf>] [6] (./paper.bbl
+Overfull \vbox (32.25682pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (32.25682pt too high) has occurred while \output is active []
+
+ [7]) [8] (./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: D4684F266DE27B79109904A9D0AEC7A8;993.
  ) 
 Here is how much of TeX's memory you used:
- 13931 strings out of 476025
- 209152 string characters out of 5790018
- 1881388 words of memory out of 5000000
- 34083 multiletter control sequences out of 15000+600000
- 542373 words of font info for 94 fonts, out of 8000000 for 9000
+ 13956 strings out of 476025
+ 209597 string characters out of 5790018
+ 1912388 words of memory out of 5000000
+ 34103 multiletter control sequences out of 15000+600000
+ 542880 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,7n,90p,868b,650s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,7n,90p,868b,610s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on paper.pdf (8 pages, 1680863 bytes).
+Output written on paper.pdf (8 pages, 1687440 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 88 named destinations out of 1000 (max. 500000)
+ 582 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 93 named destinations out of 1000 (max. 500000)
  95 words of extra memory for PDF output out of 10000 (max. 10000000)
 

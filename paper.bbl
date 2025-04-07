@@ -35,11 +35,8 @@
 \bibitem[{Akutsu {et~al.}(2020)Akutsu, Ando, Arai, Arai, Araki, Araya, Aritomi, Aso, Bae, Bae, Baiotti, Bajpai, Barton, Cannon, Capocasa, Chan, Chen, {et~al.}}]{KAGRA}
 Akutsu, T., Ando, M., Arai, K., {et~al.} 2020, Progress of Theoretical and Experimental Physics, 2021, 05A101, \dodoi{10.1093/ptep/ptaa125}
 
-\bibitem[{{Altiparmak} {et~al.}(2022{\natexlab{a}}){Altiparmak}, {Ecker}, \& {Rezzolla}}]{altiparmak22}
-{Altiparmak}, S., {Ecker}, C., \& {Rezzolla}, L. 2022{\natexlab{a}}, \apjl, 939, L34, \dodoi{10.3847/2041-8213/ac9b2a}
-
-\bibitem[{{Altiparmak} {et~al.}(2022{\natexlab{b}}){Altiparmak}, {Ecker}, \& {Rezzolla}}]{Altiparmak:2022}
----. 2022{\natexlab{b}}, Astrophys. J. Lett., 939, L34, \dodoi{10.3847/2041-8213/ac9b2a}
+\bibitem[{{Altiparmak} {et~al.}(2022){Altiparmak}, {Ecker}, \& {Rezzolla}}]{Altiparmak:2022}
+{Altiparmak}, S., {Ecker}, C., \& {Rezzolla}, L. 2022, Astrophys. J. Lett., 939, L34, \dodoi{10.3847/2041-8213/ac9b2a}
 
 \bibitem[{{Annala} {et~al.}(2020){Annala}, {Gorda}, {Kurkela}, {N{\"a}ttil{\"a}}, \& {Vuorinen}}]{Annala2019}
 {Annala}, E., {Gorda}, T., {Kurkela}, A., {N{\"a}ttil{\"a}}, J., \& {Vuorinen}, A. 2020, Nature Physics, 16, 907, \dodoi{10.1038/s41567-020-0914-9}
@@ -52,6 +49,9 @@ Akutsu, T., Ando, M., Arai, K., {et~al.} 2020, Progress of Theoretical and Exper
 
 \bibitem[{Baiotti \& Rezzolla(2017)}]{Baiotti2016}
 Baiotti, L., \& Rezzolla, L. 2017, Rept. Prog. Phys., 80, 096901, \dodoi{10.1088/1361-6633/aa67bb}
+
+\bibitem[{{Bauswein} {et~al.}(2013){Bauswein}, {Baumgarte}, \& {Janka}}]{Bauswein2013}
+{Bauswein}, A., {Baumgarte}, T.~W., \& {Janka}, H.-T. 2013, Phys. Rev. Lett., 111, 131101, \dodoi{10.1103/PhysRevLett.111.131101}
 
 \bibitem[{{Baym} {et~al.}(1971){Baym}, {Pethick}, \& {Sutherland}}]{Baym71}
 {Baym}, G., {Pethick}, C., \& {Sutherland}, P. 1971, \apj, 170, 299, \dodoi{10.1086/151216}
@@ -77,6 +77,9 @@ Baiotti, L., \& Rezzolla, L. 2017, Rept. Prog. Phys., 80, 096901, \dodoi{10.1088
 \bibitem[{Ecker \& Rezzolla(2022)}]{Ecker:2022dlg}
 Ecker, C., \& Rezzolla, L. 2022, Mon. Not. Roy. Astron. Soc., 519, 2615, \dodoi{10.1093/mnras/stac3755}
 
+\bibitem[{Ecker {et~al.}(2025)Ecker, Topolski, J\"arvinen, \& Stehr}]{Ecker:2024kzs}
+Ecker, C., Topolski, K., J\"arvinen, M., \& Stehr, A. 2025, Phys. Rev. D, 111, 023001, \dodoi{10.1103/PhysRevD.111.023001}
+
 \bibitem[{{Favata}(2014)}]{favata14}
 {Favata}, M. 2014, \prl, 112, 101101, \dodoi{10.1103/PhysRevLett.112.101101}
 
@@ -89,6 +92,15 @@ Ecker, C., \& Rezzolla, L. 2022, Mon. Not. Roy. Astron. Soc., 519, 2615, \dodoi{
 \bibitem[{Hebeler {et~al.}(2013)Hebeler, Lattimer, Pethick, \& Schwenk}]{Hebeler:2013nza}
 Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys. J., 773, 11, \dodoi{10.1088/0004-637X/773/1/11}
 
+\bibitem[{{Kashyap} {et~al.}(2022){Kashyap}, {Das}, {Radice}, {Padamata}, {Prakash}, {Logoteta}, {Perego}, {Godzieba}, {Bernuzzi}, {Bombaci}, {Fattoyev}, {Reed}, \& {Schneider}}]{Kashyap:2021wzs}
+{Kashyap}, R., {Das}, A., {Radice}, D., {et~al.} 2022, Phys. Rev. D, 105, 103022, \dodoi{10.1103/PhysRevD.105.103022}
+
+\bibitem[{{Koeppel} {et~al.}(2019){Koeppel}, {Bovard}, \& {Rezzolla}}]{Koeppel2019}
+{Koeppel}, S., {Bovard}, L., \& {Rezzolla}, L. 2019, Astrophys. J. Lett., 872, L16, \dodoi{10.3847/2041-8213/ab0210}
+
+\bibitem[{{K{\"o}lsch} {et~al.}(2022){K{\"o}lsch}, {Dietrich}, {Ujevic}, \& {Br{\"u}gmann}}]{Koelsch2021}
+{K{\"o}lsch}, M., {Dietrich}, T., {Ujevic}, M., \& {Br{\"u}gmann}, B. 2022, Phys. Rev. D, 106, 044026, \dodoi{10.1103/PhysRevD.106.044026}
+
 \bibitem[{{Landry} {et~al.}(2020){Landry}, {Essick}, \& {Chatziioannou}}]{2020Landry}
 {Landry}, P., {Essick}, R., \& {Chatziioannou}, K. 2020, \prd, 101, 123007, \dodoi{10.1103/PhysRevD.101.123007}
 
@@ -100,6 +112,9 @@ Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys. J.
 
 \bibitem[{{Miller} {et~al.}(2021){Miller}, {Lamb}, {Dittmann}, {Bogdanov}, {Arzoumanian}, {Gendreau}, {Guillot}, {Ho}, {Lattimer}, {Loewenstein}, {Morsink}, {Ray}, {Wolff}, {Baker}, {Cazeau}, {Manthripragada}, {Markwardt}, {Okajima}, {Pollard}, {Cognard}, {Cromartie}, {Fonseca}, {Guillemot}, {Kerr}, {Parthasarathy}, {Pennucci}, {Ransom}, \& {Stairs}}]{Miller2021}
 ---. 2021, Astrophys. J. Lett., 918, L28, \dodoi{10.3847/2041-8213/ac089b}
+
+\bibitem[{Most {et~al.}(2021)Most, Papenfort, Tootle, \& Rezzolla}]{Most:2021b}
+Most, E.~R., Papenfort, L.~J., Tootle, S., \& Rezzolla, L. 2021, Astrophys. J., 912, 80, \dodoi{10.3847/1538-4357/abf0a5}
 
 \bibitem[{{Most} {et~al.}(2018){Most}, {Weih}, {Rezzolla}, \& {Schaffner-Bielich}}]{Most2018}
 {Most}, E.~R., {Weih}, L.~R., {Rezzolla}, L., \& {Schaffner-Bielich}, J. 2018, Phys. Rev. Lett., 120, 261103, \dodoi{10.1103/PhysRevLett.120.261103}
@@ -127,6 +142,9 @@ Hebeler, K., Lattimer, J.~M., Pethick, C.~J., \& Schwenk, A. 2013, Astrophys. J.
 
 \bibitem[{{Speagle}(2020)}]{Dynesty}
 {Speagle}, J.~S. 2020, \mnras, 493, 3132, \dodoi{10.1093/mnras/staa278}
+
+\bibitem[{{Tootle} {et~al.}(2021){Tootle}, {Papenfort}, {Most}, \& {Rezzolla}}]{Tootle2021}
+{Tootle}, S.~D., {Papenfort}, L.~J., {Most}, E.~R., \& {Rezzolla}, L. 2021, Astrophys. J. Lett., 922, L19, \dodoi{10.3847/2041-8213/ac350d}
 
 \bibitem[{{Wade} {et~al.}(2014){Wade}, {Creighton}, {Ochsner}, {Lackey}, {Farr}, {Littenberg}, \& {Raymond}}]{wade14}
 {Wade}, L., {Creighton}, J. D.~E., {Ochsner}, E., {et~al.} 2014, \prd, 89, 103012, \dodoi{10.1103/PhysRevD.89.103012}
