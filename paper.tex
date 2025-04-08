@@ -70,7 +70,7 @@
  neutron star-black hole mergers; in the case of GW190425, the results
  provide only marginal evidence with a Bayes factor $\mathcal{BF}=1.33$
  in favour of the binary neutron star merger hypothesis. Given their
- ability to improve the parameter estimation of binary mergers involving
+ ability to improve the astrophysical inference of binary mergers involving
  neutron stars, we advocate for these physics-informed priors to be used
  as standard in the literature and provide open-source code for
  reproducibility and adaptation of the method.
@@ -85,18 +85,18 @@
 	
 One of the main goals of gravitational wave (GW) astronomy is to infer
 constraints on the neutron-star equation of state (EOS) from observations
-of binary neutron star mergers (BNS). The baryon density in neutron stars
+of binary neutron star (BNS) mergers. The baryon density in neutron stars
 and their mergers can reach several times the nuclear saturation density
 $n_s=0.16\,{\rm fm}^{-3}$ and temperatures of the order of tens of
 MeV~\citep[see, e.g.,][for reviews]{Baiotti2016,
   Paschalidis2016,Radice2020b}. Such densities and temperatures are
-inaccessible to terrestrial experiments and also to ab initio
+inaccessible to terrestrial experiments and also to \textit{ab initio}
 calculations due to the infamous fermionic sign problem, which prevents
 direct Quantum Chromodynamics (QCD) solutions on the lattice.
 
 A common approach to astrophysical GW inference is to use agnostic priors
 for some GW observables. For example, analyses of the first two observed
-BNS GW170817 \citep[e.g.,][]{abbott17_170817observation,
+BNS mergers GW170817 \citep[e.g.,][]{abbott17_170817observation,
   abbott18_170817EOS, abbott19_170817Properties} and GW190425
 \citep[e.g.,][]{abbott20_190425} employed uniform priors on the chirp
 mass $\mathcal{M}$ and the dimensionless tidal deformability
@@ -118,27 +118,26 @@ constraints from nuclear theory and perturbative QCD, as well as
 astrophysical constraints on neutron-star masses and radii into
 astrophysical GW parameter inference. We show a significant improvement
 on the measurement of the marginalised posterior on $\tilde{\Lambda}$
-from the GW observation of GW170817 from $\tilde{\Lambda} =
-466^{+308}_{-434}$ with the uniform priors to $\tilde{\Lambda} =
+from the GW observation of GW170817 from $\tilde{\Lambda}_{1.186} < 720$ with the uniform priors to $\tilde{\Lambda}_{1.186} =
 384^{+306}_{-158}$ with the new physics-informed prior (confidence
 intervals are $90\%$ throughout). 
 
-We infer a posterior on the EOS and find that the neutron-star radius
+We infer a posterior distirbution on EOS parameters and find that the neutron-star radius
 measurement for a $1.4\,{M_\odot}$ star improves from
 ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,{\rm km}$, as reported in the original
 LVK analysis~\citep{abbott19_170817Properties}, to
 ${R_{1.4}}=12.11^{+0.91}_{-1.11}\,{\rm km}$ when using physics-informed
-priors within a spectral EOS inference pipeline~\citep[see also][for some
+priors and a spectral EOS~\citep[see also][for some
   of the first estimates made after the GW170817
   event]{Most2018,Capano2020}. Similarly, for GW190425, the effective
-tidal deformability improves from $\tilde{\Lambda} = 381^{+1065}_{-271}$
-to $\tilde{\Lambda} = 183^{+180}_{-100}$.
+tidal deformability improves from $\tilde{\Lambda}_{1.44} = 381^{+1065}_{-271}$
+to $\tilde{\Lambda}_{1.44} = 183^{+180}_{-100}$.
 
 In addition to astrophysical inference, we show that these priors can be
 used to perform model selection, and hence distinguish between GW-source
 types. We perform model selection between a BNS and a neutron star --
 black hole (NSBH) origin for GW190425 and find a Bayes factor of $1.33$
-in favour of a BNS origin. When folding in the rates as the prior odds,
+in favour of a BNS origin. When including observed rates as the prior odds,
 we find an odds ratio of $0.33$, when considering the full population of
 NSBH mergers, indicating marginal support for a NSBH origin.  When
 considering only mass-gap NSBH mergers, the odds ratio is $1.33$,
