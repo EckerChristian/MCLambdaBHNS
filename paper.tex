@@ -348,49 +348,48 @@ deformability of the neutron star.
   \centering
   \includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
   \caption{Marginalised posterior distributions of the tidal
-    deformability $\tilde{\Lambda}$ obtained from Bayesian parameter
-    estimation for GW170817. The posterior using a physics-informed prior
+    deformability $\tilde{\Lambda}$ for GW170817. The posterior using a physics-informed prior
     is shown in red, while the posterior using uniform priors from the
-    LVK is shown in blue; we show the (marginalised) prior with the black
-    curve. Note that the posterior from the LVK show support up to
+    LVK analysis is shown in blue: we show the (marginalised) prior with the black
+    curve. Note that the posterior from the LVK shows support up to
     $\tilde{\Lambda} = 2000$.}
   \label{fig:GW170817_tides}
 \end{figure}	
 
-We perform a Bayesian parameter-estimation analysis on the GW strain data
-of the two (likely) BNS merger events GW170817 and GW190425 using the
+We perform Bayesian parameter estimation on the GW strain data
+of the two BNS merger events GW170817 and GW190425 using the
 publicly-available data from the GWOSC
 repository\footnote{\url{https://gwosc.org}}. We utilise the
 \texttt{Bilby} Bayesian inference framework~\citep{ashton19,romeroshaw20}
 and priors on source--frame chirp mass and tidal--deformability as
-discussed in Section \ref{sec:Methods}. Priors for all renaming
+discussed in Section \ref{sec:Methods}. Priors for all remaning
 parameters assume the so-called low-spin ($\chi \leq 0.05$) default
 priors as defined in \texttt{Bilby}. We use Planck 2018 cosmological
 parameters~\citep{Planck} such that Hubble's constant and the matter
-density are respectively $H_0=67.66 \rm \ km \ s^{-1}$, $\Omega_M =
+density are respectively $H_0=67.66 \rm \ km \ s^{-1} \ Mpc^{-1}$, $\Omega_M =
 0.30966$.
 	
 Parameter estimation for each run is performed using the \texttt{dynesty}
 nested sampler~\citep{Dynesty} and the \texttt{IMRPhenomPv2\_NRTidal}
 waveform~\citep{IMRPhenomP_NRtidal}. Analysis of BNS merger signals is
 computationally expensive and as such we utilise parallel implementation
-of \texttt{Bilby}, i.e., \texttt{pBilby}~\citep{pbilby}. More
-specifically, we reconstruct pressure--density and mass--radius curves
+of \texttt{Bilby}, i.e., \texttt{pBilby}~\citep{pbilby}. We reconstruct pressure--density and mass--radius curves
 from posterior samples of source--frame chirp mass, mass ratio, and
-effective tidal deformability by performing an EOS inference on the
+effective tidal deformability by performing EOS inference on the
 posterior samples of mass and tidal deformability. We utilise a
 four-piece spectral parameterisation~\citep{Lindblom2010} stitched to an
 SLy~\citep{2001_SLy_EOS} crust at low densities (further details can be
-found in Appendix~\ref{sec:EOS_inference}). We should remark that the choice 
-of adopting an approach for the EOS inference (i.e., four-piece spectral
+found in Appendix~\ref{sec:EOS_inference}).
+
+The choice of adopting an approach for the EOS inference (i.e., four-piece spectral
 parameterisation) that is different from that used in the EOS
 construction (i.e., seven-segment sound-speed parameterisation) follows a
 precise logic. In particular, this has the advantage that it is possible
 to compare directly with the LVK inference analysis and hence clearly
 distinguish the assumptions behind the definition of the priors from
 those employed in the inference. At the same time, this also implies that
-the posteriors obtained for the EOSs will be different from the
-corresponding priors. While these differences are very small, we plan to
+the posteriors obtained for the EOSs parameters differ from the
+corresponding priors. While these differences are small, we plan to
 explore the use of the same set of assumptions for the EOS priors and
 inference in future work.
 
