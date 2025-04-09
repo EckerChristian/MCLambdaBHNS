@@ -568,50 +568,50 @@ extensions in future work.
 
 \appendix
 	
-%========================================================================
-\section{Model Selection}
-\label{sec:Model Selection}
-%========================================================================
+% %========================================================================
+% \section{Model Selection}
+% \label{sec:Model Selection}
+% %========================================================================
 
-We perform parameter estimation of GW strain data using the
-\texttt{dynesty} nested sampler. Unlike standard Markov-chain-Monte-Carlo
-(MCMC) samplers, \texttt{dynesty} calculates the evidence for each
-parameter estimation run. To perform Bayesian model selection between BNS
-and NSBH mergers, we calculate the Bayes factor
-%
-\begin{equation}
-  \mathcal{BF}^{^{\rm BNS}}_{_{\rm NSBH}} = \frac{\mathcal{Z_{_{\rm
-          BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}}\,,
-\end{equation}
-%
-where $\mathcal{Z}_{_{\rm BNS}}$ and $\mathcal{Z}_{_{\rm NSBH}}$ are the
-Bayesian evidences obtained for the parameter estimation runs using the
-BNS and NSBH priors respectively. Formally, for model selection we should
-be computing the odds ratio, which is defined as
-%
-\begin{equation}
-  \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} := \frac{\mathcal{Z_{_{\rm
-          BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}} \frac{\pi_{_{\rm
-        BNS}}}{\pi_{_{\rm NSBH}}}\,,
-\end{equation}
-%
-where $\pi_{_{\rm BNS}}$ and $\pi_{_{\rm NSBH}}$ are the prior odds for
-each hypothesis; i.e., our relative belief about which hypothesis is more
-likely. The prior odds is calculated by considering the observed number
-of BNS mergers, relative to the observed number of NSBH mergers.
+% We perform parameter estimation of GW strain data using the
+% \texttt{dynesty} nested sampler. Unlike standard Markov-chain-Monte-Carlo
+% (MCMC) samplers, \texttt{dynesty} calculates the evidence for each
+% parameter estimation run. To perform Bayesian model selection between BNS
+% and NSBH mergers, we calculate the Bayes factor
+% %
+% \begin{equation}
+%   \mathcal{BF}^{^{\rm BNS}}_{_{\rm NSBH}} = \frac{\mathcal{Z_{_{\rm
+%           BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}}\,,
+% \end{equation}
+% %
+% where $\mathcal{Z}_{_{\rm BNS}}$ and $\mathcal{Z}_{_{\rm NSBH}}$ are the
+% Bayesian evidences obtained for the parameter estimation runs using the
+% BNS and NSBH priors respectively. Formally, for model selection we should
+% be computing the odds ratio, which is defined as
+% %
+% \begin{equation}
+%   \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} := \frac{\mathcal{Z_{_{\rm
+%           BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}} \frac{\pi_{_{\rm
+%         BNS}}}{\pi_{_{\rm NSBH}}}\,,
+% \end{equation}
+% %
+% where $\pi_{_{\rm BNS}}$ and $\pi_{_{\rm NSBH}}$ are the prior odds for
+% each hypothesis; i.e., our relative belief about which hypothesis is more
+% likely. The prior odds is calculated by considering the observed number
+% of BNS mergers, relative to the observed number of NSBH mergers.
 
 %========================================================================
 \section{Equation of state inference}
 \label{sec:EOS_inference}
 %========================================================================
 
-The posterior on the EOS from the GW data is
+The posterior distirbution on the EOS parameters $\eta$ from the GW data is
 %
 \begin{equation}
   p(\epsilon| d) = \frac{p(d|{\epsilon})\pi(\epsilon)}{\mathcal{Z}}\,,
 \end{equation}
 %
-where $\pi(\epsilon)$ is the prior on the EOS parameters $\epsilon$, and
+where $\pi(\epsilon)$ is the prior on the EOS parameters, and
 $\mathcal{Z}$ is the evidence. The likelihood is given by
 %
 \begin{equation}
@@ -642,8 +642,8 @@ likelihood transforms to
 
 In expression~\eqref{eq:P_d_eps} there are two terms that need to be
 calculated. The first one is $\pi(\mathcal{M}, q,
-\tilde{\Lambda}|\epsilon)$, that represents a prior on chirp mass,
-mass-ratio and $\tilde{\Lambda}$ for a given EOS $\epsilon$. The second
+\tilde{\Lambda}|\epsilon)$ that represents a prior on chirp mass,
+mass-ratio and $\tilde{\Lambda}$ for a given EOS. The second
 one is the likelihood $p(d|\mathcal{M},q,\tilde{\Lambda})$. Typically,
 this likelihood would be obtained by reweighing posterior samples of
 parameter estimation runs
