@@ -405,13 +405,13 @@ collaboration~\citep[blue;][]{abbott17_170817observation}, and the
 marginalised prior for $\tilde{\Lambda}$ (black). While we show only the
 tidal posteriors, we sample over all binary parameters. Posterior
 distributions for all other binary parameters, including the chirp mass
-and mass ratio, are identical for the physics-inspired and uniform prior runs.
- Note that, as expected, the marginalised
-posterior is not significantly different at large tidal deformabilities
-(compare blue and black curves), but shows significant changes at small
-values of $\tilde{\Lambda}$, essentially excluding values
-$\tilde{\Lambda} \lesssim 200$ for the physics informed priors. As a result, the $90\%$ lower and upper
-limits on the tidal deformability are now $226 \leq
+and mass ratio, are identical for the physics-informed and uniform-prior
+runs.  Note that, as expected, the marginalised posterior is not
+significantly different at large tidal deformabilities (compare blue and
+black curves), but shows significant changes at small values of
+$\tilde{\Lambda}$, essentially excluding values $\tilde{\Lambda} \lesssim
+200$ for the physics informed priors. As a result, the $90\%$ lower and
+upper limits on the tidal deformability are now $226 \leq
 \tilde{\Lambda}_{1.186} \leq 690$. These arguably represent the most
 interesting consequence of the physics-informed prior on the
 $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
@@ -463,20 +463,21 @@ prior (red) and NSBH prior (green; see Fig.~\ref{fig:priors}). We show
 the posterior distribution of the LVK collaboration obtained
 using uniform priors in blue~\citep{abbott20_190425}.
 
-Bayesian-model selection between the BNS
-and NSBH merger for the GW190425 event gives a Bayes factor of 1.33.
-We calculate the odds ratio, the product of the Bayes factor and
-our prior odds ratio. The latter can be calculated as a ratio of observed events, in
-our case the ratio of observed BNS and observed NSBH mergers. The total
-number of BNS mergers (excluding GW190425) is one; and the total number
-of publicly-released confirmed NSBH mergers is three: GW200105, GW200115~\citep{GW200115}, GW230529~\citep{GW230529}. Thus the prior odds
-ratio is $1/3$ and the odds ratio is $0.44$, which represents marginal
-evidence for a NSBH merger. To appreciate how marginal this estimate is,
-we might argue that only mass-gap events like GW230529 should be included
-in the prior. In this case, the prior odds is unity and the odds ratio is
-again 1.33, in favour of a BNS origin. Regardless, any choice of prior
-odds remains uninformative for determining the nature of GW190425 and
-additional observables [e.g., on the properties of the ejected
+Bayesian-model selection between the BNS and NSBH merger for the GW190425
+event gives a Bayes factor of $1.33$.  We calculate the odds ratio, the
+product of the Bayes factor and our prior odds ratio. The latter can be
+calculated as a ratio of observed events, in our case the ratio of
+observed BNS and observed NSBH mergers. The total number of BNS mergers
+(excluding GW190425) is one; and the total number of publicly-released
+confirmed NSBH mergers is three: GW200105, GW200115~\citep{GW200115},
+GW230529~\citep{GW230529}. Thus the prior odds ratio is $1/3$ and the
+odds ratio is $0.44$, which represents marginal evidence for a NSBH
+merger. To appreciate how marginal this estimate is, we might argue that
+only mass-gap events like GW230529 should be included in the prior. In
+this case, the prior odds is unity and the odds ratio is again $1.33$, in
+favour of a BNS origin. Regardless, any choice of prior odds remains
+uninformative for determining the nature of GW190425 and additional
+observables [e.g., on the properties of the ejected
   matter~\citep{Most:2021b}] need to be included in the priors.
 
 Figure \ref{fig:GW190425_massradius_BNS} is logically equivalent to
@@ -540,7 +541,7 @@ $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.186} =
 384^{+306}_{-158}$. In the case of GW190425, we assess the nature of the
 secondary in the binary by computing the odds ratio associated to a
 neutron star or a black hole hypothesis. 
-We find this analysis to be uninformative, with a odds ratio between 0.44 and 1.33 in favour of the BNS merger hypothesis.
+We find this analysis to be uninformative, with a odds ratio between $0.44$ and $1.33$ in favour of the BNS merger hypothesis.
 In either case, we improve the constraints on the
 radius estimates with respect to previous LVK with the posterior
 distributions indicating $R_{1.4} = 12.69^{+1.24}_{-1.22} \, {\rm km}$
@@ -733,7 +734,7 @@ Technology.
 \section*{Data Availability}
 %------------------------------------------------------------------------
 
-The implementation of our physics inspired priors into the \texttt{Bilby}
+The implementation of our physics-informed priors into the \texttt{Bilby}
 Bayesian inference library, along with documentation and example scripts
 can be found at
 \url{https://github.com/spencermagnall/physics\_informed\_priors}.
