@@ -186,7 +186,7 @@ piecewise-linear segments:
 \end{equation}
 %
 where $\mu_i$ and $c_{s,i}^2$ are parameters defining the $i$-th segment
-in the range $\mu_i \leq \mu \leq \mu_{i+1}$. Throughout this work, we
+in the range $\mu_i \leq \mu \leq \mu_{i+1}$. In this section, we
 adopt natural units where $c=G=1$, unless otherwise stated.
 
 The number density follows as 
@@ -227,7 +227,7 @@ km$ at $M = 1.1\,M_{\odot}$. We note that, unlike what was done
 in~\citet{Altiparmak:2022} and \citet{Ecker:2022dlg}, we do not impose any
 GW-informed constraints on the binary tidal deformability in the
 construction of our prior as we are reanalysing these data using the
-constructed prior.
+new prior.
 	
 In the BNS case, the binary tidal deformability of the prior is computed
 as
@@ -245,7 +245,7 @@ M_2)^{3/5} (M_1+M_2)^{-1/5}$ and we define the mass ratio $q := M_2/M_1$
 with $M_2\le M_1$.
 	
 The tidal deformability of a black hole is zero $\Lambda_{\rm BH}=0$,
-implying the total tidal deformability for a NSBH binary is
+implying the total tidal deformability for an NSBH binary is
 %
 \begin{equation} 
  \tilde{\Lambda}_{{\rm NSBH}} := \frac{16}{13} \frac{ (12M_{1} + M_{2})
@@ -260,13 +260,14 @@ mass.
 \subsection{BNS and NSBH mergers}
 %------------------------------------------------------------------------
 
-We use the probability distributions described in the previous section as
-priors on the source-frame chirp mass and effective tidal deformability
-as shown in Fig.~\ref{fig:priors}. We implement this in \texttt{Bilby}
+We use the probability distributions described in the previous Section as
+priors on the source-frame chirp mass and effective tidal deformability.
+These priors are shown in Fig.~\ref{fig:priors} where the top oanel is the BNS prior and the bottom panel is the NSBH prior.
+We implement this in \texttt{Bilby}
 using the \texttt{conditional\_prior} function, interpolating a
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
-$\tilde{\Lambda}$. The $90\%$ probability contours (dashed black lines) can 
-be fitted by a simple power law 
+$\tilde{\Lambda}$. The $90\%$ probability contours (dashed black curves) can 
+be fit by a simple power law 
 %
 \begin{equation}\label{eq:fit}
   \tilde\Lambda_{{\rm min}(\rm max)}=a + b \,\mathcal{M}^c\,,
@@ -276,23 +277,23 @@ where the fitting coefficients are $a=-57\,(-23)$, $b=583\,(2690)$ and
 $c=-3.9\,(-4.5)$ for the BNS case and $a=6\,(-5)$, $b=296\,(1700)$ and
 $c=-6.6\,(-4.9)$ for the NSBH case. For comparison we also show contours
 for $a=-41\,(-0.55)$, $b=539\,(2091)$ and $c=-4.5\,(-5.5)$ (dashed grey
-lines) corresponding to a prior in which the constraint on the tidal
+curves) corresponding to a prior in which the constraint on the tidal
 deformability from the GW170817 event, i.e., $\tilde{\Lambda} < 720$, is
 imposed; this corresponds to the analysis in~\citet{Altiparmak:2022} and
 highlights that while the estimate of $\tilde\Lambda_{\rm min}$ is hardly
-affected, that for $\tilde\Lambda_{\rm max}$ is significantly smaller.
+affected, that for $\tilde\Lambda_{\rm max}$ is significantly smaller when imposing the GW170817 constraint.
 
 \begin{figure}
   \centering
   \includegraphics[width=1.\linewidth]{Fig_1_Physics_priors.pdf}
   \caption{Priors for the source-frame chirp mass $\mathcal{M}$ and the
     dimensionless tidal deformability $\tilde{\Lambda}$ in the case of
-    BNSs (top panel) or NSBH binaries (bottom panel). In both panels,
-    dashed black lines indicate analytic fits to the $90\%$ contours of
+    BNS (top panel) or NSBH binaries (bottom panel). In both panels,
+    dashed black curves indicate analytic fits to the $90\%$ contours of
     the distribution given in Eq.~\eqref{eq:fit}, while the dashed grey
-    lines are the corresponding fits obtained when imposing the GW170817
-    constraint on the prior,
-    following~\citep{Altiparmak:2022}. Horizontal red bands represent the
+    curves are the corresponding fits obtained when imposing the GW170817
+    constraint on the prior
+    following~\cite{Altiparmak:2022}. Horizontal red bands represent the
     $90\%$ credible intervals for the measured chirp masses of
     GW170817~\citep{abbott17_170817observation},
     GW190425~\citep{abbott20_190425}, GW200115~\citep{GW200115}, and
@@ -312,7 +313,7 @@ $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}. The choice of a lower
 limit of $q=0.125$ is due to waveform limitations and is not
 astrophysically motivated.
 
-Furthermore, while both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are
+While both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are
 related to the EOS, we only impose a prior here on $\tilde{\Lambda}$, as
 $\tilde{\Lambda}$ is measured much better than
 $\delta\tilde{\Lambda}$~\citep[e.g.,][]{wade14}. In principle, one could
@@ -323,18 +324,18 @@ relatively low signal-to-noise regime. We therefore leave exploration of
 physically-motivated priors on $\delta\tilde{\Lambda}$ for future work.
 	
 
-What discussed so far refers to BNS mergers and the corresponding
-parameterisation does not go to large enough chirp-mass values. Hence, in
-the case of NSBH mergers we need to derive a new distribution by going
+The above discussion only refers to BNS mergers as the corresponding
+parameterisation does not go to large enough chirp-mass values for NSBHs. Hence, in
+the case of NSBH mergers we derive a new distribution by going
 back to the raw distributions of progenitor stellar masses and radii, and
 combine that progenitor distribution with that of a BH of mass $M_1$ and
 tidal deformability $\Lambda_1=0$. In principle, in this case we could
 use more sophisticated and realistic mass-ratio distributions, such as
 those informed by state-of-the-art binary population synthesis
-\citep[e.g.,][]{2021Broekgaarden+}. In practice, we have decided to use
-here a uniformly-distributed mass-ratio prior as we have found that our
-results do not depend significantly on the choice made for prior
-distribution on mass ratios. Finally, also for NSBHs we choose to work
+\citep[e.g.,][]{2021Broekgaarden+}. In practice, we use
+ a uniformly-distributed mass-ratio prior as we find that our
+results do not depend significantly on the choice made for the mass-ratio prior
+distribution. Finally, also for NSBHs we choose to work
 with priors in $\mathcal{M}\!- \!\tilde{\Lambda}$, enforcing
 $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal
 deformability of the neutron star.
