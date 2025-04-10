@@ -19,8 +19,8 @@
 \title{Physics-Informed Priors Improve Gravitational-Wave Constraints on
   the Nuclear Equation of State \\
 %
-  The Importance of Physics-Informed Priors to Improve Constraints on
-  Nuclear Matter and Source Classification}
+  Importance of Physics-Informed Priors to Improve Constraints on
+  Neutron-Star Matter and Source Classification}
 
 
 \author[0009-0000-7037-1809]{Spencer J. Magnall}
@@ -264,12 +264,12 @@ mass.
 
 We use the probability distributions described in the previous Section as
 priors on the source-frame chirp mass and effective tidal deformability.
-These priors are shown in Fig.~\ref{fig:priors} where the top panel is the BNS prior and the bottom panel is the NSBH prior.
-We implement this in \texttt{Bilby}
-using the \texttt{conditional\_prior} function, interpolating a
-$200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
-$\tilde{\Lambda}$. The $90\%$ probability contours (dashed black curves) can 
-be fit by a simple power law 
+These priors are shown in Fig.~\ref{fig:priors} where the top panel is
+the BNS prior and the bottom panel is the NSBH prior.  We implement this
+in \texttt{Bilby} using the \texttt{conditional\_prior} function,
+interpolating a $200\times200$ grid to draw from a joint prior on
+$\mathcal{M}$ and $\tilde{\Lambda}$. The $90\%$ probability contours
+(dashed black curves) can be fit by a simple power law
 %
 \begin{equation}\label{eq:fit}
   \tilde\Lambda_{{\rm min}(\rm max)}=a + b \,\mathcal{M}^c\,,
@@ -283,7 +283,8 @@ curves) corresponding to a prior in which the constraint on the tidal
 deformability from the GW170817 event, i.e., $\tilde{\Lambda} < 720$, is
 imposed; this corresponds to the analysis in~\citet{Altiparmak:2022} and
 highlights that while the estimate of $\tilde\Lambda_{\rm min}$ is hardly
-affected, that for $\tilde\Lambda_{\rm max}$ is significantly smaller when imposing the GW170817 constraint.
+affected, that for $\tilde\Lambda_{\rm max}$ is significantly smaller
+when imposing the GW170817 constraint.
 
 \begin{figure}
   \centering
@@ -327,18 +328,18 @@ physically-motivated priors on $\delta\tilde{\Lambda}$ for future work.
 	
 
 The above discussion only refers to BNS mergers as the corresponding
-parameterisation does not go to large enough chirp-mass values for NSBHs. Hence, in
-the case of NSBH mergers we derive a new distribution by going
-back to the raw distributions of progenitor stellar masses and radii, and
-combine that progenitor distribution with that of a BH of mass $M_1$ and
-tidal deformability $\Lambda_1=0$. In principle, in this case we could
-use more sophisticated and realistic mass-ratio distributions, such as
-those informed by state-of-the-art binary population synthesis
-\citep[e.g.,][]{2021Broekgaarden+}. In practice, we use
- a uniformly-distributed mass-ratio prior as we find that our
-results do not depend significantly on the choice made for the mass-ratio prior
-distribution. Finally, also for NSBHs we choose to work
-with priors in $\mathcal{M}\!- \!\tilde{\Lambda}$, enforcing
+parameterisation does not go to large enough chirp-mass values for
+NSBHs. Hence, in the case of NSBH mergers we derive a new distribution by
+going back to the raw distributions of progenitor stellar masses and
+radii, and combine that progenitor distribution with that of a BH of mass
+$M_1$ and tidal deformability $\Lambda_1=0$. In principle, in this case
+we could use more sophisticated and realistic mass-ratio distributions,
+such as those informed by state-of-the-art binary population synthesis
+\citep[e.g.,][]{2021Broekgaarden+}. In practice, we use a
+uniformly-distributed mass-ratio prior as we find that our results do not
+depend significantly on the choice made for the mass-ratio prior
+distribution. Finally, also for NSBHs we choose to work with priors in
+$\mathcal{M}\!- \!\tilde{\Lambda}$, enforcing
 $\tilde{\Lambda}(\Lambda_2,\mathcal{M},q)$ where $\Lambda_2$ is the tidal
 deformability of the neutron star.
 
@@ -350,47 +351,47 @@ deformability of the neutron star.
   \centering
   \includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
   \caption{Marginalised posterior distributions of the tidal
-    deformability $\tilde{\Lambda}$ for GW170817. The posterior using a physics-informed prior
-    is shown in red, while the posterior using uniform priors from the
-    LVK analysis is shown in blue: we show the (marginalised) prior with the black
-    curve. Note that the posterior from the LVK shows support up to
-    $\tilde{\Lambda} = 2000$.}
+    deformability $\tilde{\Lambda}$ for GW170817. The posterior using a
+    physics-informed prior is shown in red, while the posterior using
+    uniform priors from the LVK analysis is shown in blue: we show the
+    (marginalised) prior with the black curve. Note that the posterior
+    from the LVK shows support up to $\tilde{\Lambda} = 2000$.}
   \label{fig:GW170817_tides}
 \end{figure}	
 
-We perform Bayesian parameter estimation on the GW strain data
-of the two BNS merger events GW170817 and GW190425 using the
-publicly-available data from the GWOSC
-repository\footnote{\url{https://gwosc.org}}. We utilise the
-\texttt{Bilby} Bayesian inference framework~\citep{ashton19,romeroshaw20}
-and priors on source--frame chirp mass and tidal--deformability as
-discussed in Section \ref{sec:Methods}. Priors for all remaining
-parameters assume the so-called low-spin ($\chi \leq 0.05$) default
-priors as defined in \texttt{Bilby}. We use Planck 2018 cosmological
-parameters~\citep{Planck} such that Hubble's constant and the matter
-density are respectively $H_0=67.66 \rm \ km \ s^{-1} \ Mpc^{-1}$, $\Omega_M =
-0.30966$.
+We perform Bayesian parameter estimation on the GW strain data of the two
+BNS merger events GW170817 and GW190425 using the publicly-available data
+from the GWOSC repository\footnote{\url{https://gwosc.org}}. We utilise
+the \texttt{Bilby} Bayesian inference
+framework~\citep{ashton19,romeroshaw20} and priors on source--frame chirp
+mass and tidal--deformability as discussed in Section
+\ref{sec:Methods}. Priors for all remaining parameters assume the
+so-called low-spin ($\chi \leq 0.05$) default priors as defined in
+\texttt{Bilby}. We use Planck 2018 cosmological parameters~\citep{Planck}
+such that Hubble's constant and the matter density are respectively
+$H_0=67.66 \rm \ km \ s^{-1} \ Mpc^{-1}$, $\Omega_M = 0.30966$.
 	
 Parameter estimation for each run is performed using the \texttt{dynesty}
 nested sampler~\citep{Dynesty} and the \texttt{IMRPhenomPv2\_NRTidal}
 waveform~\citep{IMRPhenomP_NRtidal}. Analysis of BNS merger signals is
 computationally expensive and as such we utilise parallel implementation
-of \texttt{Bilby}, i.e., \texttt{pBilby}~\citep{pbilby}. We reconstruct pressure--density and mass--radius curves
-from posterior samples of source--frame chirp mass, mass ratio, and
-effective tidal deformability by performing EOS inference on the
-posterior samples of mass and tidal deformability. We utilise a
-four-piece spectral parameterisation~\citep{Lindblom2010} stitched to an
+of \texttt{Bilby}, i.e., \texttt{pBilby}~\citep{pbilby}. We reconstruct
+pressure--density and mass--radius curves from posterior samples of
+source--frame chirp mass, mass ratio, and effective tidal deformability
+by performing EOS inference on the posterior samples of mass and tidal
+deformability. We utilise a four-piece spectral
+parameterisation~\citep{Lindblom2010} stitched to an
 SLy~\citep{2001_SLy_EOS} crust at low densities (further details can be
 found in Appendix~\ref{sec:EOS_inference}).
 
-The choice of adopting an approach for the EOS inference (i.e., four-piece spectral
-parameterisation) that is different from that used in the EOS
-construction (i.e., seven-segment sound-speed parameterisation) follows a
-precise logic. In particular, this has the advantage that it is possible
-to compare directly with the LVK inference analysis and hence clearly
-distinguish the assumptions behind the definition of the priors from
-those employed in the inference. At the same time, this also implies that
-the posteriors obtained for the EOSs parameters differ from the
+The choice of adopting an approach for the EOS inference (i.e.,
+four-piece spectral parameterisation) that is different from that used in
+the EOS construction (i.e., seven-segment sound-speed parameterisation)
+follows a precise logic. In particular, this has the advantage that it is
+possible to compare directly with the LVK inference analysis and hence
+clearly distinguish the assumptions behind the definition of the priors
+from those employed in the inference. At the same time, this also implies
+that the posteriors obtained for the EOSs parameters differ from the
 corresponding priors. While these differences are small, we plan to
 explore the use of the same set of assumptions for the EOS priors and
 inference in future work.
@@ -517,16 +518,17 @@ prior.
 
 The still poor knowledge of the EOS of nuclear matter represents a
 significant obstacle in the analysis of GW events involving neutron
-stars. This is true not only for parameter estimation of neutron stars in the case of BNS mergers,
-but also to assess whether the low-mass component is actually a neutron star or a black hole in
-candidate NSBH mergers. To counter these limitations, a number of
-approaches have recently been developed that use a large number of
-physically and astrophysically consistent parameterised EOSs to deduce
-quasi-universal behaviours of the neutron star. A particularly useful
-relation is the one presented by~\cite{Altiparmak:2022}, who have shown a
-tight statistical correlation between the chirp mass $\mathcal{M}$ --
-arguably, the best-measured quantity in binary mergers -- and the binary
-tidal deformability $\tilde{\Lambda}$.
+stars. This is true not only for parameter estimation of neutron stars in
+the case of BNS mergers, but also to assess whether the low-mass
+component is actually a neutron star or a black hole in candidate NSBH
+mergers. To counter these limitations, a number of approaches have
+recently been developed that use a large number of physically and
+astrophysically consistent parameterised EOSs to deduce quasi-universal
+behaviours of the neutron star. A particularly useful relation is the one
+presented by~\cite{Altiparmak:2022}, who have shown a tight statistical
+correlation between the chirp mass $\mathcal{M}$ -- arguably, the
+best-measured quantity in binary mergers -- and the binary tidal
+deformability $\tilde{\Lambda}$.
 
 We here exploit the $\mathcal{M}\!- \!\tilde{\Lambda}$ relation to
 re-investigate the constraints on the GW170817 and GW190425 events. More
@@ -573,38 +575,7 @@ extensions in future work.
 
 
 \appendix
-	
-% %========================================================================
-% \section{Model Selection}
-% \label{sec:Model Selection}
-% %========================================================================
 
-% We perform parameter estimation of GW strain data using the
-% \texttt{dynesty} nested sampler. Unlike standard Markov-chain-Monte-Carlo
-% (MCMC) samplers, \texttt{dynesty} calculates the evidence for each
-% parameter estimation run. To perform Bayesian model selection between BNS
-% and NSBH mergers, we calculate the Bayes factor
-% %
-% \begin{equation}
-%   \mathcal{BF}^{^{\rm BNS}}_{_{\rm NSBH}} = \frac{\mathcal{Z_{_{\rm
-%           BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}}\,,
-% \end{equation}
-% %
-% where $\mathcal{Z}_{_{\rm BNS}}$ and $\mathcal{Z}_{_{\rm NSBH}}$ are the
-% Bayesian evidences obtained for the parameter estimation runs using the
-% BNS and NSBH priors respectively. Formally, for model selection we should
-% be computing the odds ratio, which is defined as
-% %
-% \begin{equation}
-%   \mathcal{O}^{^{\rm BNS}}_{_{\rm NSBH}} := \frac{\mathcal{Z_{_{\rm
-%           BNS}}}}{\mathcal{Z_{_{\rm NSBH}}}} \frac{\pi_{_{\rm
-%         BNS}}}{\pi_{_{\rm NSBH}}}\,,
-% \end{equation}
-% %
-% where $\pi_{_{\rm BNS}}$ and $\pi_{_{\rm NSBH}}$ are the prior odds for
-% each hypothesis; i.e., our relative belief about which hypothesis is more
-% likely. The prior odds is calculated by considering the observed number
-% of BNS mergers, relative to the observed number of NSBH mergers.
 
 %========================================================================
 \section{Equation of state inference}
@@ -713,26 +684,28 @@ priors for each EOS parameter and enforce a minimum TOV mass $M_{\rm TOV}
 \section*{Acknowledgements}
 %============================================================
 
-The authors are grateful to the organisers of the NEOSGrav2024 (Neutron Star Equation of State and Gravitational Waves) conference, held in Goa, India, from October 1-4, 2024, and organised by the Inter-University Centre for Astronomy and
-Astrophysics (IUCAA), Pune, where the discussions that led to this work
-were initiated. We thank Nir Guttman, Floor Broekgaarden and Nikhil
-Sarin for useful discussions. SJM receives support from the Australian
-Government Research Training Program. Partial funding comes from the ERC
-Advanced Grant ``JETSET: Launching, propagation and emission of
-relativistic jets from binary mergers and across mass scales'' (Grant
-No. 884631), and the European Horizon Europe staff exchange (SE)
-programme HORIZON-MSCA2021-SE-01 Grant No. NewFunFiCO-101086251. CE
-acknowledges support by the Deutsche Forschungsgemeinschaft (DFG, German
-Research Foundation) through the CRC-TR 211 ``Strong-interaction matter
-under extreme conditions''-- project number 315477589 -- TRR 211. LR
-acknowledges the Walter Greiner Gesellschaft zur F\"orderung der
-physikalischen Grundlagenforschung e.V. through the Carl W. Fueck
-Laureatus Chair. SJM, PDL, and SRG are supported through Australian
-Research Council (ARC) Centres of Excellence CE170100004 and CE230900016,
-Discovery Projects DP220101610 and DP230103088, and LIEF Project
-LE210100002.  We also computational support through the Ngarrgu Tindebeek
-/ OzSTAR Australian national facility at Swinburne University of
-Technology.
+The authors are grateful to the organisers of the NEOSGrav2024 (Neutron
+Star Equation of State and Gravitational Waves) conference, held in Goa,
+India, from October 1-4, 2024, and organised by the Inter-University
+Centre for Astronomy and Astrophysics (IUCAA), Pune, where the
+discussions that led to this work were initiated. We thank Nir Guttman,
+Floor Broekgaarden and Nikhil Sarin for useful discussions. SJM receives
+support from the Australian Government Research Training Program. Partial
+funding comes from the ERC Advanced Grant ``JETSET: Launching,
+propagation and emission of relativistic jets from binary mergers and
+across mass scales'' (Grant No. 884631), and the European Horizon Europe
+staff exchange (SE) programme HORIZON-MSCA2021-SE-01 Grant
+No. NewFunFiCO-101086251. CE acknowledges support by the Deutsche
+Forschungsgemeinschaft (DFG, German Research Foundation) through the
+CRC-TR 211 ``Strong-interaction matter under extreme conditions''--
+project number 315477589 -- TRR 211. LR acknowledges the Walter Greiner
+Gesellschaft zur F\"orderung der physikalischen Grundlagenforschung
+e.V. through the Carl W. Fueck Laureatus Chair. SJM, PDL, and SRG are
+supported through Australian Research Council (ARC) Centres of Excellence
+CE170100004 and CE230900016, Discovery Projects DP220101610 and
+DP230103088, and LIEF Project LE210100002.  We also computational support
+through the Ngarrgu Tindebeek / OzSTAR Australian national facility at
+Swinburne University of Technology.
 
 %------------------------------------------------------------------------
 \section*{Data Availability}
