@@ -16,8 +16,11 @@
 
 \begin{document}
 	
-\title{Physics-Informed Priors Improve Gravitational-Wave Constraints on the Nuclear Equation of State}
-
+\title{Physics-Informed Priors Improve Gravitational-Wave Constraints on
+  the Nuclear Equation of State \\
+%
+  The Importance of Physics-Informed Priors to Improve Constraints on
+  Nuclear Matter and Source Classification}
 
 
 \author[0009-0000-7037-1809]{Spencer J. Magnall}
@@ -122,7 +125,7 @@ with the uniform priors to $\tilde{\Lambda}_{1.186} = 384^{+306}_{-158}$
 with the new physics-informed prior (confidence intervals are $90\%$
 throughout).
 
-We infer a posterior distirbution on EOS parameters and find that the
+We infer a posterior distribution on EOS parameters and find that the
 neutron-star radius measurement for a $1.4\,{M_\odot}$ star improves from
 ${R_{1.4}}=12.54^{+1.05}_{-1.54}\,{\rm km}$, as reported in the original
 LVK analysis~\citep{abbott19_170817Properties}, to
@@ -261,7 +264,7 @@ mass.
 
 We use the probability distributions described in the previous Section as
 priors on the source-frame chirp mass and effective tidal deformability.
-These priors are shown in Fig.~\ref{fig:priors} where the top oanel is the BNS prior and the bottom panel is the NSBH prior.
+These priors are shown in Fig.~\ref{fig:priors} where the top panel is the BNS prior and the bottom panel is the NSBH prior.
 We implement this in \texttt{Bilby}
 using the \texttt{conditional\_prior} function, interpolating a
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
@@ -544,7 +547,7 @@ the BNS merger hypothesis.  In either case, we improve the constraints on
 the radius estimates with respect to previous LVK with the posterior
 distributions indicating $R_{1.4} = 12.69^{+1.24}_{-1.22} \, {\rm km}$
 for BNS and $R_{1.4} = 12.06^{+1.44}_{-1.15} \, {\rm km}$ for NSBH
-mergers. We give seperate constraints on the EOS for both BNS and NSBH
+mergers. We give separate constraints on the EOS for both BNS and NSBH
 origins of GW190425; however we could also calculate a single EOS
 posterior weighted by the evidence for BNS and NSBH merger origins of
 GW190425~(e.g., \citealt{2020Ashton}).
@@ -608,7 +611,7 @@ extensions in future work.
 \label{sec:EOS_inference}
 %========================================================================
 
-The posterior distirbution on the EOS parameters $\eta$ from the GW data is
+The posterior distribution on the EOS parameters $\eta$ from the GW data is
 %
 \begin{equation}
   p(\epsilon| d) = \frac{p(d|{\epsilon})\pi(\epsilon)}{\mathcal{Z}}\,,
@@ -710,9 +713,9 @@ priors for each EOS parameter and enforce a minimum TOV mass $M_{\rm TOV}
 \section*{Acknowledgements}
 %============================================================
 
-The authors are grateful to the organisers of the NEOSGrav2024 (Neutron Star Equation of State and Gravitational Waves) conference, held in Goa, India, from October 1–4, 2024, and organized by the Inter-University Centre for Astronomy and
+The authors are grateful to the organisers of the NEOSGrav2024 (Neutron Star Equation of State and Gravitational Waves) conference, held in Goa, India, from October 1-4, 2024, and organised by the Inter-University Centre for Astronomy and
 Astrophysics (IUCAA), Pune, where the discussions that led to this work
-were initiated. SJM thanks Nir Guttman, Floor Broekgaarden and Nikhil
+were initiated. We thank Nir Guttman, Floor Broekgaarden and Nikhil
 Sarin for useful discussions. SJM receives support from the Australian
 Government Research Training Program. Partial funding comes from the ERC
 Advanced Grant ``JETSET: Launching, propagation and emission of
