@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex paper"] 1744151836 "paper.aux" "paper.bbl" "paper" 1744151869 0
+["bibtex paper"] 1744243808 "paper.aux" "paper.bbl" "paper" 1744243871 0
   "./aasjournal.bst" 1743552696 36130 1e2d4614828005814bd64e3c665b8e99 ""
   "./references.bib" 1744004306 45844 249713c139cc0cf1c5a40b0284f6fac3 ""
-  "paper.aux" 1744151868 12207 b3cdc2d5c1b7bdab301318279fd28a98 "pdflatex"
+  "paper.aux" 1744243871 12091 68927531458425c6fb133bd45bc01bcb "pdflatex"
   (generated)
   "paper.bbl"
   "paper.blg"
   (rewritten before read)
-["pdflatex"] 1744151868 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1744151869 0
-  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1744151868 37356 b55719f448a53ee46ae4409f06606a8d ""
+["pdflatex"] 1744243870 "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" "paper.pdf" "paper" 1744243871 0
+  "/Users/plasky/Research/OngoingResearchFiles/BNS/MCLambdaBHNS/paper.tex" 1744243870 37419 19d5e799ef805cb345eef1f809039dda ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -48,7 +48,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -147,16 +146,16 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1691466162 7883469 5b3fbfb35fa6cf48797d061a32dad879 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Fig_1_Physics_priors.pdf" 1743634851 1191223 4e6f7af9758fe02b5e46c7eb9733ba25 ""
-  "Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf" 1744004306 72505 a515f1588591f8c6e01d5021915e252c ""
+  "Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf" 1744243768 72493 e5c552352e9faa775e85569a4c280b87 ""
   "Fig_3_GW190425_lambda_tilde_posteriors.pdf" 1744004306 70899 c3f9f7da3b9a700a4dedaa0b3dddccbf ""
-  "GW170817_press_dens_MR.pdf" 1744004306 216369 b33f6c797679cb09a7b5a0530943a978 ""
-  "GW190425_press_dens_MR.pdf" 1744004306 279761 90fc55f7a73b10505fa91647405412aa ""
+  "GW170817_press_dens_MR.pdf" 1744243768 216349 93f3a5d8029eaa770db641b4276f05a0 ""
+  "GW190425_press_dens_MR.pdf" 1744243768 213234 74c7bd43b318e6beb32c3815e54e56cb ""
   "Orcid-ID.png" 1743552696 27604 8527c7c3c14d5c207af947385c09fd77 ""
   "aastex631.cls" 1743552696 231673 3a8503ea2dc529eec05658a2b11d12d0 ""
-  "paper.aux" 1744151868 12207 b3cdc2d5c1b7bdab301318279fd28a98 "pdflatex"
-  "paper.bbl" 1744151837 13772 2b8d1cc9fb34d257abc545392e66d619 "bibtex paper"
-  "paper.out" 1744151868 993 d4684f266de27b79109904a9d0aec7a8 "pdflatex"
-  "paper.tex" 1744151868 37356 b55719f448a53ee46ae4409f06606a8d ""
+  "paper.aux" 1744243871 12091 68927531458425c6fb133bd45bc01bcb "pdflatex"
+  "paper.bbl" 1744243808 13772 2b8d1cc9fb34d257abc545392e66d619 "bibtex paper"
+  "paper.out" 1744243871 871 46607e398eb77a7e3bd2d59654ae49db "pdflatex"
+  "paper.tex" 1744243870 37419 19d5e799ef805cb345eef1f809039dda ""
   (generated)
   "paper.aux"
   "paper.log"
