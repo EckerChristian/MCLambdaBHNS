@@ -290,7 +290,7 @@ when imposing the GW170817 constraint.
 
 \begin{figure}
   \centering
-  \includegraphics[width=1.\linewidth]{Fig_1_Physics_priors.pdf}
+  \includegraphics[width=1.\columnwidth]{Fig_1_Physics_priors.pdf}
   \caption{Priors for the source-frame chirp mass $\mathcal{M}$ and the
     dimensionless tidal deformability $\tilde{\Lambda}$ in the case of
     BNS (top panel) or NSBH binaries (bottom panel). In both panels,
@@ -328,12 +328,13 @@ parameter would not add significantly to parameter estimation in the
 relatively low signal-to-noise regime. We therefore leave exploration of
 physically-motivated priors on $\delta\tilde{\Lambda}$ for future work.
 
-We construct priors on $\mathcal{M}$ and $\tilde{\Lambda}$ 
-by randomly generating neutron star binaries. This is equivalent to choosing flat priors
-on the mass distribution of binary neutron stars. It has been shown that an incorrect choice of
-neutron star population leads to a bias in the EOS after 20 observations~\citep[e.g.,][]{2020Wysocki}. 
-However, given the small number of observed events we expect any bias to be minimal.
-We plan to explore the impact of different mass populations in future work. 
+We construct priors on $\mathcal{M}$ and $\tilde{\Lambda}$ by randomly
+generating neutron star binaries. This is equivalent to choosing flat
+priors on the mass distribution of BNSs. It has been shown that an
+incorrect choice of a neutron-star population leads to a bias in the EOS
+after $\sim 20$ observations~\citep[e.g.,][]{2020Wysocki}. However, given
+the small number of observed events, we expect any bias to be minimal. We
+plan to explore the impact of different mass populations in future work.
 
 The above discussion only refers to BNS mergers as the corresponding
 parameterisation does not go to large enough chirp-mass values for
@@ -357,7 +358,7 @@ deformability of the neutron star.
 
 \begin{figure}
   \centering
-  \includegraphics[width=1.\linewidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
+  \includegraphics[width=1.\columnwidth]{Fig_2_GW170817_lambda_tilde_posteriors_BNS.pdf}
   \caption{Marginalised posterior distributions of the tidal
     deformability $\tilde{\Lambda}$ for GW170817. The posterior using a
     physics-informed prior is shown in red, while the posterior using
@@ -409,6 +410,21 @@ inference in future work.
 \label{sec:Results}
 %========================================================================
 	
+\begin{figure}
+  \centering
+  \includegraphics[width=1.\columnwidth]{GW170817_press_dens_MR.pdf}
+  \caption{Posterior distributions of the range of pressures and energy
+    densities for a nuclear-matter EOS (top panel) and of the
+    corresponding masses and radii (bottom panel) in the case of
+    GW170817. In both panels, the shaded regions show the $90\%$ credible
+    intervals of the posterior distributions obtained using the
+    physics-informed priors (red) or the uniform priors (blue), while the
+    dashed curves show the $90\%$ credible intervals of the priors on
+    chirp mass and tidal deformability when mapped to the spectral
+    parameterisation.}
+    \label{fig:GW170817_massradius}
+\end{figure}
+
 Figure \ref{fig:GW170817_tides} shows the posterior distributions of the
 tidal deformability of GW170817 analyzed using the physics-informed BNS
 (red), the publicly-released uniform priors from the LVK
@@ -427,20 +443,6 @@ upper limits on the tidal deformability are now $226 \leq
 interesting consequence of the physics-informed prior on the
 $\mathcal{M}\!-\!\tilde{\Lambda}$ relation.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{GW170817_press_dens_MR.pdf}
-  \caption{Posterior distributions of the range of pressures and energy
-    densities for a nuclear-matter EOS (top panel) and of the
-    corresponding masses and radii (bottom panel) in the case of
-    GW170817. In both panels, the shaded regions show the $90\%$ credible
-    intervals of the posterior distributions obtained using the
-    physics-informed priors (red) or the uniform priors (blue), while the
-    dashed curves show the $90\%$ credible intervals of the priors on
-    chirp mass and tidal deformability when mapped to the spectral
-    parameterisation.}
-    \label{fig:GW170817_massradius}
-\end{figure}
 
 Figure~\ref{fig:GW170817_massradius} shows the impact of the
 $\mathcal{M}\!-\!\tilde{\Lambda}$ relation on the reconstructed posterior
@@ -458,7 +460,7 @@ uniform prior (blue) when sampled with the spectral parameterisation.
 
 \begin{figure}
   \centering
-  \includegraphics[width=1.\linewidth]{Fig_3_GW190425_lambda_tilde_posteriors.pdf}
+  \includegraphics[width=1.\columnwidth]{Fig_3_GW190425_lambda_tilde_posteriors.pdf}
   \caption{The same as in Fig.~\ref{fig:GW170817_tides} but for the
     GW190425 event. The posterior using a physics-informed prior for BNS
     mergers is shown in red, while the posterior for NSBH mergers is
@@ -506,7 +508,7 @@ prior.
 
 \begin{figure}
   \centering
-  \includegraphics[width=\linewidth]{GW190425_press_dens_MR.pdf}
+  \includegraphics[width=1.\columnwidth]{GW190425_press_dens_MR.pdf}
   \caption{The same as in Fig.~\ref{fig:GW170817_massradius} but for the
     GW190425 event. The top panel shows the posterior distributions in
     pressure--density space, while the bottom panel shows the
