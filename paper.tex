@@ -129,8 +129,7 @@ throughout).
 
 We infer a posterior distribution on EOS parameters and find that the
 neutron-star radius measurement for a $1.4\,{M_\odot}$ star improves from
-${R_{1.4}}=12.54^{+1.05}_{-1.54}\,{\rm km}$, as reported in the original
-LVK analysis~\citep{abbott19_170817Properties}, to
+${R_{1.4}}=12.54^{+1.05}_{-1.54}\,{\rm km}$, as reported in the original analysis~\citep{abbott19_170817Properties}, to
 ${R_{1.4}}=12.11^{+0.91}_{-1.11}\,{\rm km}$ when using physics-informed
 priors and a spectral EOS~\citep[see also][for some of the first
   estimates made after the GW170817
@@ -227,7 +226,11 @@ with a maximum mass $M_{\rm TOV} < 2.0\,M_{\odot}$. In addition, we
 impose NICER radius constraints from J0740+6620~\citep{Miller2021,
   Riley2021} and J0030+0451~\citep{Riley2019, MCMiller2019b}, rejecting
 EOSs with $R < 10.75\,\rm km$ at $M = 2.0\,M_{\odot}$ or $R < 10.8\,\rm
-km$ at $M = 1.1\,M_{\odot}$. We note that, unlike what was done
+km$ at $M = 1.1\,M_{\odot}$.
+Naively, we would expect a loss of information since we are discarding the uncertainties associated with these measurements. 
+However, \citet{2023Jiang} showed that the underlying distirbutions are almost identical regardless of the choice of constant or variable likelihood,
+with 90\% credible intervals essentially overlapping. 
+We note that, unlike what was done
 in~\citet{Altiparmak:2022} and \citet{Ecker:2022dlg}, we do not impose any
 GW-informed constraints on the binary tidal deformability in the
 construction of our prior as we are reanalysing these data using the
@@ -330,11 +333,10 @@ physically-motivated priors on $\delta\tilde{\Lambda}$ for future work.
 
 We construct priors on $\mathcal{M}$ and $\tilde{\Lambda}$ by randomly
 generating neutron star binaries. This is equivalent to choosing flat
-priors on the mass distribution of BNSs. It has been shown that an
-incorrect choice of a neutron-star population leads to a bias in the EOS
-after $\sim 20$ observations~\citep[e.g.,][]{2020Wysocki}. However, given
-the small number of observed events, we expect any bias to be minimal. We
-plan to explore the impact of different mass populations in future work.
+priors on the mass distribution of BNSs. It has been shown that an incorrect choice of neutron star population leads to a bias in the inferred EOS from
+gravitational-wave measurements after around 20 observations~\citep[e.g.,][]{2015Agathos,2020Wysocki,2020Landry}. However, given the small number of observed
+events we expect any bias to be minimal. We plan to explore
+the impact of different mass populations in future work.
 
 The above discussion only refers to BNS mergers as the corresponding
 parameterisation does not go to large enough chirp-mass values for
@@ -563,6 +565,9 @@ mergers. We give separate constraints on the EOS for both BNS and NSBH
 origins of GW190425; however we could also calculate a single EOS
 posterior weighted by the evidence for BNS and NSBH merger origins of
 GW190425~(e.g., \citealt{2020Ashton}).
+Compared to other works which provide constraints on the cold nuclear EOS by combining nuclear and astrophysical measurements using joint likelihoods
+ \citep[e.g.,][]{2019Coughlin,2020Dietrich,2023Tiwari,2023Pang,2024Breschi,2025Koehn,2025Golomb}
+we obtain consistent, if slightly broader constraints on the radius of a $1.4 \, M_\odot$ neutron star.
 
 Overall, our results clearly indicate that physics-informed priors do
 improve the parameter estimation of GW events involving neutron stars and
@@ -698,8 +703,8 @@ The authors are grateful to the organisers of the NEOSGrav2024 (Neutron
 Star Equation of State and Gravitational Waves) conference, held in Goa,
 India, from October 1-4, 2024, and organised by the Inter-University
 Centre for Astronomy and Astrophysics (IUCAA), Pune, where the
-discussions that led to this work were initiated. We thank Nir Guttman,
-Floor Broekgaarden and Nikhil Sarin for useful discussions. SJM receives
+discussions that led to this work were initiated. The authors thank Debarati Chatterjee, Nir Guttman,
+Floor Broekgaarden and Nikhil Sarin. SJM receives
 support from the Australian Government Research Training Program. Partial
 funding comes from the ERC Advanced Grant ``JETSET: Launching,
 propagation and emission of relativistic jets from binary mergers and
@@ -716,7 +721,8 @@ supported through Australian Research Council (ARC) Centres of Excellence
 CE170100004 and CE230900016, Discovery Projects DP220101610 and
 DP230103088, and LIEF Project LE210100002.  We also computational support
 through the Ngarrgu Tindebeek / OzSTAR Australian national facility at
-Swinburne University of Technology.
+Swinburne University of Technology. This material is based upon work supported by NSF’s LIGO Laboratory which is a major facility fully funded by the National Science
+Foundation.
 
 %------------------------------------------------------------------------
 \section*{Data Availability}
@@ -724,8 +730,7 @@ Swinburne University of Technology.
 
 The implementation of our physics-informed priors into the \texttt{Bilby}
 Bayesian inference library, along with documentation and example scripts
-can be found at
-\url{https://github.com/spencermagnall/physics\_informed\_priors}.
+can be found at \url{https://github.com/spencermagnall/physics\_informed\_priors}.
 
 \bibliography{references}{}
 \bibliographystyle{aasjournal}
