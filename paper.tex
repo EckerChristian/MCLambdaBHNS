@@ -8,10 +8,11 @@
 \newcommand\aastex{AAS\TeX}
 \newcommand\latex{La\TeX}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
-\newcommand{\SM}[1]{\textcolor{blue}{SM: #1}}
+\newcommand{\SM}[1]{\textcolor{green}{SM: #1}}
 \newcommand{\CE}[1]{\textcolor{violet}{CE: #1}}
 \newcommand{\pdl}[1]{\textcolor{teal}{PL: #1}}
 \newcommand{\lr}[1]{\textcolor{magenta}{LR: #1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
 
 
 \begin{document}
@@ -63,7 +64,7 @@
  {12.54^{+1.05}_{-1.54}} \, {\rm km}$ to $R_{1.4} = 12.11^{+0.91}_{-1.11}
  \,{\rm km}$ and those on the tidal deformability from
  $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.186} =
- 384^{+306}_{-158}$ ($90\%$ confidence intervals) at the events measured
+ 384^{+306}_{-158}$ ($90\%$ confidence intervals) at the \blue{event's} measured
  chirp mass $\mathcal{M}=1.186\,M_\odot$. We also show these priors can
  be used to perform model selection between binary neutron star and
  neutron star-black hole mergers; in the case of GW190425, the results
@@ -138,9 +139,9 @@ used to perform model selection, and hence distinguish between GW-source
 types. We perform model selection between a BNS and a neutron star --
 black hole (NSBH) origin for GW190425 and find a Bayes factor of $1.33$
 in favour of a BNS origin. When including observed rates as the prior odds,
-we find an odds ratio of $0.33$, when considering the full population of
+we find an odds ratio \blue{in favour of a BNS origin} of $0.33$, when considering the full population of
 NSBH mergers, indicating marginal support for a NSBH origin.  When
-considering only mass-gap NSBH mergers, the odds ratio is $1.33$,
+considering only mass-gap NSBH mergers, the odds ratio \blue{in favour of a BNS origin} is $1.33$,
 marginally in favour of a BNS merger origin. Regardless, we find that
 model selection for the origin of GW190425 remains uninformative.
 	
@@ -152,7 +153,7 @@ collaboration~\citep[e.g.,][]{LIGO, Virgo, KAGRA}. This code provides a
 numerical implementation of the joint probability distribution as a
 \texttt{Bilby} constrained-prior object for $\mathcal{M}$ and
 $\tilde{\Lambda}$. We describe details of the method and implementation
-in the next Section.
+in \blue{Section~\ref{sec:Methods}}.
 
 
 %========================================================================
@@ -271,7 +272,9 @@ the BNS prior and the bottom panel is the NSBH prior.  We implement this
 in \texttt{Bilby} using the \texttt{conditional\_prior} function,
 interpolating a $200\times200$ grid to draw from a joint prior on
 $\mathcal{M}$ and $\tilde{\Lambda}$. The $90\%$ probability contours
-(dashed black curves) can be fit by a simple power law
+(dashed black curves) can be fit by a simple power law \blue{to obtain analytic estimates
+for the minimum (maximum) value of $\tilde{\Lambda}$ as function of the
+chirp mass}
 %
 \begin{equation}\label{eq:fit}
   \tilde\Lambda_{{\rm min}(\rm max)}=a + b \,\mathcal{M}^c\,,
@@ -321,7 +324,8 @@ astrophysically motivated.
 While both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are
 related to the EOS, we only impose a prior here on $\tilde{\Lambda}$, as
 $\tilde{\Lambda}$ is measured much better than
-$\delta\tilde{\Lambda}$~\citep[e.g.,][]{wade14}. In principle, one could
+$\delta\tilde{\Lambda}$~\citep[e.g.,][]{wade14}. \blue{We use a uniform prior on $\delta\tilde{\Lambda}$ in the range $\delta\tilde{\Lambda} \in [-500,500]$.}
+In principle, one could
 set a combined prior on the three parameters $(\mathcal{M},\,
 \tilde{\Lambda}, \,\delta\tilde{\Lambda})$, however, adding this latter
 parameter would not add significantly to parameter estimation in the
@@ -420,10 +424,12 @@ inference in future work.
     corresponding masses and radii (bottom panel) in the case of
     GW170817. In both panels, the shaded regions show the $90\%$ credible
     intervals of the posterior distributions obtained using the
-    physics-informed priors (red) or the uniform priors (blue), while the
-    dashed curves show the $90\%$ credible intervals of the priors on
-    chirp mass and tidal deformability when mapped to the spectral
-    parameterisation.}
+    physics-informed priors (red) or the uniform priors (blue), while %the
+    %dashed curves show the $90\%$ credible intervals of the priors on
+    %chirp mass and tidal deformability when mapped to the spectral
+    %parameterisation.
+    \blue{the dashed curves show the 90\% credible intervals of the effective priors of the relationship between chirp mass and tidal deformability for the uniform (blue) and physics-informed (red) priors, when mapped to the spectral parameterisation.}
+    }
     \label{fig:GW170817_massradius}
 \end{figure}
 
@@ -466,7 +472,7 @@ uniform prior (blue) when sampled with the spectral parameterisation.
   \caption{The same as in Fig.~\ref{fig:GW170817_tides} but for the
     GW190425 event. The posterior using a physics-informed prior for BNS
     mergers is shown in red, while the posterior for NSBH mergers is
-    shown in green. The posterior using uniform priors from the LVK is
+    shown in green. The posterior using uniform priors \blue{and assuming a BNS origin} from the LVK is
     reported in blue.}
   \label{fig:GW190425_tides}
 \end{figure}
@@ -479,9 +485,13 @@ uniform prior (blue) when sampled with the spectral parameterisation.
     reconstructed mass--radius curves. The shaded regions show the $90\%$
     credible intervals of the posterior distributions obtained from the
     analysis using the physics-informed BNS prior (red) and the NSBH
-    prior (green). The black dashed curve shows the $90\%$ credible
-    intervals of the priors when
-    mapped to a spectral parameterisation.}
+    prior (green). 
+    %The black dashed curve shows the $90\%$ credible
+    %intervals of the priors when
+    %mapped to a spectral parameterisation.
+    \blue{The black dashed curve shows the $90\%$ credible interval of the effective prior of the relationship between chirp mass
+    and tidal deformability for the physics-informed prior, when mapped to the spectral parameterisation.}
+    }
   \label{fig:GW190425_massradius_BNS}
 \end{figure}
 Figure \ref{fig:GW190425_tides} offers a complementary view to
