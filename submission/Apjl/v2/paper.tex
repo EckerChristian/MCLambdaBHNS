@@ -12,7 +12,7 @@
 \newcommand{\CE}[1]{\textcolor{violet}{CE: #1}}
 \newcommand{\pdl}[1]{\textcolor{teal}{PL: #1}}
 \newcommand{\lr}[1]{\textcolor{magenta}{LR: #1}}
-\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{\textbf{#1}}}
 
 
 \begin{document}
@@ -41,13 +41,15 @@
 \author[0000-0003-3763-1386]{Paul D. Lasky}
 \affiliation{School of Physics and Astronomy, Monash University, Clayton
   VIC 3800, Australia}
-\affiliation{OzGrav: The ARC Centre of Excellence for Gravitational Wave Discovery, Clayton VIC 3800, Australia}
+\affiliation{OzGrav: The ARC Centre of Excellence for Gravitational Wave
+  Discovery, Clayton VIC 3800, Australia}
 
 
 \author[0000-0002-9575-5152]{Simon R. Goode}
 \affiliation{School of Physics and Astronomy, Monash University, Clayton
   VIC 3800, Australia}
-\affiliation{OzGrav: The ARC Centre of Excellence for Gravitational Wave Discovery, Clayton VIC 3800, Australia}
+\affiliation{OzGrav: The ARC Centre of Excellence for Gravitational Wave
+  Discovery, Clayton VIC 3800, Australia}
 
 
 \begin{abstract}
@@ -64,7 +66,7 @@
  {12.54^{+1.05}_{-1.54}} \, {\rm km}$ to $R_{1.4} = 12.11^{+0.91}_{-1.11}
  \,{\rm km}$ and those on the tidal deformability from
  $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.186} =
- 384^{+306}_{-158}$ ($90\%$ confidence intervals) at the \blue{event's} measured
+ 384^{+306}_{-158}$ ($90\%$ confidence intervals) at the \blue{source-frame}
  chirp mass $\mathcal{M}=1.186\,M_\odot$. We also show these priors can
  be used to perform model selection between binary neutron star and
  neutron star-black hole mergers; in the case of GW190425, the results
@@ -108,9 +110,9 @@ The above prior assumptions are overly conservative. Basic physical
 principles such as causality, consistency with nuclear-physics
 experiments, and perturbative QCD calculations, imply a strong
 correlation between $\mathcal{M}$ and $\tilde{\Lambda}$ in neutron-star
-binaries. Constraints from astrophysical measurements of neutron-star
-masses and radii further tighten this correlation~\citep{Altiparmak:2022,
-  Ecker:2022, Ecker:2022dlg}.
+binaries~\blue{\citep{Altiparmak:2022}}. Constraints from astrophysical
+measurements of neutron-star masses and radii further tighten this
+correlation~\citep{Ecker:2022, Ecker:2022dlg}.
 
 Motivated by this, we introduce physics-informed joint priors on
 $\mathcal{M}$ and $\tilde{\Lambda}$ that incorporate microphysical
@@ -138,12 +140,13 @@ In addition to astrophysical inference, we show that these priors can be
 used to perform model selection, and hence distinguish between GW-source
 types. We perform model selection between a BNS and a neutron star --
 black hole (NSBH) origin for GW190425 and find a Bayes factor of $1.33$
-in favour of a BNS origin. When including observed rates as the prior odds,
-we find an odds ratio \blue{in favour of a BNS origin} of $0.33$, when considering the full population of
-NSBH mergers, indicating marginal support for a NSBH origin.  When
-considering only mass-gap NSBH mergers, the odds ratio \blue{in favour of a BNS origin} is $1.33$,
-marginally in favour of a BNS merger origin. Regardless, we find that
-model selection for the origin of GW190425 remains uninformative.
+in favour of a BNS origin. When including observed rates as the prior
+odds, we find an odds ratio \blue{in favour of a BNS origin} of $0.33$,
+when considering the full population of NSBH mergers, indicating marginal
+support for a NSBH origin.  When considering only mass-gap NSBH mergers,
+the odds ratio \blue{in favour of a BNS origin} is $1.33$, marginally in
+favour of a BNS merger origin. Regardless, we find that model selection
+for the origin of GW190425 remains uninformative.
 	
 In advocating for this prior becoming standard in the literature, we
 provide an open-source configuration for the \texttt{Bilby} Bayesian
@@ -267,14 +270,25 @@ mass.
 
 We use the probability distributions described in the previous Section as
 priors on the source-frame chirp mass and effective tidal deformability.
-These priors are shown in Fig.~\ref{fig:priors} where the top panel is
-the BNS prior and the bottom panel is the NSBH prior.  We implement this
-in \texttt{Bilby} using the \texttt{conditional\_prior} function,
-interpolating a $200\times200$ grid to draw from a joint prior on
-$\mathcal{M}$ and $\tilde{\Lambda}$. The $90\%$ probability contours
-(dashed black curves) can be fit by a simple power law \blue{to obtain analytic estimates
-for the minimum (maximum) value of $\tilde{\Lambda}$ as function of the
-chirp mass}
+\blue{In essence, for any EOS in our sample, we randomly collect $100$
+  pairs of $M_{1,2},\,\Lambda_{1,2}$, out of which we compute
+  $\mathcal{M}_{\rm chirp}$ and ${\tilde \Lambda}$.} These priors are
+shown in Fig.~\ref{fig:priors} where the top panel is the BNS prior and
+the bottom panel is the NSBH prior. We implement this in \texttt{Bilby}
+using the \texttt{conditional\_prior} function, interpolating a
+$200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
+$\tilde{\Lambda}$. \blue{We note that exclusion of the small
+  $\tilde{\Lambda}$ part of the distribution is the combination of all
+  the constraints that are imposed on the EOSs we construct. However, the
+  most significant of such constraint is that coming from pQCD, that
+  filters out very soft EOSs as they would lead to rather small sound
+  speeds at small densities, but then superluminal ones at higher
+  densities in order to match the asymptotic pQCD constraint.}
+
+The $90\%$ probability contours (dashed black curves)
+can be fit by a simple power law \blue{to obtain analytic estimates for
+  the minimum (maximum) value of $\tilde{\Lambda}$ as function of the
+  chirp mass}
 %
 \begin{equation}\label{eq:fit}
   \tilde\Lambda_{{\rm min}(\rm max)}=a + b \,\mathcal{M}^c\,,
