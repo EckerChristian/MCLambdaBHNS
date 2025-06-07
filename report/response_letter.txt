@@ -1,146 +1,210 @@
-Physics inspired priors referee comments
+Dear Prof. Rasio,
+
+     thank you for sending us the report of the Referee, whom we thank
+for the helpful comments and suggestions on the manuscript. Our responses
+to the Referee's comments (indicated with a "# " symbol) are outlined
+below, while the changes to the manuscript are highlighted in blue
+boldface text in the revised version.
+
+     We hope that with the revisions made the paper will be considered
+acceptable for publication in ApJL.
+
+     Best regards,
+
+     The Authors
+
+
+===========================================================================
+
+# typo: abstract: at the events measured chirp mass -# for events
+# measured with chirp mass ... ?
+
+  We thank the Referee for pointing out a typo in the abstract, which we
+  have corrected in the revised version.
+
+
+# Abstract: lines 19-21: "Given their ability to improve the
+# astrophysical inference of binary mergers involving neutron stars, we
+# advocate for these physics-informed priors to be used as standard in
+# the literature and provide open-source code for reproducibility and
+# adaptation of the method."  >> too strong a statement. The authors
+# should remove it or modify it to indicate how based on their results,
+# these priors could get reliable measurements. Providing open source
+# code for reproducibility is a common practice now and therefore, that
+# part of the sentence does not add any value to the abstract.
+
+  This statement includes an objective and a subjective component. The
+  objective part is true, and is shown in the paper - i.e., that the
+  physics-informed priors used in this paper improve the astrophysical
+  inference. We therefore understand that the Referee is arguing that
+  advocating for using these priors as standard in the literature is the
+  part of the sentence that is too strong. We respectfully disagree with
+  this sentiment, and note that it may fall outside of the scope of the
+  Referee's role. Firstly, our manuscript shows that the physics-informed
+  priors improve astrophysical inference, and they are completely within
+  the spirit of Bayesian methodology; i.e., that one starts with their
+  prior belief about how systems behave, and then uses data to update
+  those beliefs. Therefore, starting with uniform priors incorporates
+  nothing about our prior knowledge of systems, and so we do advocate for
+  these priors to become standard in the literature. Secondly, there is
+  nothing objectively wrong with this statement, but instead the Referee
+  may be offering a stylistic comment, which we respectfully acknowledge
+  but do not share. Finally, we find that "advocating" the use of a
+  technique or procedure should be something that scientists should be
+  able to do. It is then up to their peers' judgement - which is
+  subjective - to accept or not the suggestion on the basis of the
+  evidence we have provided and which is objective.
+  
+  With respect to the comment about providing open-source code, we again
+  respectfully disagree with the Referee that this does not add value to
+  the abstract. The implementation of these priors are complicated for a
+  number of reasons. We are the developers of both the code that
+  generates the priors (which is computationally expensive), and also the
+  original developers of the parameter-estimation software. We believe
+  making the code open-source is important for the community, to the
+  point of being included in the abstract.
+
+
+# "The above prior assumptions are overly conservative. Basic physical
+# principles such as causality, consistency with nuclear-physics
+# experiments, and perturbative QCD calculations, imply a strong
+# correlation between M and \Lambda in neutron-star binaries."  >>
+# citation?
+
+  We thank the Referee for the suggestion. The citation is of course to
+  the work of Altiparmak+ 2022 where the correlation was first presented;
+  we have added it in the revised version.
+  
+
+# In the abstract could you also quote the 90% upper limit in addition to
+# the median + 90% confidence interval from your study? Then it will be
+# easy to compare with the previous upper limit 720.
+
+  In the abstract, we quote the upper limit on Lambda for the original
+  (i.e., the LVK) results because those results are also consistent with
+  zero, implying the measurement is only that of an upper limit. On the
+  other hand, our results rule out Lambda = 0 with a large degree of
+  confidence, meaning that a 90% upper limit is not a relevant quantity
+  to quote. For this reason, it would be misleading to quote a 90% upper
+  limit in the abstract for our results; if we were to do this in the
+  abstract, it would further require a couple of sentences explaining
+  this result, which would unnecessarily bloat the abstract.
+
+
+# "We show a significant improvement on the measurement ..."  >>This line
+# could go in the conclusions not introduction
+
+  We see this as a stylistic suggestion from the Referee. We believe
+  stating this in the abstract, introduction, and conclusion is critical
+  and emphasises the main punchline of the paper.
+
+
+# "When including observed rates as the prior odds, we find an odds ratio
+# of 0.33" >> Odds ratio comparing what over what? i.e., it's not clear
+# whether the BNS is in the numerator or denominator
+
+   We thank the Referee for pointing out that this statement is
+   confusing. We have modified the manuscript with additional
+   clarification on the odds ratio.
+
+
+# "We describe details of the method and implementation in the next
+# Section."  >> Do you mean Methods section, or Section 2? Mention which
+# section specifically.
+
+  We have updated the manuscript to explicitly refer to the entirety of
+  Section 2 which encompasses both the eos construction and prior
+  implementation.
+
+
+# "We use the probability distributions described in the previous Section
+# as priors on the source-frame chirp mass and effective tidal
+# deformability."  >> Could you be specific about how the priors were
+# constructed?
+
+  We thank the Referee for raising this point. Much of the information on
+  how the probability distributions on the source-frame chirp mass and
+  effective tidal deformability are discussed in Altiparmak+ 2022, but we
+  agree that a brief summary can be added to the manuscript. This is what
+  we have done in the revised version.
+  
+
+# "where the fitting coefficients are a = ?57 (?23) ..."  >> It's not
+# clear what the numbers in the brackets are.
  
-We thank the reviewer for their helpful comments and suggestions on the manuscript. 
-Our responses to reviewers comments are outlined below, and changes to the manuscript are highlighted in blue text. 
+  The numbers in and out of the brackets here represent the lower and
+  upper bounds of the 90% for the fitting function, where the latter are
+  indicated in the round brackets. We realise that this might not have
+  been clear enough in the original work and have added some additional
+  clarification to the manuscript.
 
 
-typo: abstract: at the events measured chirp mass -> for events measured
-with chirp mass ... ?
+# "We sample directly in source-frame chirp mass, mass ratio and the two
+# tidal deformability parameters \Lambda and \delta \Lambda" >> In the
+# next paragraph the authors say that they do not have a prior on \delta
+# \Lambda. Can you clarify how you don't have priors on \delta \Lambda
+# but also say that you sample in that parameter?
 
-We thank the referee for pointing out a typo in the abstract. This should read “at the event’s measured chirp mass…” i.e, at the chirp mass of BNS event GW170817. 
-We have corrected this in the manuscript.   
-
-
-Abstract: lines 19-21: "Given their ability to improve the astrophysical
-inference of binary mergers involving neutron stars, we advocate for
-these physics-informed priors to be used as standard in the literature
-and provide open-source code for reproducibility and adaptation of the
-method."  >> too strong a statement. The authors should remove it or
-modify it to indicate how based on their results, these priors could get
-reliable measurements. Providing open source code for reproducibility is
-a common practice now and therefore, that part of the sentence does not
-add any value to the abstract.
+  We thank the Referee for pointing out how this is confusing. We sample
+  over lambda_tilde and delta_lambda when we perform parameter
+  estimation, but we do not construct a "physics inspired prior" for
+  delta_lambda as we do for lambda_tilde. The prior on delta_lambda is
+  set to be uniform during parameter estimation. We have amended the
+  manuscript to make this explicitly clear.
 
 
+# The physics informed priors imposes a hard cut on the tidal
+# deformability excluding values below ~200, which then translates to the
+# posterior. Since this prior essentially eliminates a large chunk of
+# soft equation of states, could you emphasize how the calculations you
+# present for your physics-informed priors translates to the cut and
+# provide an physical explanation for why eliminating low Lambdas is a
+# valid assumption for GW170817?
 
-This statement includes an objective and a subjective component. The objective part is true, and is shown in the paper – i.e., that the physics-informed priors used in this paper improve the astrophysical inference.
-We therefore understand that the Referee is arguing that advocating for using these priors as standard in the literature is the part of the sentence that is too strong.
-We respectfully disagree with this sentiment, and note that it may fall outside of the scope of the Referee's role. 
-Firstly, our manuscript shows that the physics-informed priors improve astrophysical inference, and they are completely within the spirit of Bayesian methodology; i.e., that one starts with their prior belief about how systems behave, and then uses data to update those beliefs.
-Therefore, starting with uniform priors incorporates nothing about our prior knowledge of systems, and so we do advocate for these priors to become standard in the literature.
-Secondly, there is nothing objectively wrong with this statement, but instead the Referee may be offering a stylistic comment, which we respectfully acknowledge but do not share. 
+  We thank the Referee for raising this point. The exclusion of the
+  small-Lambda part of the distribution is the combination of all the
+  constraints that are imposed on the EOSs we construct. However, the
+  most significant of such constraint is that coming from pQCD, that
+  "filters" out very soft EOSs as they would lead to rather small sound
+  speeds at small densities but then superluminal ones at higher
+  densities in order to match the asymptotic pQCD constraint. We have
+  added a statement on this in the revised version.
 
-
-
-
-With respect to the comment about providing open-source code, we again respectfully disagree with the Referee that this does not add value to the abstract.
-The implementation of these priors are complicated for a number of reasons.
-We are the developers of both the code that generates the priors (which is computationally expensive), and also the original developers of the parameter-estimation software.
-We believe making the code open source is important for the community, to the point of being included in the abstract.  
-
-
-
-"The above prior assumptions are overly conservative. Basic physical
-principles such as causality, consistency with nuclear-physics
-experiments, and perturbative QCD calculations, imply a strong
-correlation between M and \Lambda in neutron-star binaries."
->> citation?
-
- SM : Has the correlation between chirp mass and tidal deformability explored anywhere else other than in Alitparamak+, Ecker and Rezzolla, 2022a,b ?
- Otherwise this paragraph needs a restructure. 
+  SM: I believe this is mostly set by the TOV mass? So the "cut" would be
+  set by pulsar timing measurements. CE and LR are better equipped to
+  comment on this.  LR: I've added the explanation; CE please check you
+  agree
 
 
+# Fig 3 caption: "the dashed lines show 90% credible intervals of the
+# priors of chirp mass and tidal deformability ..."  >> This line is
+# confusing. Do you just mean the physics-informed priors for the
+# corresponding posteriors?
 
-In the abstract could you also quote the 90% upper limit in addition to
-the median + 90% confidence interval from your study? Then it will be
-easy to compare with the previous upper limit 720.
+  We agree this is confusing. The dashed curves are the effective priors
+  for when we take the physics-informed priors from chirp mass-tidal
+  deformability parameter space, and map them into the spectral
+  parameterisation. We have changed the caption to read "the dashed
+  curves show the 90% credible intervals of the effective priors of the
+  relationship between chirp mass and tidal deformability for the
+  uniform(blue) and physics-informed (red) priors, when mapped to the
+  spectral parameterisation. We have made a similar amendment to Figure
+  5.
 
-In the abstract, we quote the upper limit on Lambda for the original (i.e., the LVK) results because those results are also consistent with zero, implying the measurement is only that of an upper limit.
-On the other hand, our results rule out Lambda = 0 with a large degree of confidence, meaning that a 90% upper limit is not a relevant quantity to quote.
-For this reason, it would be misleading to quote a 90% upper limit in the abstract for our results; if we were to do this in the abstract, it would further require a couple of sentences explaining this result, which would unnecessarily bloat the abstract.
+# Fig 4 caption: "The posterior using uniform priors from the LVK is
+# reported in blue."  >> maybe you can add that they assume a BNS merger?
 
-
-"We show a significant improvement on the measurement ..."
->>This line could go in the conclusions not introduction
-
-We see this as a stylistic suggestion from the Referee.
-We believe stating this in the abstract, introduction, and conclusion is critical and emphasises the main punchline of the paper.
-
-
-"When including observed rates as the prior odds, we find an odds ratio of 0.33"
->> Odds ratio comparing what over what? i.e., it's not clear whether the
-   BNS is in the numerator or denominator
-
-We thank the referee for pointing out that this statement is confusing.
-We have modified the manuscript with additional clarification on the odds ratio. 
+  We have done as the Referee has suggested, and have added that the LVK
+  analysis shown in Figure 4 assumes a BNS merger.
 
 
+# In the conclusions, you quote the 90% upper limit from the LVK analysis
+# and compare that to a 90% credible interval from your physics informed
+# prior analysis. Can you quote the 90% upper limit for your analysis as
+# well, so that it's easier to compare?
 
-"We describe details of the method and implementation in the next Section."
->> Do you mean Methods section, or Section 2? Mention which section
-   specifically.
-
-We have updated the manuscript to explicitly refer to the entirety of Section 2 which encompassses both the eos construction and prior implementation.  
-
-"We use the probability distributions described in the previous Section
-as priors on the source-frame chirp mass and effective tidal
-deformability."
->> Could you be specific about how the priors were constructed?
-
-SM: Perhaps CE can answer this.I believe the referee is asking about specifically about how the EOSs were mapped into chirp masss and tidal deformability.
-Perhaps one clarifying sentence is all that is neccessary. 
-
-
-
-"where the fitting coefficients are a = ?57 (?23) ..."
->> It's not clear what the numbers in the brackets are.
- 
-The numbers in and out of the brackets here represent the lower and upper bounds of the 90% for the fitting function.
-We realise that this might not have been clear enough in the original work and have added some additional clarification to the manuscript. 
-
-
-
-"We sample directly in source-frame chirp mass, mass ratio and the two
-tidal deformability parameters \Lambda and \delta \Lambda"
->> In the next paragraph the authors say that they do not have a prior on
-   \delta \Lambda. Can you clarify how you don't have priors on \delta
-   \Lambda but also say that you sample in that parameter?
-
-We thank the reviewer for pointing out how this is confusing.
-We sample over lambda_tilde and delta_lambda when we perform parameter estimation, but we do not construct a “physics inspired prior" for delta_lambda as we do for lambda_tilde.
-The prior on delta_lambda is set to be uniform during parameter estimation. We have amended the manuscript to make this explicitly clear. 
-
-The physics informed priors imposes a hard cut on the tidal deformability
-excluding values below ~200, which then translates to the
-posterior. Since this prior essentially eliminates a large chunk of soft
-equation of states, could you emphasize how the calculations you present
-for your physics-informed priors translates to the cut and provide an
-physical explanation for why eliminating low Lambdas is a valid
-assumption for GW170817?
-
-SM: I believe this is mostly set by the TOV mass? So the “cut” would be set by pulsar timing measurements. CE and LR are better equipped to comment on this. 
-
-
-Fig 3 caption: "the dashed lines show 90% credible intervals of the
-priors of chirp mass and tidal deformability ..."
->> This line is confusing. Do you just mean the physics-informed priors
-   for the corresponding posteriors?
-
-We agree this is confusing. The dashed curves are the effective priors for when we take the physics-informed priors from chirp mass-tidal deformability parameter space, and map them into the spectral parameterisation.
-We have changed the caption to read "the dashed curves show the 90% credible intervals of the effective priors of the relationship between chirp mass and tidal deformability
-for the uniform(blue) and physics-informed (red) priors, when mapped to the spectral parameterisation. 
-We have made a similar ammendent to Figure 5. 
-
-Fig 4 caption: "The posterior using uniform priors from the LVK is reported in blue."
->> maybe you can add that they assume a BNS merger?
-
-We have done as the referee has suggested, and have added that the LVK analysis shown in Figure 4 assumes a BNS merger. 
-
-In the conclusions, you quote the 90% upper limit from the LVK analysis
-and compare that to a 90% credible interval from your physics informed
-prior analysis. Can you quote the 90% upper limit for your analysis as
-well, so that it's easier to compare?
-
-
-We reiterate here that the limits provided by the LVK analysis are also consistent with a tidal deformability of zero and hence it only makes sense to quote an upper limit. 
-Conversely, our results are not consistent with zero, with a large degree of confidence and we instead quote median and upper and lower limits of our credible interval. 
+  We reiterate here that the limits provided by the LVK analysis are also
+  consistent with a tidal deformability of zero and hence it only makes
+  sense to quote an upper limit. Conversely, our results are not
+  consistent with zero, with a large degree of confidence and we instead
+  quote median and upper and lower limits of our credible interval.
