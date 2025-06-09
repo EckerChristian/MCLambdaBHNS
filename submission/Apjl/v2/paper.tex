@@ -232,7 +232,7 @@ information since we are discarding the uncertainties associated with
 these measurements.  However, \citet{2023Jiang} showed that the
 underlying distributions are almost identical regardless of the choice of
 constant or variable likelihood, with $90\%$ credible intervals
-essentially overlapping.  We note that, unlike what was done
+essentially overlapping. We note that, unlike what was done
 in~\citet{Altiparmak:2022} and \citet{Ecker:2022dlg}, we do not impose
 any GW-informed constraints on the binary tidal deformability in the
 construction of our prior as we are reanalysing these data using the new
@@ -278,10 +278,10 @@ shown in Fig.~\ref{fig:priors} where the top panel is the BNS prior and
 the bottom panel is the NSBH prior. We implement this in \texttt{Bilby}
 using the \texttt{conditional\_prior} function, interpolating a
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
-$\tilde{\Lambda}$. \blue{We note that the exclusion of the small
-  $\tilde{\Lambda}$ part of the distribution is the combination of all
-  the constraints that are imposed on the EOSs we construct. However, the
-  most significant of such constraint is that coming from pQCD, that
+$\tilde{\Lambda}$. \blue{We note that the exclusion of the
+  small-$\tilde{\Lambda}$ part of the distribution is the combination of
+  all the constraints that are imposed on the EOSs we construct. However,
+  the most significant of such constraint is that coming from pQCD, that
   filters out very soft EOSs as they would lead to rather small sound
   speeds at small densities, but then superluminal ones at higher
   densities in order to match the asymptotic pQCD
