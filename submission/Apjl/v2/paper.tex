@@ -71,8 +71,9 @@
  be used to perform model selection between binary neutron star and
  neutron star-black hole mergers; in the case of GW190425, the results
  provide only marginal evidence with a Bayes factor $\mathcal{BF}=1.33$
- in favour of the binary neutron star merger hypothesis. Given their
- ability to improve the astrophysical inference of binary mergers involving
+ in favour of the binary neutron star merger hypothesis.
+\CE{I suggest to remove this sentence:}
+Given their ability to improve the astrophysical inference of binary mergers involving
  neutron stars, we advocate for these physics-informed priors to be used
  as standard in the literature and provide open-source code for
  reproducibility and adaptation of the method.
@@ -277,13 +278,22 @@ shown in Fig.~\ref{fig:priors} where the top panel is the BNS prior and
 the bottom panel is the NSBH prior. We implement this in \texttt{Bilby}
 using the \texttt{conditional\_prior} function, interpolating a
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
-$\tilde{\Lambda}$. \blue{We note that exclusion of the small
-  $\tilde{\Lambda}$ part of the distribution is the combination of all
-  the constraints that are imposed on the EOSs we construct. However, the
-  most significant of such constraint is that coming from pQCD, that
-  filters out very soft EOSs as they would lead to rather small sound
-  speeds at small densities, but then superluminal ones at higher
-  densities in order to match the asymptotic pQCD constraint.}
+$\tilde{\Lambda}$. 
+
+%  \blue{We note that exclusion of the small
+%  $\tilde{\Lambda}$ part of the distribution is the combination of all
+%  the constraints that are imposed on the EOSs we construct. However, the
+%  most significant of such constraint is that coming from pQCD, that
+%  filters out very soft EOSs as they would lead to rather small sound
+%  speeds at small densities, but then superluminal ones at higher
+%  densities in order to match the asymptotic pQCD constraint.}
+\blue{As demonstrated in~\citep{Ecker:2022dlg}, the suppression of the 
+low-$\tilde{\Lambda}$ region in the distribution arises from the lower bound 
+on the maximum neutron star mass based on X-ray observations. These constraints 
+favor relatively stiff EOSs to meet the mass constraint, thereby excluding 
+softer EOSs that would yield smaller values of $\tilde{\Lambda}$.
+}
+
 
 The $90\%$ probability contours (dashed black curves)
 can be fit by a simple power law \blue{to obtain analytic estimates for
@@ -577,7 +587,8 @@ $R_{1.4} = {12.54^{+1.05}_{-1.54}} \, {\rm km}$ to $R_{1.4} =
 12.11^{+0.91}_{-1.11} \, {\rm km}$.  Similarly, the constraints on the
 tidal deformability are considerably restricted, going from
 $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.186} =
-384^{+306}_{-158}$. In the case of GW190425, we assess the nature of the
+384^{+306}_{-158}$ \blue{, which corresponds to a revised upper bound $\tilde{\Lambda}_{1.186}<690$.}
+In the case of GW190425, we assess the nature of the
 secondary in the binary by computing the odds ratio associated to a
 neutron star or a black hole hypothesis.  We find this analysis to be
 uninformative, with a odds ratio between $0.44$ and $1.33$ in favour of

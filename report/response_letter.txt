@@ -64,6 +64,14 @@ acceptable for publication in ApJL.
   making the code open-source is important for the community, to the
   point of being included in the abstract.
 
+ CE: I kind of agree with the referee that advertising our result to 
+ be used as "new standard" shouldn't be in the abstract. It doesn't 
+ convey any result and is up to the reader if they use it or not.
+ Here is my suggestion:
+	
+ + Indeed, we moved the corresponding sentence from the abstract since
+since this is already stted in the conclusion section.
+
 
 # "The above prior assumptions are overly conservative. Basic physical
 # principles such as causality, consistency with nuclear-physics
@@ -71,8 +79,8 @@ acceptable for publication in ApJL.
 # correlation between M and \Lambda in neutron-star binaries."  >>
 # citation?
 
-  We thank the Referee for the suggestion. The citation is of course to
-  the work of Altiparmak+ 2022 where the correlation was first presented;
+  We thank the Referee for the suggestion. The citation is to the work 
+  of Altiparmak+ 2022 where the correlation was first presented;
   we have added it in the revised version.
   
 
@@ -97,6 +105,9 @@ acceptable for publication in ApJL.
   We see this as a stylistic suggestion from the Referee. We believe
   stating this in the abstract, introduction, and conclusion is critical
   and emphasises the main punchline of the paper.
+
+CE: We removed the sentence from the abstract since an equivalent statement
+can already be found in the conclusion section. 
 
 
 # "When including observed rates as the prior odds, we find an odds ratio
@@ -174,7 +185,12 @@ acceptable for publication in ApJL.
   set by pulsar timing measurements. CE and LR are better equipped to
   comment on this.  LR: I've added the explanation; CE please check you
   agree
-
+  
+  CE: Indeed, the lower cut on the chirp mass is mostly due to the 2Msun
+  constraint that requires sufficiently stiff models to reach this bound.
+  We actally show this explicitly Fig.3 of 2209.08101, where the lower
+  bound is set by the mass constraint but the upper bound remains unaffected.
+  I corrected the corresponding statement in the manuscript.
 
 # Fig 3 caption: "the dashed lines show 90% credible intervals of the
 # priors of chirp mass and tidal deformability ..."  >> This line is
@@ -208,3 +224,18 @@ acceptable for publication in ApJL.
   sense to quote an upper limit. Conversely, our results are not
   consistent with zero, with a large degree of confidence and we instead
   quote median and upper and lower limits of our credible interval.
+
+ CE: I think the referee wants to have a revised upper bound from our analyis.
+ Wouldn that just be the upper bound of our 90% CI, i.e. Ltilde<690? 
+ But I agree, citing an upper bound only makes sense when you don't have a lower
+one, which was essentially the case in the original analysis. Since we have
+here a rather strict lower bound we should always cite median+-. We could
+still do the trivial caluclation and cite it in the conclusion.
+
+ The original LVK analyis essentially only resulted in an upper bound and no 
+lower bound on Lambda, so it makes sense to cite only the upper bound for this.
+However, our analysis with physics informed priors results in a rather strict lower bound,
+so here it makes sense to cite the cental value and the 90% uncertainty.
+We extended the conclusion section and cite now explicitly the upper bound of this 
+interval, i.e. Lambda<690.
+
