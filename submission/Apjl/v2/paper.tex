@@ -278,20 +278,22 @@ shown in Fig.~\ref{fig:priors} where the top panel is the BNS prior and
 the bottom panel is the NSBH prior. We implement this in \texttt{Bilby}
 using the \texttt{conditional\_prior} function, interpolating a
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
-$\tilde{\Lambda}$. 
-%  \blue{We note that exclusion of the small
-%  $\tilde{\Lambda}$ part of the distribution is the combination of all
-%  the constraints that are imposed on the EOSs we construct. However, the
-%  most significant of such constraint is that coming from pQCD, that
-%  filters out very soft EOSs as they would lead to rather small sound
-%  speeds at small densities, but then superluminal ones at higher
-%  densities in order to match the asymptotic pQCD constraint.}
-\blue{As demonstrated in~\citep{Ecker:2022dlg}, the suppression of the 
-low-$\tilde{\Lambda}$ region in the distribution arises from the lower bound 
-on the maximum neutron star mass based on X-ray observations. These constraints 
-favor relatively stiff EOSs to meet the mass constraint, thereby excluding 
-softer EOSs that would yield smaller values of $\tilde{\Lambda}$.
-}
+$\tilde{\Lambda}$. \blue{We note that the exclusion of the small
+  $\tilde{\Lambda}$ part of the distribution is the combination of all
+  the constraints that are imposed on the EOSs we construct. However, the
+  most significant of such constraint is that coming from pQCD, that
+  filters out very soft EOSs as they would lead to rather small sound
+  speeds at small densities, but then superluminal ones at higher
+  densities in order to match the asymptotic pQCD
+  constraint. Furthermore, as demonstrated in~\citep{Ecker:2022dlg}, the
+  suppression of the low-$\tilde{\Lambda}$ region is also dependent on
+  the assumed the maximum massneutron star}
+%% \blue{As demonstrated in~\citep{Ecker:2022dlg}, the suppression of the
+%%   low-$\tilde{\Lambda}$ region in the distribution arises from the
+%%   lower bound on the maximum neutron star mass based on X-ray
+%%   observations. These constraints favor relatively stiff EOSs to meet
+%%   the mass constraint, thereby excluding softer EOSs that would yield
+%%   smaller values of $\tilde{\Lambda}$.  }
 
 
 The $90\%$ probability contours (dashed black curves)
@@ -344,15 +346,16 @@ $q\in[0.125,\,1]$~\citep[e.g.,][]{romeroshaw20}. The choice of a lower
 limit of $q=0.125$ is due to waveform limitations and is not
 astrophysically motivated.
 
-While both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are
-related to the EOS, we only impose a prior here on $\tilde{\Lambda}$, as
+While both $\tilde{\Lambda}$ and $\delta\tilde{\Lambda}$ are related to
+the EOS, we only impose a prior here on $\tilde{\Lambda}$, as
 $\tilde{\Lambda}$ is measured much better than
-$\delta\tilde{\Lambda}$~\citep[e.g.,][]{wade14}. \blue{We use a uniform prior on $\delta\tilde{\Lambda}$ in the range $\delta\tilde{\Lambda} \in [-500,500]$.}
-In principle, one could
-set a combined prior on the three parameters $(\mathcal{M},\,
-\tilde{\Lambda}, \,\delta\tilde{\Lambda})$, however, adding this latter
-parameter would not add significantly to parameter estimation in the
-relatively low signal-to-noise regime. We therefore leave exploration of
+$\delta\tilde{\Lambda}$~\citep[e.g.,][]{wade14}. \blue{We use a uniform
+  prior on $\delta\tilde{\Lambda}$ in the range $\delta\tilde{\Lambda}
+  \in [-500,500]$.}  In principle, one could set a combined prior on the
+three parameters $(\mathcal{M},\, \tilde{\Lambda},
+\,\delta\tilde{\Lambda})$, however, adding this latter parameter would
+not add significantly to parameter estimation in the relatively low
+signal-to-noise regime. We therefore leave exploration of
 physically-motivated priors on $\delta\tilde{\Lambda}$ for future work.
 
 We construct priors on $\mathcal{M}$ and $\tilde{\Lambda}$ by randomly
@@ -451,8 +454,10 @@ inference in future work.
     %dashed curves show the $90\%$ credible intervals of the priors on
     %chirp mass and tidal deformability when mapped to the spectral
     %parameterisation.
-    \blue{the dashed curves show the 90\% credible intervals of the effective priors of the relationship between chirp mass and tidal deformability for the uniform (blue) and physics-informed (red) priors, when mapped to the spectral parameterisation.}
-    }
+    \blue{the dashed curves show the 90\% credible intervals of the
+      effective priors of the relationship between chirp mass and tidal
+      deformability for the uniform (blue) and physics-informed (red)
+      priors, when mapped to the spectral parameterisation.}  }
     \label{fig:GW170817_massradius}
 \end{figure}
 
@@ -495,10 +500,11 @@ uniform prior (blue) when sampled with the spectral parameterisation.
   \caption{The same as in Fig.~\ref{fig:GW170817_tides} but for the
     GW190425 event. The posterior using a physics-informed prior for BNS
     mergers is shown in red, while the posterior for NSBH mergers is
-    shown in green. The posterior using uniform priors \blue{and assuming a BNS origin} from the LVK is
-    reported in blue.}
+    shown in green. The posterior using uniform priors \blue{and assuming
+      a BNS origin} from the LVK is reported in blue.}
   \label{fig:GW190425_tides}
 \end{figure}
+
 \begin{figure}
   \centering
   \includegraphics[width=1.\columnwidth]{GW190425_press_dens_MR.pdf}
@@ -512,11 +518,13 @@ uniform prior (blue) when sampled with the spectral parameterisation.
     %The black dashed curve shows the $90\%$ credible
     %intervals of the priors when
     %mapped to a spectral parameterisation.
-    \blue{The black dashed curve shows the $90\%$ credible interval of the effective prior of the relationship between chirp mass
-    and tidal deformability for the physics-informed prior, when mapped to the spectral parameterisation.}
-    }
+    \blue{The black dashed curve shows the $90\%$ credible interval of
+      the effective prior of the relationship between chirp mass and
+      tidal deformability for the physics-informed prior, when mapped to
+      the spectral parameterisation.}  }
   \label{fig:GW190425_massradius_BNS}
 \end{figure}
+
 Figure \ref{fig:GW190425_tides} offers a complementary view to
 Fig.~\ref{fig:GW170817_tides} and shows the posterior distribution of the
 intrinsic tidal parameter of GW190425 when analyzed using both the BNS
@@ -586,17 +594,17 @@ $R_{1.4} = {12.54^{+1.05}_{-1.54}} \, {\rm km}$ to $R_{1.4} =
 12.11^{+0.91}_{-1.11} \, {\rm km}$.  Similarly, the constraints on the
 tidal deformability are considerably restricted, going from
 $\tilde{\Lambda}_{1.186} < 720$ to $\tilde{\Lambda}_{1.186} =
-384^{+306}_{-158}$ \blue{, which corresponds to a revised upper bound $\tilde{\Lambda}_{1.186}<690$.}
-In the case of GW190425, we assess the nature of the
-secondary in the binary by computing the odds ratio associated to a
-neutron star or a black hole hypothesis.  We find this analysis to be
-uninformative, with a odds ratio between $0.44$ and $1.33$ in favour of
-the BNS merger hypothesis.  In either case, we improve the constraints on
-the radius estimates with respect to previous LVK with the posterior
-distributions indicating $R_{1.4} = 12.69^{+1.24}_{-1.22} \, {\rm km}$
-for BNS and $R_{1.4} = 12.06^{+1.44}_{-1.15} \, {\rm km}$ for NSBH
-mergers. We give separate constraints on the EOS for both BNS and NSBH
-origins of GW190425; however we could also calculate a single EOS
+384^{+306}_{-158}$ \blue{, which corresponds to a revised upper bound
+  $\tilde{\Lambda}_{1.186}<690$.}  In the case of GW190425, we assess the
+nature of the secondary in the binary by computing the odds ratio
+associated to a neutron star or a black hole hypothesis.  We find this
+analysis to be uninformative, with a odds ratio between $0.44$ and $1.33$
+in favour of the BNS merger hypothesis.  In either case, we improve the
+constraints on the radius estimates with respect to previous LVK with the
+posterior distributions indicating $R_{1.4} = 12.69^{+1.24}_{-1.22} \,
+{\rm km}$ for BNS and $R_{1.4} = 12.06^{+1.44}_{-1.15} \, {\rm km}$ for
+NSBH mergers. We give separate constraints on the EOS for both BNS and
+NSBH origins of GW190425; however we could also calculate a single EOS
 posterior weighted by the evidence for BNS and NSBH merger origins of
 GW190425~(e.g., \citealt{2020Ashton}). Compared to other works which
 provide constraints on the cold nuclear EOS by combining nuclear and
