@@ -20,7 +20,7 @@ acceptable for publication in ApJL.
 # measured with chirp mass ... ?
 
   We thank the Referee for pointing out a typo in the abstract, which we
-  have corrected in the revised version.
+  have corrected in the revised version on line 15.
 
 
 # Abstract: lines 19-21: "Given their ability to improve the
@@ -72,7 +72,7 @@ acceptable for publication in ApJL.
 
   We thank the Referee for the suggestion. The citation is to the work 
   of Altiparmak+ 2022 where the correlation was first presented;
-  we have added it in the revised version.
+  we have added it in the revised version on line number 48.
   
 
 # In the abstract could you also quote the 90% upper limit in addition to
@@ -103,14 +103,14 @@ acceptable for publication in ApJL.
 
    We thank the Referee for pointing out that this statement is
    confusing. We have modified the manuscript with additional
-   clarification on the odds ratio.
+   clarification on the odds ratio on lines 78-79 and 82.
 
 
 # "We describe details of the method and implementation in the next
 # Section."  >> Do you mean Methods section, or Section 2? Mention which
 # section specifically.
 
-  We have updated the manuscript to explicitly refer to the entirety of
+  We have updated the manuscript (on line 95) to explicitly refer to the entirety of
   Section 2 which encompasses both the eos construction and prior
   implementation.
 
@@ -124,7 +124,7 @@ acceptable for publication in ApJL.
   how the probability distributions on the source-frame chirp mass and
   effective tidal deformability are discussed in Altiparmak+ 2022, but we
   agree that a brief summary can be added to the manuscript. This is what
-  we have done in the revised version.
+  we have done in the revised version on lines 171-173.
   
 
 # "where the fitting coefficients are a = ?57 (?23) ..."  >> It's not
@@ -134,7 +134,7 @@ acceptable for publication in ApJL.
   upper bounds of the 90% for the fitting function, where the latter are
   indicated in the round brackets. We realise that this might not have
   been clear enough in the original work and have added some additional
-  clarification to the manuscript.
+  clarification to the manuscript on lines 189-191.
 
 
 # "We sample directly in source-frame chirp mass, mass ratio and the two
@@ -148,7 +148,7 @@ acceptable for publication in ApJL.
   estimation, but we do not construct a "physics inspired prior" for
   delta_lambda as we do for lambda_tilde. The prior on delta_lambda is
   set to be uniform during parameter estimation. We have amended the
-  manuscript to make this explicitly clear.
+  manuscript on lines 213-214 to make this explicitly clear.
 
 
 # The physics informed priors imposes a hard cut on the tidal
@@ -164,7 +164,7 @@ acceptable for publication in ApJL.
   constraints that are imposed on the EOSs we construct. 
   The lower cut on the tidal defomability is dominantely due to the ~2Msun
   constraint that requires sufficiently stiff models to reach this bound.
-  We added a discussion clarifying this point in the revised manuscript.
+  We added a discussion clarifying this point on lines 178-187 in the revised manuscript.
 
 
 # Fig 3 caption: "the dashed lines show 90% credible intervals of the
@@ -200,4 +200,4 @@ acceptable for publication in ApJL.
   consistent with zero, with a large degree of confidence and we instead
   quote median and upper and lower limits of our credible interval.
   For easier comparison to the old result we now report explicitly 
-  the revised upper bound in the Conclusion section.
+  the revised upper bound in the Conclusion section on lines 380-381.
