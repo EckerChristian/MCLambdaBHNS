@@ -57,10 +57,9 @@
  physics in a regime not accessible to terrestrial experiments. We
  introduce physics-informed priors constrained by nuclear theory and
  perturbative Quantum Chromodynamics calculations, as well as
- astrophysical measurements of neutron-star masses anda radii. 
-%When these
-% priors are used in gravitational-wave astrophysical inference, we show a
-% significant improvement on nuclear equation of state constraints.
+ astrophysical measurements of neutron-star masses and radii. 
+ When these priors are used in gravitational-wave astrophysical inference, 
+ we show a significant improvement on neutron-star matter constraints.
  Applying these to the first observed gravitational-wave binary
  neutron-star merger GW170817, the constraints on the radius of a
  $1.4\,M_\odot$ neutron star improve from $R_{1.4} =
@@ -73,10 +72,10 @@
  neutron star-black hole mergers; in the case of GW190425, the results
  provide only marginal evidence with a Bayes factor $\mathcal{BF}=1.33$
  in favour of the binary neutron star merger hypothesis.
-%\CE{I suggest to remove this sentence:} Given their ability to improve the astrophysical inference of binary mergers involving
-% neutron stars, we advocate for these physics-informed priors to be used
-% as standard in the literature and provide open-source code for
-% reproducibility and adaptation of the method.
+ Given their ability to improve the astrophysical inference of binary mergers involving
+ neutron stars, we advocate for these physics-informed priors to be used
+ as standard in the literature and provide open-source code for
+ reproducibility and adaptation of the method.
 \end{abstract}
 	
 \keywords{neutron stars --- gravitational waves --- equation of state}
@@ -278,23 +277,28 @@ shown in Fig.~\ref{fig:priors} where the top panel is the BNS prior and
 the bottom panel is the NSBH prior. We implement this in \texttt{Bilby}
 using the \texttt{conditional\_prior} function, interpolating a
 $200\times200$ grid to draw from a joint prior on $\mathcal{M}$ and
-$\tilde{\Lambda}$. \blue{We note that the exclusion of the
-  small-$\tilde{\Lambda}$ part of the distribution is the combination of
-  all the constraints that are imposed on the EOSs we construct. However,
-  the most significant of such constraint is that coming from pQCD, that
-  filters out very soft EOSs as they would lead to rather small sound
-  speeds at small densities, but then superluminal ones at higher
-  densities in order to match the asymptotic pQCD
-  constraint. Furthermore, as demonstrated by~\citet{Ecker:2022dlg}, the
-  suppression of the low-$\tilde{\Lambda}$ region is sensitive to the
-  assumed the maximum mass, moving progressively to larger values of
-  $\tilde{\Lambda}$ with the increase of $M_{_{\rm TOV}}$.}
-%% \blue{As demonstrated in~\citep{Ecker:2022dlg}, the suppression of the
-%%   low-$\tilde{\Lambda}$ region in the distribution arises from the
-%%   lower bound on the maximum neutron star mass based on X-ray
-%%   observations. These constraints favor relatively stiff EOSs to meet
-%%   the mass constraint, thereby excluding softer EOSs that would yield
-%%   smaller values of $\tilde{\Lambda}$.  }
+$\tilde{\Lambda}$. 
+\blue{
+The absence of low-$\tilde{\Lambda}$ values in our distribution results
+from the combined effect of all constraints imposed on the EOSs we construct,
+with the dominant being the lower bound on the maximum neutron star mass. 
+As demonstrated by \citet{Ecker:2022dlg}, increasing the assumed $M_{\rm TOV}$ 
+systematically shifts the suppression of the low-$\tilde{\Lambda}$ region 
+toward higher values of $\tilde{\Lambda}$. This constraint effectively 
+favors stiffer EOSs capable of supporting higher maximum masses, 
+thereby excluding softer EOSs that would yield smaller $\tilde{\Lambda}$.
+}
+%\blue{We note that the exclusion of the
+%  small-$\tilde{\Lambda}$ part of the distribution is the combination of
+%  all the constraints that are imposed on the EOSs we construct. However,
+%  the most significant of such constraint is that coming from pQCD, that
+%  filters out very soft EOSs as they would lead to rather small sound
+%  speeds at small densities, but then superluminal ones at higher
+%  densities in order to match the asymptotic pQCD
+%  constraint. Furthermore, as demonstrated by~\citet{Ecker:2022dlg}, the
+%  suppression of the low-$\tilde{\Lambda}$ region is sensitive to the
+%  assumed the maximum mass, moving progressively to larger values of
+%  $\tilde{\Lambda}$ with the increase of $M_{_{\rm TOV}}$.}
 
 
 The $90\%$ probability contours (dashed black curves)
