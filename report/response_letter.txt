@@ -64,15 +64,6 @@ acceptable for publication in ApJL.
   making the code open-source is important for the community, to the
   point of being included in the abstract.
 
- CE: I kind of agree with the referee that advertising our result to 
- be used as "new standard" shouldn't be in the abstract. It doesn't 
- convey any result and is up to the reader if they use it or not.
- Here is my suggestion:
-	
- + Indeed, we moved the corresponding sentence from the abstract since
-since this is already stted in the conclusion section.
-
-
 # "The above prior assumptions are overly conservative. Basic physical
 # principles such as causality, consistency with nuclear-physics
 # experiments, and perturbative QCD calculations, imply a strong
@@ -105,10 +96,6 @@ since this is already stted in the conclusion section.
   We see this as a stylistic suggestion from the Referee. We believe
   stating this in the abstract, introduction, and conclusion is critical
   and emphasises the main punchline of the paper.
-
-CE: We removed the sentence from the abstract since an equivalent statement
-can already be found in the conclusion section. 
-
 
 # "When including observed rates as the prior odds, we find an odds ratio
 # of 0.33" >> Odds ratio comparing what over what? i.e., it's not clear
@@ -174,23 +161,11 @@ can already be found in the conclusion section.
 
   We thank the Referee for raising this point. The exclusion of the
   small-Lambda part of the distribution is the combination of all the
-  constraints that are imposed on the EOSs we construct. However, the
-  most significant of such constraint is that coming from pQCD, that
-  "filters" out very soft EOSs as they would lead to rather small sound
-  speeds at small densities but then superluminal ones at higher
-  densities in order to match the asymptotic pQCD constraint. We have
-  added a statement on this in the revised version.
-
-  SM: I believe this is mostly set by the TOV mass? So the "cut" would be
-  set by pulsar timing measurements. CE and LR are better equipped to
-  comment on this.  LR: I've added the explanation; CE please check you
-  agree
-  
-  CE: Indeed, the lower cut on the chirp mass is mostly due to the 2Msun
+  constraints that are imposed on the EOSs we construct. 
+  The lower cut on the tidal defomability is dominantely due to the ~2Msun
   constraint that requires sufficiently stiff models to reach this bound.
-  We actally show this explicitly Fig.3 of 2209.08101, where the lower
-  bound is set by the mass constraint but the upper bound remains unaffected.
-  I corrected the corresponding statement in the manuscript.
+  We added a discussion clarifying this point in the revised manuscript.
+
 
 # Fig 3 caption: "the dashed lines show 90% credible intervals of the
 # priors of chirp mass and tidal deformability ..."  >> This line is
@@ -224,18 +199,5 @@ can already be found in the conclusion section.
   sense to quote an upper limit. Conversely, our results are not
   consistent with zero, with a large degree of confidence and we instead
   quote median and upper and lower limits of our credible interval.
-
- CE: I think the referee wants to have a revised upper bound from our analyis.
- Wouldn that just be the upper bound of our 90% CI, i.e. Ltilde<690? 
- But I agree, citing an upper bound only makes sense when you don't have a lower
-one, which was essentially the case in the original analysis. Since we have
-here a rather strict lower bound we should always cite median+-. We could
-still do the trivial caluclation and cite it in the conclusion.
-
- The original LVK analyis essentially only resulted in an upper bound and no 
-lower bound on Lambda, so it makes sense to cite only the upper bound for this.
-However, our analysis with physics informed priors results in a rather strict lower bound,
-so here it makes sense to cite the cental value and the 90% uncertainty.
-We extended the conclusion section and cite now explicitly the upper bound of this 
-interval, i.e. Lambda<690.
-
+  For easier comparison to the old result we now report explicitly 
+  the revised upper bound in the Conclusion section.
