@@ -1,0 +1,9 @@
+Reviewer's Comments:
+
+The authors have edited the following line: "... tidal deformability are considerably restricted, going from \tilde \Lambda_{1.186} < 720 to \tilde \Lambda_{1.186} = 384^{+306}_{−158}, which corresponds to a revised upper bound \tilde \Lambda_{1.186} < 690. "
+
+First, the authors should be clear about what the number 690 is. Is it the 90% upper limit?
+
+Second, if the above is true, isn't the 90% upper limit essentially the same as the 90th percentile? But, the number 690 seems to be coming from (384 + 306). I believe 384 here is the median of the 90% credible interval, 384 + 306 is the 95th percentile, and 384 - 158 is the 5th percentile. In that case, the authors should quote their 90% percentile not the 95th percentile.
+
+The authors should clarify and state this clearly in the abstract too, where the number 720 is an upper limit, but it is not stated what study it came from or what exactly it is -- is it a 90% upper limit? If so, the authors should quote their 90% upper limit in addition to their 90% credible interval.
